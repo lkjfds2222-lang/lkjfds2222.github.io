@@ -1,11 +1,19 @@
 'use strict';
-/* 雞省研究所 V3：前端不直接抓取第三方資料，以 GitHub Actions 審核後的 JSON 為準。 */
+/* 雞省研究所 V3.4：自訂單點參考價不等於官方核價。比價券仍以 GitHub Actions 審核後的 JSON 為準。 */
 const FOOD={fried:{name:'咔啦脆雞',emoji:'🍗',unit:'塊',max:14},smallBurger:{name:'小脆雞堡',emoji:'🍔',unit:'個',max:8},burger:{name:'雞腿堡',emoji:'🥪',unit:'個',max:8},tart:{name:'原味蛋撻',emoji:'🥧',unit:'顆',max:16},nuggets:{name:'上校雞塊',emoji:'🍗',unit:'塊',max:24,step:4},fries:{name:'香酥脆薯',emoji:'🍟',unit:'份',max:8},hash:{name:'薯餅',emoji:'🥔',unit:'份',max:8},drink:{name:'飲料',emoji:'🥤',unit:'杯',max:12},boneless:{name:'無骨雞腿霸',emoji:'🍖',unit:'塊',max:12}};
 const KEYS=Object.keys(FOOD),$=id=>document.getElementById(id),money=n=>Number(n).toLocaleString('zh-TW');
 const DATE_TPE=()=>new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 const esc=s=>String(s).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 let coupons=SNAPSHOT,selected={fried:4,tart:2,drink:2},party=2,excluded=new Set(),favorite=new Set(),filter='all',status=null;
 let history={},verifiedSingles={},activePlans=[],chosenPlan=0,loadedOnline=false;
+let historyDays=30,lastHistoryCode=null,manualSingles={},enableManualSingles=false;
+const MANUAL_STORAGE='kfc_manual_single_prices_v34';
+try{let x=JSON.parse(localStorage.getItem(MANUAL_STORAGE)||'{}');if(x&&typeof x==='object'&&!Array.isArray(x))for(const k of KEYS){let v=Number(x[k]);if(Number.isInteger(v)&&v>=1&&v<=500)manualSingles[k]=v;}}catch(_){}
+const validManualPrice=(v)=>Number.isInteger(v)&&v>=1&&v<=500;
+function saveManualPrices(){try{localStorage.setItem(MANUAL_STORAGE,JSON.stringify(manualSingles))}catch(_){}}
+function renderManualPrices(){let el=$('manual-price-grid');if(!el)return;el.innerHTML=KEYS.map(k=>`<label class="single-price-field"><span>${FOOD[k].emoji} ${FOOD[k].name}</span><span class="single-price-input"><b>NT$</b><input type="number" data-single="${k}" inputmode="numeric" min="1" max="500" step="1" placeholder="未設定" value="${manualSingles[k]||''}" aria-label="${FOOD[k].name} 單點參考價格"></span></label>`).join('');updateManualSummary()}
+function updateManualSummary(){let el=$('manual-price-status');if(!el)return;let n=Object.keys(manualSingles).length;el.textContent=`已設定 ${n} 種單點參考價${enableManualSingles?'，將加入下次試算':'，目前未納入比價'}。手動價格只儲存在本機，不代表肯德基官方現價。`;}
+
 try{favorite=new Set(JSON.parse(localStorage.getItem('kfc_deal_favs')||'[]'))}catch(_){}
 const isValid=c=>Boolean(/^\d{5}$/.test(String(c.code))&&Number.isInteger(c.price)&&c.price>0&&c.price<2000&&/^20\d\d-\d\d-\d\d$/.test(c.end)&&(!c.start||c.start<=DATE_TPE())&&c.end>=DATE_TPE()&&c.items&&typeof c.items==='object'&&Object.values(c.items).every(v=>Number.isInteger(v)&&v>=0)&&Object.keys(c.items).every(k=>KEYS.includes(k)));
 const validList=()=>coupons.filter(isValid);
@@ -21,14 +29,28 @@ $('excluded-items').addEventListener('change',e=>{let k=e.target.dataset.exclude
 function selectedMode(){return document.querySelector('input[name="mode"]:checked').value}
 // 不推測第三方數字 orderTypes 的意思。只有已人工核對的文字 channels 才能對應特定訂購方式。
 function eligible(c,channel){return channel==='any'||(Array.isArray(c.channels)&&c.channels.includes(channel)&&c.channelVerified===true)}
-function getOptions(req={}){let channel=$('channel').value;let opts=validList().filter(c=>eligible(c,channel)&&!Object.keys(c.items).some(k=>excluded.has(k)&&c.items[k]>0));
- // Only hand-verified individual menu prices can be added as synthetic choices.
- for(const [k,r] of Object.entries(verifiedSingles)){
-  if(!FOOD[k]||!r||!Number.isInteger(r.price)||r.price<1||r.price>500||!/^https:\/\//.test(r.sourceUrl||'')||!/^20\d\d-\d\d-\d\d$/.test(r.verifiedAt||''))continue;
-  const age=(new Date(DATE_TPE()+'T12:00:00+08:00')-new Date(r.verifiedAt+'T12:00:00+08:00'))/86400000;
-  if(age<0||age>30||excluded.has(k))continue;
-  if(channel!=='any'&&!(r.channelVerified===true&&Array.isArray(r.channels)&&r.channels.includes(channel)))continue;
-  for(let i=0;i<Math.max(1,Math.min(FOOD[k].max,req[k]||0));i++)opts.push({code:'SINGLE-'+k+'-'+(i+1),title:FOOD[k].name+'（已核價單點）',price:r.price,items:{[k]:1},desc:FOOD[k].name+' 1 '+FOOD[k].unit,original:null,synthetic:true,sourceUrl:r.sourceUrl});
+function getOptions(req={},repeat=false){let channel=$('channel').value;let opts=validList().filter(c=>eligible(c,channel)&&!Object.keys(c.items).some(k=>excluded.has(k)&&c.items[k]>0));
+ // Each single-item choice is a physical unit. When repeats are disabled, add one bounded
+ // copy per requested unit, all with the same canonical code so duplicate compositions collapse.
+ // User-entered prices override verified menu prices for the same category only while enabled.
+ for(const k of KEYS){
+  if(excluded.has(k)||!req[k])continue;
+  let r=verifiedSingles[k],manual=enableManualSingles&&validManualPrice(manualSingles[k]);
+  let sourceUrl=null,price=null,code=null,title=null;
+  if(manual){
+   // For channel-specific quotes, we cannot assert applicability. Only include on unrestricted mode.
+   if(channel!=='any')continue;
+   price=manualSingles[k];code='MANUAL-'+k;title=FOOD[k].name+'（自行輸入參考價）';
+  }else{
+   if(!r||!Number.isInteger(r.price)||r.price<1||r.price>500||!/^https:\/\//.test(r.sourceUrl||'')||!/^20\d\d-\d\d-\d\d$/.test(r.verifiedAt||''))continue;
+   const age=(new Date(DATE_TPE()+'T12:00:00+08:00')-new Date(r.verifiedAt+'T12:00:00+08:00'))/86400000;
+   if(age<0||age>30)continue;
+   if(channel!=='any'&&!(r.channelVerified===true&&Array.isArray(r.channels)&&r.channels.includes(channel)))continue;
+   price=r.price;code='SINGLE-'+k;title=FOOD[k].name+'（有來源的單點價）';sourceUrl=r.sourceUrl;
+  }
+  const unit={code,title,price,items:{[k]:1},desc:FOOD[k].name+' 1 '+FOOD[k].unit,original:null,synthetic:true,manual,sourceUrl};
+  const quantity=repeat?1:Math.max(1,Math.min(FOOD[k].max,req[k]||0));
+  for(let i=0;i<quantity;i++)opts.push(unit);
  }
  return opts;
 }
@@ -59,13 +81,13 @@ function solveRepeat(req,opts,exact){let s=setupStates(req);if(!s)return [];if(s
  for(let c of opts){let ns=nextState(p.state,c,s,exact,req);if(ns<=p.state)continue;heap.push({...takePlan(p,c),state:ns});}
  }
  return pops>=150000?{tooMany:true}:result;}
-function calculate(){let req=Object.fromEntries(KEYS.map(k=>[k,selected[k]||0]));if(!KEYS.some(k=>req[k])){renderResult(null,req,null);return}let exact=selectedMode()==='exact';let opts=getOptions(req),budget=Number($('budget').value),repeat=$('repeat').checked;
+function calculate(){let req=Object.fromEntries(KEYS.map(k=>[k,selected[k]||0]));if(!KEYS.some(k=>req[k])){renderResult(null,req,null);return}let exact=selectedMode()==='exact';let repeat=$('repeat').checked,opts=getOptions(req,repeat),budget=Number($('budget').value);
  $('result-body').innerHTML='<div class="res-empty">🔍 正在比較可用的優惠組合...</div>';
  setTimeout(()=>{let time=performance.now(),plans=repeat?solveRepeat(req,opts,exact):solveOnce(req,opts,exact);activePlans=Array.isArray(plans)?plans:[];chosenPlan=0;renderResult(plans,req,{opts,budget,repeat,exact,elapsed:performance.now()-time});},20);
 }
 function actualCounts(plan,opts){let values={};for(const [code,n]of Object.entries(plan.counts)){let c=opts.find(x=>x.code===code);if(!c)continue;for(const [k,v]of Object.entries(c.items))values[k]=(values[k]||0)+v*n}return values}
 function planSummary(plan,opts,req){let actual=actualCounts(plan,opts);let extra=KEYS.filter(k=>(actual[k]||0)>(req[k]||0)).map(k=>FOOD[k].name+'多 '+(actual[k]-req[k])+FOOD[k].unit);return {actual,extra}}
-function planText(p,opts){return '肯德基比價購買清單\n'+Object.entries(p.counts).map(([code,n])=>{let c=opts.find(x=>x.code===code);return (c?.synthetic?'單點 ': '優惠碼 ')+code+' × '+n+'｜'+c.title+'｜'+c.desc+'｜NT$ '+money(c.price*n)}).join('\n')+'\n合計 NT$ '+money(p.cost)+'\n此為已收錄資料試算，請至官方確認實際可用性。'}
+function planText(p,opts){return '肯德基比價購買清單\n'+Object.entries(p.counts).map(([code,n])=>{let c=opts.find(x=>x.code===code);return (c?.manual?'自行輸入單點 ':c?.synthetic?'單點 ': '優惠碼 ')+(c?.synthetic?'':code+' × ')+n+'｜'+c.title+'｜'+c.desc+'｜NT$ '+money(c.price*n)}).join('\n')+'\n合計 NT$ '+money(p.cost)+'\n此為已收錄資料試算，請至官方確認實際可用性。'}
 function renderResult(plans,req,context){let target=$('result-body');if(!context){target.innerHTML='<div class="res-empty"><div class="large-icon">🧺</div><h3>先挑選想吃的餐點</h3><p>設定數量後比較優惠券組合。</p></div>';return}
  if(plans?.tooMany){target.innerHTML='<div class="res-empty">🧩 條件過於複雜，請減少餐點種類或數量。系統不會以近似結果冒充最低價。</div>';return}
  if(!plans?.length){target.innerHTML=`<div class="res-empty"><div class="large-icon">🧐</div><h3>目前找不到符合限制的組合</h3><p>可試試最低價模式、取消排除餐點或修改購買方式。<br>若選了特定通路，只會使用已人工驗證適用的券。</p></div>`;return}
@@ -77,12 +99,14 @@ function drawSelectedPlan(){
  const entries=Object.entries(p.counts).map(([code,n])=>({code,n,c:ctx.opts.find(x=>x.code===code)})).filter(x=>x.c);
  const codeEntries=entries.filter(x=>!x.c.synthetic);
  const voucherCount=codeEntries.reduce((sum,x)=>sum+x.n,0);
+ const hasManual=entries.some(x=>x.c.manual);
  const detailRows=entries.map(({code,n,c})=>`<div class="detail-line">
  <div><b>${esc(c.title)} × ${n}</b><small>${esc(c.desc)}</small><small class="detail-amount">小計 NT$ ${money(c.price*n)}</small></div>
- <div class="detail-actions"><span class="coupon-code" title="${c.synthetic?'經人工核價的單點':'優惠碼 '+esc(code)}">${esc(c.synthetic?'單點':code)}</span><button class="tiny-btn" type="button" data-copy="${esc(code)}" aria-label="${c.synthetic?'開啟單點價格來源':'複製優惠碼 '+esc(code)}">${c.synthetic?'來源 ↗':'複製券碼'}</button></div>
+ <div class="detail-actions"><span class="coupon-code" title="${c.manual?'自行輸入，非官方核價':c.synthetic?'有來源的單點':'優惠碼 '+esc(code)}">${esc(c.manual?'自訂價':c.synthetic?'單點':code)}</span>${c.manual?'<span class="manual-badge">待核對</span>':`<button class="tiny-btn" type="button" data-copy="${esc(code)}" aria-label="${c.synthetic?'開啟單點價格來源':'複製優惠碼 '+esc(code)}">${c.synthetic?'來源 ↗':'複製券碼'}</button>`}</div>
  </div>`).join('');
  target.innerHTML=`
  <div class="v3-label">${ctx.exact?'精準數量比價':'至少滿足餐點需求'} · ${ctx.repeat?'可重複使用理論價格':'每張券最多一次'}</div>
+ ${hasManual?'<div class="manual-alert" role="note">⚠ 本方案包含你自行輸入的單點價格；未核對官方售價、稅費或通路，僅供估算。</div>':''}
  <div class="price-big"><small>NT$ </small>${money(p.cost)}</div>
  <span class="status-chip ${over?'warning':''}">${over?'超過預算 NT$ '+money(p.cost-ctx.budget):'✓ '+(ctx.budget?'符合預算':'已收錄選項中的低價方案')}</span>
  <div class="plan-list" aria-label="其他購買方案">${activePlans.map((x,i)=>`<button class="plan-option ${i===chosenPlan?'selected':''}" aria-pressed="${i===chosenPlan}" type="button" data-plan="${i}"><div class="plan-head"><b>${i===0?'🏆 最低價方案':'備選方案 '+(i+1)}</b><strong>NT$ ${money(x.cost)}</strong></div><div class="plan-caption">${x.uses} 張／筆優惠選項 · ${Object.keys(x.counts).length} 種組合</div></button>`).join('')}</div>
@@ -91,27 +115,39 @@ function drawSelectedPlan(){
  <div class="plan-total-row"><span>購買清單合計</span><strong>NT$ ${money(p.cost)}</strong></div></section>
  <div class="plan-warning">✅ 需求：${esc(KEYS.filter(k=>req[k]).map(k=>FOOD[k].name+req[k]+FOOD[k].unit).join('、'))}<br>📦 實得：${esc(KEYS.filter(k=>actual[k]).map(k=>FOOD[k].name+actual[k]+FOOD[k].unit).join('、'))}<br>🎁 額外品項：${esc(extra.join('、')||'無（依已收錄品項統計）')}</div>
  <div class="plan-foot"><button id="copy-plan" class="outline" type="button">📋 複製購買清單</button><button id="copy-codes" class="outline" type="button" ${voucherCount?'':'disabled'}>🎟️ 只複製優惠碼</button><button id="share-plan" class="outline" type="button">🔗 分享需求</button><a class="outline" target="_blank" rel="noopener noreferrer" href="https://www.kfcclub.com.tw/coupon">官方核對 ↗</a></div>
- <p class="plan-note">價格僅涵蓋已收錄、目前有效且符合已知限制的選項。尚未完整驗證門市、重複使用限制與商品供應；${ctx.opts.some(x=>x.synthetic)?'單點價格採已核對來源。':'尚未納入所有官方單點套餐的價格。'} 計算 ${Math.round(ctx.elapsed)} ms。</p>`;
+ <p class="plan-note">價格僅涵蓋已收錄、目前有效且符合已知限制的選項。尚未完整驗證門市、重複使用限制與商品供應；${hasManual?'本方案包含自行輸入的參考單價，不是正式報價。':entries.some(x=>x.c.synthetic)?'本方案單點價格有來源及核對日期。':'未納入所有官方單點套餐的價格。'} 計算 ${Math.round(ctx.elapsed)} ms。</p>`;
  target.querySelectorAll('[data-plan]').forEach(el=>el.onclick=()=>{chosenPlan=Number(el.dataset.plan);drawSelectedPlan()});
- target.querySelectorAll('[data-copy]').forEach(el=>el.onclick=()=>{const code=el.dataset.copy,c=ctx.opts.find(x=>x.code===code);if(!c)return;if(c.synthetic){window.open(c.sourceUrl,'_blank','noopener');return;}copy(code)});
+ target.querySelectorAll('[data-copy]').forEach(el=>el.onclick=()=>{const code=el.dataset.copy,c=ctx.opts.find(x=>x.code===code);if(!c)return;if(c.synthetic){if(c.sourceUrl)window.open(c.sourceUrl,'_blank','noopener');return;}copy(code)});
  $('copy-plan').onclick=()=>copy(planText(p,ctx.opts));
  $('copy-codes').onclick=()=>copy(codeEntries.map(({code,n})=>n>1?code+' × '+n:code).join('\n'));
- $('share-plan').onclick=async()=>{let u=new URL(location.href);u.searchParams.set('plan',encodeURIComponent(JSON.stringify({selected,excluded:[...excluded],exact:ctx.exact,repeat:ctx.repeat,channel:$('channel').value,budget:ctx.budget})));if(navigator.share){try{await navigator.share({title:'雞省研究所 V3.2',url:u.href});return}catch(_){}}copy(u.href)};
+ $('share-plan').onclick=async()=>{let u=new URL(location.href);u.searchParams.set('plan',encodeURIComponent(JSON.stringify({selected,excluded:[...excluded],exact:ctx.exact,repeat:ctx.repeat,channel:$('channel').value,budget:ctx.budget})));if(navigator.share){try{await navigator.share({title:'雞省研究所 V3.4',url:u.href});return}catch(_){}}copy(u.href)};
 }
 function restoreShare(){let raw=new URL(location.href).searchParams.get('plan');if(!raw)return;try{let d=JSON.parse(decodeURIComponent(raw));if(d.selected&&typeof d.selected==='object')selected=Object.fromEntries(KEYS.map(k=>[k,Math.max(0,Math.min(FOOD[k].max,Number(d.selected[k])||0))]));excluded=new Set((d.excluded||[]).filter(k=>KEYS.includes(k)&&!selected[k]));party=0;if(d.exact)document.querySelector('input[value="exact"]').checked=true;$('repeat').checked=!!d.repeat;if(['any','pickup','dinein','delivery'].includes(d.channel))$('channel').value=d.channel;if([0,100,200,300,500,800].includes(Number(d.budget)))$('budget').value=Number(d.budget);toast('已載入分享的餐點需求')}catch(_){}}
 function renderCards(){let keyword=$('search').value.trim().toLowerCase(),order=$('sort').value;let list=validList().filter(c=>{
- if(filter==='favorite'&&!favorite.has(c.code))return false;if(filter==='under100'&&c.price>=100)return false;if(filter==='burger'&&!(c.items.burger||c.items.smallBurger))return false;if(['fried','tart','nuggets'].includes(filter)&&!c.items[filter])return false;return !keyword||[c.code,c.title,c.desc].join(' ').toLowerCase().includes(keyword)});
+ if(filter==='favorite'&&!favorite.has(c.code))return false;if(filter==='expiring'&&c.end>DATE_TPE()&&Math.ceil((Date.parse(c.end+'T12:00:00+08:00')-Date.parse(DATE_TPE()+'T12:00:00+08:00'))/86400000)>7)return false;if(filter==='under100'&&c.price>=100)return false;if(filter==='burger'&&!(c.items.burger||c.items.smallBurger))return false;if(['fried','tart','nuggets'].includes(filter)&&!c.items[filter])return false;return !keyword||[c.code,c.title,c.desc].join(' ').toLowerCase().includes(keyword)});
  list.sort((a,b)=>order==='high'?b.price-a.price:order==='expire'?a.end.localeCompare(b.end)||a.price-b.price:order==='discount'?(b.original&&b.original>b.price?1-b.price/b.original:0)-(a.original&&a.original>a.price?1-a.price/a.original:0)||a.price-b.price:a.price-b.price);
  $('stat-coupons').textContent=validList().length;
  $('count-result').textContent=`顯示 ${list.length} 張有效券 · 自動排除未開始及過期券`;
  $('coupon-cards').innerHTML=list.length?list.map(c=>{let gap=Math.round((new Date(c.end+'T12:00:00+08:00')-new Date(DATE_TPE()+'T12:00:00+08:00'))/86400000);let saved=c.original&&c.original>c.price?Math.round((1-c.price/c.original)*100):null;
  return `<article class="coupon-card"><div class="card-top"><div class="card-icon">${c.items.fried?'🍗':c.items.tart?'🥧':c.items.burger||c.items.smallBurger?'🍔':'🎟️'}</div><button class="heart ${favorite.has(c.code)?'active':''}" data-fav="${esc(c.code)}" aria-label="收藏${esc(c.code)}">${favorite.has(c.code)?'♥':'♡'}</button></div><div class="card-title">${esc(c.title)}</div><div class="card-code">優惠代碼 ${esc(c.code)}</div><p class="card-desc">${esc(c.desc)}</p><div class="card-tags">${saved?`<span class="mini-chip">參考原價省 ${saved}%</span>`:''}${gap<=7?'<span class="mini-chip pill-danger">即將到期</span>':''}</div><div class="card-end"><div><div class="card-price"><span>NT$</span> ${money(c.price)}</div>${c.original?`<div class="old-price">參考原價 NT$ ${money(c.original)}</div>`:''}</div><div><div class="exp ${gap<=7?'soon':''}">期限至 ${esc(c.end)}</div><button class="copy-btn" data-copy="${esc(c.code)}">複製券碼</button><a class="tiny-btn" href="https://www.kfcclub.com.tw/coupon" target="_blank" rel="noopener noreferrer" title="到肯德基官網輸入這張優惠碼進行核對">官網查證 ↗</a><button class="tiny-btn" data-history="${esc(c.code)}">價格歷史</button></div></div></article>`}).join(''):'<div class="emptycards">找不到符合條件的有效券，請換個品項或關鍵字。</div>';
 }
-function renderHistory(code){let c=coupons.find(x=>x.code===code);const records=(history[code]||[]).slice(-90);const box=$('history-card');box.classList.add('show');$('history-title').textContent=(c?.title||'優惠券')+'｜'+code;
- let chart=$('history-graph');chart.innerHTML='';if(!records.length){$('history-text').textContent='尚無每日追蹤記錄。首次部署後，成功核對來源才會記錄，不會捏造歷史價格。';return}
- const w=640,h=130,pad=20,min=Math.min(...records.map(r=>r.price)),max=Math.max(...records.map(r=>r.price));let delta=Math.max(4,max-min);const points=records.map((r,i)=>`${pad+(records.length===1?0:i/(records.length-1)*(w-2*pad))},${h-pad-(r.price-min)/delta*(h-2*pad)}`).join(' ');
- chart.innerHTML=`<polyline points="${points}" fill="none" stroke="#c62c28" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="${points.split(' ').slice(-1)[0].replace(',','" cy="')}" r="4" fill="#c62c28"/>`;
- $('history-text').textContent=`${records.length} 筆已保存價格記錄 · 首筆 ${records[0].date} NT$ ${money(records[0].price)} → 最近 ${records.at(-1).date} NT$ ${money(records.at(-1).price)}。僅代表本網站取得並審核的資料。`;
+function renderHistory(code){
+ const c=coupons.find(x=>x.code===code);const box=$('history-card');
+ lastHistoryCode=code;box.classList.add('show');$('history-title').textContent=(c?.title||'優惠券')+'｜'+code;
+ document.querySelectorAll('[data-history-days]').forEach(b=>b.classList.toggle('selected',Number(b.dataset.historyDays)===historyDays));
+ const src=Array.isArray(history[code])?history[code]:[];
+ const until=DATE_TPE(),from=new Date(until+'T12:00:00+08:00');from.setUTCDate(from.getUTCDate()-(historyDays-1));
+ const cutoff=new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit'}).format(from);
+ const records=src.filter(r=>r&&/^20\d\d-\d\d-\d\d$/.test(r.date)&&r.date>=cutoff&&r.date<=until&&Number.isInteger(r.price)&&r.price>0).sort((a,b)=>a.date.localeCompare(b.date));
+ const chart=$('history-graph'),metrics=$('history-metrics');chart.innerHTML='';
+ if(!records.length){$('history-text').textContent=`最近 ${historyDays} 天尚無通過核對的價格記錄，不代表價格未變動。`;metrics.textContent='尚無可計算的歷史價格';return}
+ const prices=records.map(r=>r.price),min=Math.min(...prices),max=Math.max(...prices),delta=prices.at(-1)-prices[0];
+ metrics.textContent=`最低 NT$ ${money(min)}　最高 NT$ ${money(max)}　區間變化 ${delta>0?'+':''}${money(delta)} 元`;
+ const w=640,h=150,pad=24,range=Math.max(max-min,2);
+ const points=records.map((r,i)=>`${pad+(records.length===1?0:i/(records.length-1)*(w-2*pad))},${h-pad-(r.price-min)/range*(h-2*pad)}`).join(' ');
+ const lastPoint=points.split(' ').at(-1).split(',');
+ chart.innerHTML=`<line x1="${pad}" y1="${h-pad}" x2="${w-pad}" y2="${h-pad}" stroke="#dec9b7"/><polyline points="${points}" fill="none" stroke="#c62c28" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="${lastPoint[0]}" cy="${lastPoint[1]}" r="4" fill="#c62c28"/>`;
+ $('history-text').textContent=`最近 ${historyDays} 天有 ${records.length} 筆已保存記錄 · ${records[0].date}：NT$ ${money(records[0].price)} → ${records.at(-1).date}：NT$ ${money(records.at(-1).price)}。僅代表來源核對記錄，非官方保證售價。`;
  box.scrollIntoView({behavior:'smooth',block:'nearest'});
 }
 
@@ -144,6 +180,11 @@ $('filter-buttons').addEventListener('click',e=>{let b=e.target.closest('[data-f
 $('search').addEventListener('input',renderCards);$('sort').addEventListener('change',renderCards);
 $('coupon-cards').addEventListener('click',e=>{let b=e.target.closest('[data-fav],[data-copy],[data-history]');if(!b)return;if(b.dataset.copy){copy(b.dataset.copy);return}if(b.dataset.history){renderHistory(b.dataset.history);return}if(b.dataset.fav){let code=b.dataset.fav;if(favorite.has(code))favorite.delete(code);else favorite.add(code);try{localStorage.setItem('kfc_deal_favs',JSON.stringify([...favorite]))}catch(_){}renderCards()}});
 $('calculate').addEventListener('click',calculate);
+$('manual-price-grid').addEventListener('change',e=>{const el=e.target.closest('input[data-single]');if(!el)return;const k=el.dataset.single;if(!FOOD[k])return;const raw=el.value.trim(),v=Number(raw);if(raw&&validManualPrice(v)){manualSingles[k]=v}else{delete manualSingles[k];if(raw)toast('單價請輸入 1～500 元的整數')}saveManualPrices();renderManualPrices();});
+$('use-manual-prices').addEventListener('change',e=>{enableManualSingles=!!e.target.checked;updateManualSummary();});
+$('clear-manual-prices').addEventListener('click',()=>{manualSingles={};saveManualPrices();renderManualPrices();toast('已清空自訂單價')});
+$('history-range').addEventListener('click',e=>{const btn=e.target.closest('[data-history-days]');if(!btn)return;historyDays=Number(btn.dataset.historyDays);if(lastHistoryCode)renderHistory(lastHistoryCode)});
+
 $('history-close').addEventListener('click',()=>$('history-card').classList.remove('show'));
-restoreShare();initQuantities();renderCards();calculate();loadData();loadOfficial();
+restoreShare();initQuantities();renderManualPrices();renderCards();calculate();loadData();loadOfficial();
 if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register('./sw.js').catch(()=>{});
