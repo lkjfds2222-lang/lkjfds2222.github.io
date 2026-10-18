@@ -159,6 +159,7 @@ def normalize_coupon(raw:dict,today:str)->tuple[dict|None,str]:
          'items':dict(result),'desc':' ＋ '.join(descs)[:350],
          'original':orig,'note':'KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準',
          'source':'KCouper'}
+    if start:out['start']=start
     kinds=raw.get('order_types')
     if isinstance(kinds,list) and all(isinstance(x,int) for x in kinds):out['orderTypes']=kinds
     return out,''
@@ -248,6 +249,7 @@ def merge(root:Path,kcouper_js:str|None,article_html:str|None,now:datetime,sourc
             item['end']=rec['end']
         item['source']='KCouper'
         if rec.get('orderTypes') is not None:item['orderTypes']=rec['orderTypes']
+        if rec.get('start'):item['start']=rec['start']
     # 第二來源：如果未出現在 KCouper，且文章能明確抓到價格才修正既有券；不自動擷取文章新券餐點。
     for code,rec in article.items():
         if code not in current:
@@ -282,14 +284,17 @@ def merge(root:Path,kcouper_js:str|None,article_html:str|None,now:datetime,sourc
     if newly:=sorted(pending_codes-seen_before):
         alerts.append({'kind':'new-needs-review','codes':newly[:20],'count':len(newly)})
     if uncertain:
-        alerts.append({'kind':'verification-required','count':len(uncertain)})
+        for finding in uncertain[:80]:
+            alerts.append({'kind':'verification-required','code':finding.get('code'),
+                           'reason':finding.get('reason'),
+                           'fingerprint':json.dumps(finding,ensure_ascii=False,sort_keys=True)[:350]})
     if source_errors:
         alerts.append({'kind':'source-error','sources':source_errors})
     # 相同警告只首次通知；保留在 alerts.json 供儀表板查看，但不每天發重複留言。
     def alert_key(a):
         kind=a.get('kind')
         if kind=='source-error':return (kind,tuple(sorted(a.get('sources',{}))))
-        if kind=='verification-required':return (kind,a.get('count'))
+        if kind=='verification-required':return (kind,a.get('code'),a.get('fingerprint'))
         if kind=='new-needs-review':return (kind,tuple(a.get('codes',())))
         return (kind,a.get('code'),a.get('from'),a.get('to'))
     try:
@@ -310,8 +315,26 @@ def merge(root:Path,kcouper_js:str|None,article_html:str|None,now:datetime,sourc
     review={'generatedAt':stamp,'newCoupons':new_pending,'uncertainChanges':uncertain,
             'approvedChanges':changes,'autoAddedCoupons':new_autos}
     alert_file={'generatedAt':stamp,'alerts':alerts,'newAlerts':new_alerts,'sourceErrors':source_errors}
-    # 先在記憶體完全驗證，最後才一次寫入各份 JSON。
+    # 只替當次來源明確出現的券記錄價格歷史，一天同券一筆，保留最近 90 天。
+    hist_path=root/'price-history.json'
+    try:
+        history=json.loads(hist_path.read_text(encoding='utf8'))
+        if not isinstance(history,dict):history={}
+    except (OSError,ValueError):history={}
+    cutoff=(now.astimezone(TPE).date()-timedelta(days=90)).isoformat()
+    for c in output:
+        if c['end']<today or str(c['code']) not in kc and str(c['code']) not in article:continue
+        code=str(c['code'])
+        old_rows=history.get(code,[])
+        if not isinstance(old_rows,list):old_rows=[]
+        old_rows=[r for r in old_rows if isinstance(r,dict) and cutoff<=str(r.get('date',''))<today and isinstance(r.get('price'),int)]
+        old_rows.append({'date':today,'price':int(c['price']),'end':c['end']})
+        history[code]=old_rows[-90:]
+    history={code:rows for code,rows in history.items() if rows and rows[-1]['date']>=cutoff}
+    meta['priceHistoryPoints']=sum(len(rows) for rows in history.values())
+    # 先在記憶體完全驗證，最後才逐份寫入資料。
     atomic_json(coupons_path,output)
+    atomic_json(hist_path,history)
     atomic_json(root/'update-status.json',meta)
     atomic_json(root/'pending-review.json',review)
     atomic_json(root/'alerts.json',alert_file)

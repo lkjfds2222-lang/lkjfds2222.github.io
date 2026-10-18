@@ -1,72 +1,75 @@
-# 🍗 雞省研究所 — KCouper 整合、每日自動更新與異常提醒版
+# 雞省研究所 V3｜更精準的優惠券比價網站
 
-本專案是一個可放在 GitHub Pages 的靜態網站。網站可按想吃的炸雞、蛋撻、漢堡、飲料等數量計算優惠券組合，也可搜尋、收藏與複製優惠碼。
+靜態網站，可以部署到 GitHub Pages。**不是肯德基官方**；資料取自公開整理來源，不能保證任何券或價格在門市實際可用。
 
-## 這一版新增的內容
+## V3 新功能
 
-- **KCouper 結構化來源**：每日從 [`Winedays/KCouper` 的 `public/coupon.js`](https://github.com/Winedays/KCouper/blob/master/public/coupon.js) 讀取 `COUPON_DICT`，優先使用優惠碼、價格、日期和餐點明細。不執行第三方 JavaScript，而是從 JS 中提取 JSON。
-- **第二來源交叉核對**：當 KCouper 不可用時，從 [好康情報誌](https://info.talk.tw/kfc-coupon/) 抓取已知券的明確價格與期限；兩站資料不同則標註待審。
-- **自動辨識部分新券**：只要每個品項都能識別為已支援餐點、數量明確、沒有隱藏加價或跨品類選項、價格日期合理，新券才會自動加入最省搭配。未知商品、非標準尺寸、複雜口味選擇與資訊衝突會寫到 `pending-review.json`，不納入最省組合。由於餐點變動較多，此分類器無法涵蓋所有券。
-- **新優惠資訊儀表板**：網站新增「每日優惠情報中心」，呈現最後檢查時間、自動新增數、待審數、資料來源核對狀態。
-- **異常提醒**：`alerts.json` 保留警告；GitHub Actions Summary 會顯示新增異常並嘗試開啟／更新 GitHub Issue。若您在 GitHub 訂閱儲存庫通知，是否收到 Email 取決於您的通知設定。
-- **保護原資料**：來源格式錯誤或都無法核對時停止寫入；不會將優惠券清空。對大幅變動的價格及餐點構成差異採人工複核，不會擅自套用。
+1. **比較最多 3 組低價方案**：各項指定餐點數量透過精確動態規劃 / 狀態最短路求解，並列出實得數量、額外餐點與購買清單。未求出確切結果時會顯示無法計算，不會以粗估稱為最低價。當不同商品有不同口味或規格時仍需核對。
+2. **不多買模式**：依九類已辨識餐點限制份數完全吻合；已知另附 QQ 球或濃湯等未列入九類的餐券會排除。未知配餐、口味互換仍可能需人工查證。
+3. **通路限制不亂猜**：僅在券有 `channelVerified: true` 和 `channels`（`pickup`/`dinein`/`delivery`）時才視為已核對適用通路。KCouper `order_types` 數字會保留，但不推測其意思，因此選擇限定通路時若沒有人工核對資料可能沒有結果。
+4. **購物習慣**：排除不想吃的餐點、選擇人數、預算、收藏、查詢、複製優惠碼，分享包含餐點需求的連結。
+5. **有憑據的單點價格**：由網站管理者在 `menu-prices.json` 填入 **來源 URL、核對日、價錢**，30 天內已核對的品項才加入比價；預設空白，絕不自行猜測單點價格。一般單點或原價套餐資料不完整時，網站只宣稱「已收錄選項中的最低價」。
+6. **最近 90 天價格紀錄**：自動更新成功後，僅針對本次來源明確出現的券記錄每天一筆價格（含仍需門市最終核對的限制），不追溯或補造過往資料；`price-history.json` 初始為空。
+7. **PWA 支援**：`manifest.webmanifest`、`sw.js` 可供部分手機加入主畫面並在斷線時瀏覽上次取得的頁面或資料；斷線時**不**應把快取資料理解為當日優惠。
+8. **異常提醒**：有疑慮的新券、內容改動、價格異常會放入待審 JSON，GitHub Actions 摘要及 GitHub Issues 提醒。GitHub 通知能否寄 Email 取決於帳號設定。
 
-> ⚠️ 本網站非肯德基官方，且 KCouper 亦屬第三方公開資料整理。網站只能提供收錄優惠券中的最低價建議，**不保證所有券都可兌換、可重複使用或適用所有門市**。實際價格和適用範圍請以肯德基官方購物車確認。KCouper 的原始專案權利與資料使用方式應予尊重；若用於公開發布，請先確認其最新授權與資料使用規則。
+## 安裝／上傳到 GitHub
 
-## 上線（GitHub Pages）
+1. **完整解壓縮 ZIP**，並把檔案與資料夾全部上傳到你的 GitHub 儲存庫**根目錄**，包含隱藏資料夾 `.github/workflows/`。不要只上傳 `index.html`，因為新版還需要 `v3.js` 等檔案。
+2. 前往儲存庫 `Settings → Pages → Build and deployment`，將 Source 設定為 `GitHub Actions`。
+3. 在 `Settings → Actions → General` 確認工作流程有必要的 `Read and write permissions`，並開啟儲存庫 Issues（異常提醒用）。有些環境會依組織政策限制此設定。
+4. 在 `Actions → 雞省研究所｜每日核對與自動更新 → Run workflow` 手動執行一次。
+5. 等待部署完成後，從 `Settings → Pages` 查看公開網址。
 
-1. 在 [GitHub 新增儲存庫](https://github.com/new)，例如 `kfc-deal-lab`，選 Public（公開）。
-2. 將本 ZIP 完整解壓縮，**包含隱藏的 `.github/workflows/`**，把所有檔案上傳到儲存庫根目錄。
-3. 在儲存庫 **Settings → Pages → Build and deployment → Source** 選 `GitHub Actions`。
-4. **Settings → Actions → General → Workflow permissions** 選擇允許 Actions 寫入內容（如果帳號和組織政策允許），否則自動資料更動無法提交。若要建立異常 Issues，請在 Settings 開啟 Issues 功能。
-5. **Actions → 雞省研究所｜每日核對與自動更新 → Run workflow**，先手動觸發一次；等待執行與發布。
-6. 回到 **Settings → Pages** 查看公開網站網址。
+預設排程為台灣每天 **09:17**（GitHub Actions 使用 UTC 01:17，可能有延遲或排程停用）。**此套件尚未在你的 GitHub 帳號實際部署，也尚未進行真實排程連線驗收。**
 
-之後 GitHub Actions 預設每天台灣時間 **09:17**（UTC 01:17）執行。GitHub 排程不保證準點，停用排程或政策限制造成的漏跑須手動檢查。若希望收到異常通知，可以在儲存庫右上角 **Watch → Custom → Issues** 訂閱；GitHub 是否寄信仍依你帳號設定。
+若你原本已有 V2，請直接把同名檔案及新增檔案上傳到原儲存庫，保留原本 `.github/workflows/daily-coupons.yml` 的路徑。建議先用分支測試，再合併上線。
 
-## 專案檔案
+## 如何加入已確認的單點價格？
 
-| 路徑 | 用途 |
+預設 `menu-prices.json` 的 `prices` 是空物件。請手動更改：
+
+```json
+{
+  "prices": {
+    "tart": {
+      "price": 42,
+      "sourceUrl": "https://www.kfcclub.com.tw/",
+      "verifiedAt": "2026-10-18",
+      "channels": [],
+      "channelVerified": false
+    }
+  }
+}
+```
+
+> 42 元僅為**格式範例，非經核實的實際售價**。更新時請改成當時查到的官方售價與實際核對日期。`verifiedAt` 必須在近 30 天內，過期資料便自動停用。若要限定特定通路，請先人工核對適用資訊，再將 `channels` 寫為 `pickup`、`dinein` 或 `delivery`，並將 `channelVerified` 設為 `true`。
+
+優惠券亦可人工加上 `channels` 與 `channelVerified`。來源 `orderTypes` 數字**不等於**已核對適用通路。
+
+## 資料及程式檔案
+
+| 檔案 | 用途 |
 | --- | --- |
-| `index.html` | 網頁、比價計算機、優惠券卡片與更新狀態中心 |
-| `coupons.json` | 提供網站的正式優惠資料（原有 53 張為離線快照起點） |
-| `update-status.json` | 最近核對時間、來源狀況、自動新增與待審統計 |
-| `pending-review.json` | 尚未能安全上線的新券、價格/餐點差異與變更紀錄 |
-| `alerts.json` | 異常警訊及當天新增告警，用於 GitHub Issue |
-| `scripts/update_coupons.py` | 取得 KCouper 與文章資料、審核、合併、發布 JSON |
-| `scripts/article_source.py` | 文章來源解析器（必要時作後備） |
-| `scripts/report_alerts.py` | Actions Summary 和 GitHub Issue 的異常通知 |
-| `.github/workflows/daily-coupons.yml` | 每日排程、執行測試、更新及部署 |
-| `tests/` | 離線單元測試、文章測試範例 |
+| `index.html` + `v3.js` | 網站、比價、搜尋、分享、價格折線圖 |
+| `coupons.json` | 優惠券正式資料 |
+| `price-history.json` | 最多 90 天的成功核對價格紀錄 |
+| `menu-prices.json` | 可手動維護有來源的單點價格 |
+| `update-status.json`、`pending-review.json`、`alerts.json` | 核對狀態、待審及告警 |
+| `scripts/` | 每日更新、來源分析及 GitHub Issue 提醒 |
+| `.github/workflows/daily-coupons.yml` | 每日更新 + GitHub Pages 部署 |
+| `manifest.webmanifest`、`sw.js`、`app-icon.svg` | 手機主畫面與部分離線功能 |
 
 ## 測試
 
-```bash
+```sh
 python -m unittest discover -s tests -p 'test_*.py' -v
-```
-
-手動測試實際更新（**注意：會修改本資料夾裡的 JSON**，建議先備份或在複製資料夾測試）：
-
-```bash
-python scripts/update_coupons.py
-```
-
-若沒有網路，仍可執行離線測試，但**沒有證明實際來源每天都能取得**。目前提供的 ZIP 是尚未連接你 GitHub 帳號的可部署專案，並非已執行的每日排程。
-
-本機展示網站：
-
-```bash
+node --check v3.js
 python -m http.server 8000
 ```
 
-在瀏覽器開啟 `http://localhost:8000/`；直接雙擊 `index.html` 可能只能看到離線起始快照。
+然後瀏覽 `http://localhost:8000`。初始優惠券是 **2026/10/18 整理的離線快照**，首次真實更新之後才有新的來源檢查時間與價格歷史。可直接從檔案打開 HTML 供本機快速預覽，但需確保同一資料夾有 `v3.js`；`file://` 無法取用本地 JSON，仍會使用內嵌快照。
 
-## 常見問題
+**關於準確性**：第三方來源可能有商品規格或折價券適用限制；比價器只能在當前已收錄且被識別的餐點分類範圍內提供計算。若使用者需要特定辣度、尺寸、外送運費、最低消費或跨餐點替換等，應於官方購物車重新核對。
 
-**有新優惠但沒有自動加入？** 請開 `pending-review.json`，若是尺寸、口味、未知品項或來源內容不一致，需人工核對，並在 `coupons.json` 加上正確 `items` 對應數量。
-
-**來源失敗？** 在 Actions 中讀取本次執行 Logs。若兩來源都失敗，網站會維持上一份已成功儲存的資料，並會顯示舊的檢查日期。若更新流程沒過，來源抓取失敗提醒可能只在 Actions Summary/Issues 裡。
-
-**已經核對過的異常還一直提醒？** 來源穩定但待審沒完成的警告仍會在 `alerts.json` 保留；Issues 僅針對新發現或內容改變的警告更新，避免每天重複通知。
-
-**為什麼不是全部新券都自動發布？** 這是刻意設計。只憑優惠券名稱無法判斷餐點數量與口味可換細節。如果把未確定套餐加進精算，可能會誤報最低價。
+資料來源：[KCouper](https://winedays.github.io/KCouper/) · [好康情報誌](https://info.talk.tw/kfc-coupon/) · [肯德基官方優惠](https://www.kfcclub.com.tw/coupon)。再次分發第三方資料時，應先確認原始網站的授權與使用規則。

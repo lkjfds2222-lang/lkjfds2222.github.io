@@ -1,0 +1,8 @@
+{
+  "name": "雞省研究所 V3｜肯德基優惠券比價",
+  "short_name": "雞省研究所",
+  "description": "離線收藏與組合試算。資料以線上每日核對為準。",
+  "lang": "zh-TW", "start_url": "./", "scope": "./", "display": "standalone",
+  "theme_color": "#d52e28", "background_color": "#fff8ef",
+  "icons": [{"src":"./app-icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}

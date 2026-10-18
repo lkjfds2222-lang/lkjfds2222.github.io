@@ -1,0 +1,5 @@
+{
+  "info": "人工確認來源後才能新增價格；未設定的單點不會被算入最低價。",
+  "example": {"fried": {"price": 0, "sourceUrl": "https://www.kfcclub.com.tw/", "verifiedAt": "2026-10-18", "channels": [], "channelVerified": false}},
+  "prices": {}
+}
