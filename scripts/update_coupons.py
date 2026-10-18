@@ -22,7 +22,7 @@ from article_source import PageText, extract
 KCOUPER_URL = 'https://raw.githubusercontent.com/Winedays/KCouper/master/public/coupon.js'
 ARTICLE_URL = 'https://info.talk.tw/kfc-coupon/'
 TPE = timezone(timedelta(hours=8))
-CATEGORIES = {'fried','smallBurger','burger','tart','nuggets','fries','hash','drink','boneless'}
+CATEGORIES = {'fried','smallBurger','burger','tart','nuggets','fries','hash','drink','boneless','rice','pepperRice','creamRice'}
 DATE_RE = re.compile(r'^20\d\d-\d\d-\d\d$')
 CODE_RE = re.compile(r'^\d{5}$')
 
@@ -97,6 +97,12 @@ def recognize_item(raw:dict)->tuple[str|None,int,str]:
         return '_ignore',0,''
     # 若同一選項可切換到不同品類，不能以預設餐點當作一定會收到的餐點。
     def category_of(value:str)->str|None:
+        # 飯類依口味區分。含整份主餐/雞肉的名稱不可誤認為單純一份飯。
+        if ('飯' in value or '米飯' in value) and any(x in value for x in ('脆雞飯','紙包雞','套餐','分享餐','飯餐','米漢堡')):
+            return None
+        if '青花椒醬飯' in value:return 'pepperRice'
+        if '蒜香白醬飯' in value:return 'creamRice'
+        if any(x in value for x in ('雞汁風味飯','雞汁飯','雞汁風味米飯')):return 'rice'
         if '薯餅' in value:return 'hash'
         if '無骨雞腿霸' in value:return 'boneless'
         if '上校雞塊' in value or re.search(r'(^|[0-9])雞塊',value):return 'nuggets'
@@ -114,6 +120,11 @@ def recognize_item(raw:dict)->tuple[str|None,int,str]:
         return None,0,'大/中薯不可替代小薯'
     if any((other:=category_of(clean_name(str(v.get('name') or '')))) is not None and other!=cat for v in flavors):
         return None,0,'替換選項會改變餐點類別'
+    # 同一來源的選項若可把飯改為非飯品項，不能把飯計為保證供應。
+    if cat in ('rice','pepperRice','creamRice') and any(
+            ('飯' not in clean_name(str(v.get('name') or '')))
+            for v in flavors if v.get('name')):
+        return None,0,'飯類可替換非飯品項，無法保證數量'
     pack=1
     if cat in ('nuggets','tart','fried'):
         pack=multiplier(name)

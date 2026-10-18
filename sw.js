@@ -1,6 +1,6 @@
-/* 雞省研究所 V3.4：最新資料優先，僅離線時使用上次載入的靜態網站。 */
-const CACHE='kfc-v34-shell-v1';
-const SHELL=['./','./index.html','./v3.js?v=3.4.0','./manifest.webmanifest','./app-icon.svg'];
+/* 雞省研究所 V3.4.1：最新資料優先，僅離線時使用上次載入的靜態網站。 */
+const CACHE='kfc-v341-rice-shell-v1';
+const SHELL=['./','./index.html','./v3.js?v=3.4.1','./manifest.webmanifest','./app-icon.svg'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE&&key.startsWith('kfc-')).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',event=>{
