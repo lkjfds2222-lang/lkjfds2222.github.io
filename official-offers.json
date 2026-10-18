@@ -1,0 +1,16 @@
+{
+  "generatedAt": null,
+  "couponPage": {
+    "ok": false,
+    "url": "https://www.kfcclub.com.tw/coupon",
+    "listingAvailable": false,
+    "note": "尚未執行官方網站檢查，請到肯德基官網確認優惠碼。"
+  },
+  "homePage": {
+    "ok": false,
+    "url": "https://www.kfcclub.com.tw/"
+  },
+  "offers": [],
+  "pendingCodes": [],
+  "sourceErrors": {}
+}

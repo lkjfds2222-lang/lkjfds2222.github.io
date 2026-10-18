@@ -1,84 +1,61 @@
 name: 雞省研究所｜每日核對與自動更新
-
 on:
   workflow_dispatch:
   schedule:
-    # 台灣時間每日 09:17（UTC 01:17）
+    # 台灣每天 09:17（UTC 01:17）；GitHub 可能延後執行
     - cron: '17 1 * * *'
-
 permissions:
   contents: write
   issues: write
   pages: write
   id-token: write
-
 concurrency:
   group: kfc-coupon-check
   cancel-in-progress: false
-
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-
       - name: 更新腳本單元測試
         run: python -m unittest discover -s tests -p 'test_*.py' -v
-
       - name: 更新 KCouper 與優惠文章資料
         id: refresh
         continue-on-error: true
         run: python scripts/update_coupons.py
-
       - name: 生成警告與 Issues 提醒
         if: always()
         continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/report_alerts.py '${{ steps.refresh.outcome }}'
-
-      # GitHub 寫回失敗不應阻止 Pages 部署，但須留下明確警告。
       - name: 記錄已通過的更新與待審資訊
-        id: save_data
         if: steps.refresh.outcome == 'success'
-        continue-on-error: true
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- coupons.json update-status.json pending-review.json alerts.json price-history.json
+          git add coupons.json update-status.json pending-review.json alerts.json
           if ! git diff --cached --quiet; then
             git commit -m 'chore: refresh KFC coupon checks'
-            git push origin "HEAD:${GITHUB_REF_NAME}"
+            git push
           fi
-
-      - name: 回報資料寫回失敗
-        if: steps.save_data.outcome == 'failure'
-        run: |
-          echo '::warning title=優惠券資料寫回失敗::GitHub 寫回更新資料失敗，本次仍會嘗試部署。請查看「記錄已通過的更新與待審資訊」的詳細紀錄。'
-          echo '### ⚠️ 資料寫回失敗' >> "$GITHUB_STEP_SUMMARY"
-          echo '本次網站將嘗試部署，但更新資料沒有成功存回 main。請檢查 GitHub Actions Token 權限、分支保護或 git push 拒絕原因。' >> "$GITHUB_STEP_SUMMARY"
-
       - name: 準備靜態網站
         run: |
           mkdir -p _site
           cp index.html v3.js coupons.json update-status.json pending-review.json alerts.json price-history.json menu-prices.json manifest.webmanifest sw.js app-icon.svg _site/
           touch _site/.nojekyll
-          test -s _site/index.html
           test -s _site/v3.js
           test -s _site/coupons.json
-          node --check _site/v3.js
-
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
-
   deploy:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

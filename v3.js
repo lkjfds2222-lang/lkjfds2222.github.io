@@ -96,7 +96,7 @@ function drawSelectedPlan(){
  target.querySelectorAll('[data-copy]').forEach(el=>el.onclick=()=>{const code=el.dataset.copy,c=ctx.opts.find(x=>x.code===code);if(!c)return;if(c.synthetic){window.open(c.sourceUrl,'_blank','noopener');return;}copy(code)});
  $('copy-plan').onclick=()=>copy(planText(p,ctx.opts));
  $('copy-codes').onclick=()=>copy(codeEntries.map(({code,n})=>n>1?code+' × '+n:code).join('\n'));
- $('share-plan').onclick=async()=>{let u=new URL(location.href);u.searchParams.set('plan',encodeURIComponent(JSON.stringify({selected,excluded:[...excluded],exact:ctx.exact,repeat:ctx.repeat,channel:$('channel').value,budget:ctx.budget})));if(navigator.share){try{await navigator.share({title:'雞省研究所 V3.1',url:u.href});return}catch(_){}}copy(u.href)};
+ $('share-plan').onclick=async()=>{let u=new URL(location.href);u.searchParams.set('plan',encodeURIComponent(JSON.stringify({selected,excluded:[...excluded],exact:ctx.exact,repeat:ctx.repeat,channel:$('channel').value,budget:ctx.budget})));if(navigator.share){try{await navigator.share({title:'雞省研究所 V3.2',url:u.href});return}catch(_){}}copy(u.href)};
 }
 function restoreShare(){let raw=new URL(location.href).searchParams.get('plan');if(!raw)return;try{let d=JSON.parse(decodeURIComponent(raw));if(d.selected&&typeof d.selected==='object')selected=Object.fromEntries(KEYS.map(k=>[k,Math.max(0,Math.min(FOOD[k].max,Number(d.selected[k])||0))]));excluded=new Set((d.excluded||[]).filter(k=>KEYS.includes(k)&&!selected[k]));party=0;if(d.exact)document.querySelector('input[value="exact"]').checked=true;$('repeat').checked=!!d.repeat;if(['any','pickup','dinein','delivery'].includes(d.channel))$('channel').value=d.channel;if([0,100,200,300,500,800].includes(Number(d.budget)))$('budget').value=Number(d.budget);toast('已載入分享的餐點需求')}catch(_){}}
 function renderCards(){let keyword=$('search').value.trim().toLowerCase(),order=$('sort').value;let list=validList().filter(c=>{
@@ -105,7 +105,7 @@ function renderCards(){let keyword=$('search').value.trim().toLowerCase(),order=
  $('stat-coupons').textContent=validList().length;
  $('count-result').textContent=`顯示 ${list.length} 張有效券 · 自動排除未開始及過期券`;
  $('coupon-cards').innerHTML=list.length?list.map(c=>{let gap=Math.round((new Date(c.end+'T12:00:00+08:00')-new Date(DATE_TPE()+'T12:00:00+08:00'))/86400000);let saved=c.original&&c.original>c.price?Math.round((1-c.price/c.original)*100):null;
- return `<article class="coupon-card"><div class="card-top"><div class="card-icon">${c.items.fried?'🍗':c.items.tart?'🥧':c.items.burger||c.items.smallBurger?'🍔':'🎟️'}</div><button class="heart ${favorite.has(c.code)?'active':''}" data-fav="${esc(c.code)}" aria-label="收藏${esc(c.code)}">${favorite.has(c.code)?'♥':'♡'}</button></div><div class="card-title">${esc(c.title)}</div><div class="card-code">優惠代碼 ${esc(c.code)}</div><p class="card-desc">${esc(c.desc)}</p><div class="card-tags">${saved?`<span class="mini-chip">參考原價省 ${saved}%</span>`:''}${gap<=7?'<span class="mini-chip pill-danger">即將到期</span>':''}</div><div class="card-end"><div><div class="card-price"><span>NT$</span> ${money(c.price)}</div>${c.original?`<div class="old-price">參考原價 NT$ ${money(c.original)}</div>`:''}</div><div><div class="exp ${gap<=7?'soon':''}">期限至 ${esc(c.end)}</div><button class="copy-btn" data-copy="${esc(c.code)}">複製券碼</button><button class="tiny-btn" data-history="${esc(c.code)}">價格歷史</button></div></div></article>`}).join(''):'<div class="emptycards">找不到符合條件的有效券，請換個品項或關鍵字。</div>';
+ return `<article class="coupon-card"><div class="card-top"><div class="card-icon">${c.items.fried?'🍗':c.items.tart?'🥧':c.items.burger||c.items.smallBurger?'🍔':'🎟️'}</div><button class="heart ${favorite.has(c.code)?'active':''}" data-fav="${esc(c.code)}" aria-label="收藏${esc(c.code)}">${favorite.has(c.code)?'♥':'♡'}</button></div><div class="card-title">${esc(c.title)}</div><div class="card-code">優惠代碼 ${esc(c.code)}</div><p class="card-desc">${esc(c.desc)}</p><div class="card-tags">${saved?`<span class="mini-chip">參考原價省 ${saved}%</span>`:''}${gap<=7?'<span class="mini-chip pill-danger">即將到期</span>':''}</div><div class="card-end"><div><div class="card-price"><span>NT$</span> ${money(c.price)}</div>${c.original?`<div class="old-price">參考原價 NT$ ${money(c.original)}</div>`:''}</div><div><div class="exp ${gap<=7?'soon':''}">期限至 ${esc(c.end)}</div><button class="copy-btn" data-copy="${esc(c.code)}">複製券碼</button><a class="tiny-btn" href="https://www.kfcclub.com.tw/coupon" target="_blank" rel="noopener noreferrer" title="到肯德基官網輸入這張優惠碼進行核對">官網查證 ↗</a><button class="tiny-btn" data-history="${esc(c.code)}">價格歷史</button></div></div></article>`}).join(''):'<div class="emptycards">找不到符合條件的有效券，請換個品項或關鍵字。</div>';
 }
 function renderHistory(code){let c=coupons.find(x=>x.code===code);const records=(history[code]||[]).slice(-90);const box=$('history-card');box.classList.add('show');$('history-title').textContent=(c?.title||'優惠券')+'｜'+code;
  let chart=$('history-graph');chart.innerHTML='';if(!records.length){$('history-text').textContent='尚無每日追蹤記錄。首次部署後，成功核對來源才會記錄，不會捏造歷史價格。';return}
@@ -114,6 +114,21 @@ function renderHistory(code){let c=coupons.find(x=>x.code===code);const records=
  $('history-text').textContent=`${records.length} 筆已保存價格記錄 · 首筆 ${records[0].date} NT$ ${money(records[0].price)} → 最近 ${records.at(-1).date} NT$ ${money(records.at(-1).price)}。僅代表本網站取得並審核的資料。`;
  box.scrollIntoView({behavior:'smooth',block:'nearest'});
 }
+
+function renderOfficial(d){
+ const health=$('official-health'),list=$('official-offer-list');if(!health||!list)return;
+ if(!d||typeof d!=='object'){health.textContent='⚠️ 尚無官方巡查記錄；可使用上方官網按鈕自行確認。';return}
+ const cp=d.couponPage||{},home=d.homePage||{};
+ const when=d.generatedAt?String(d.generatedAt).slice(0,16).replace('T',' '):'未提供';
+ health.textContent=(cp.ok?'✓ 官方優惠碼頁可讀':'⚠ 官方優惠碼頁無法核對')+'｜'+(home.ok?'官方首頁可讀':'官方首頁未更新')+'｜檢查 '+when+(d.staleData?'｜上一版活動摘要已過時':'')+'；官方查碼頁非公開批次券清單。';
+ const offers=Array.isArray(d.offers)?d.offers.slice(0,8):[];
+ list.innerHTML=offers.length?offers.map(o=>`<div class="official-item">${esc(String(o.title||'活動資料待確認').slice(0,110))} <small>・尚待結帳核對</small><div><a href="https://www.kfcclub.com.tw/" target="_blank" rel="noopener noreferrer">前往官網查證 ↗</a></div></div>`).join(''):'<div class="official-item">尚未辨識到可展示的官方活動文字；不代表肯德基目前沒有優惠。請至官網查看。</div>';
+}
+async function loadOfficial(){
+ if(location.protocol==='file:'){renderOfficial(null);return}
+ try{renderOfficial(await fetchJson('official-offers.json'))}catch(_){renderOfficial(null)}
+}
+
 function renderStatus(){if(!status)return;let stamp=status.lastChecked||'';$('upd-last').textContent=stamp?stamp.slice(5,16).replace('T',' '):'未核對';$('upd-auto').textContent=(status.autoAdded||0)+' 張';$('upd-pending').textContent=(status.pendingNewCoupons||0)+' 張';$('upd-review').textContent=(status.reviewNeeded||0)+' 項';
  $('upd-sources').innerHTML=Object.entries(status.sources||{}).map(([name,val])=>`${val.ok?'<span class="pill-green">● 成功</span>':'<span class="pill-orange">● 失敗</span>'} ${esc(name)}（${Number(val.verified??val.listed??0)} 筆）`).join('<br>')||'尚未核對';}
 async function fetchJson(name){let r=await fetch('./'+name+'?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error(name+' HTTP '+r.status);return r.json()}
@@ -130,5 +145,5 @@ $('search').addEventListener('input',renderCards);$('sort').addEventListener('ch
 $('coupon-cards').addEventListener('click',e=>{let b=e.target.closest('[data-fav],[data-copy],[data-history]');if(!b)return;if(b.dataset.copy){copy(b.dataset.copy);return}if(b.dataset.history){renderHistory(b.dataset.history);return}if(b.dataset.fav){let code=b.dataset.fav;if(favorite.has(code))favorite.delete(code);else favorite.add(code);try{localStorage.setItem('kfc_deal_favs',JSON.stringify([...favorite]))}catch(_){}renderCards()}});
 $('calculate').addEventListener('click',calculate);
 $('history-close').addEventListener('click',()=>$('history-card').classList.remove('show'));
-restoreShare();initQuantities();renderCards();calculate();loadData();
+restoreShare();initQuantities();renderCards();calculate();loadData();loadOfficial();
 if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register('./sw.js').catch(()=>{});

@@ -1,24 +1,41 @@
-# 雞省研究所 V3.1：畫面修復與易用性升級
+# 雞省研究所 V3.2｜官方資料來源巡查與網站強化
 
-此為「更新補丁」，只包含三個必須覆蓋的檔案，不含舊版 coupons.json，也不修改每日更新工作流程。
+這是 **V3.1 升級補丁**，不是完整資料庫包。保留你現在已經正常更新的 `coupons.json`、`price-history.json`、`alerts.json`、`pending-review.json`、`update-status.json`、`menu-prices.json`。
 
-## 更新的內容
-- 修正購買清單因父層深色主題繼承白色文字，導致淺色卡片幾乎看不到字。
-- 購買清單更易讀：深色標題、餐點數量、優惠券代碼、複製按鈕、小計及整筆總額。
-- 新增「只複製優惠碼」按鈕；重複券會標註使用張數。
-- 加強手機及小螢幕排版、鍵盤可用性與顏色對比。
-- 更換 Service Worker 快取版本，避免更新後依然顯示舊介面；JSON 不存入 App Shell 快取，降低陳舊價格誤導風險。
+## 上傳到 GitHub
 
-## 上傳到原本的 GitHub Pages
-1. 打開 https://github.dev/lkjfds2222-lang/lkjfds2222.github.io 。
-2. 將本資料夾的 **index.html、v3.js、sw.js** 覆蓋儲存庫根目錄的同名檔案（不是放到 .github/workflows 裡）。
-3. Ctrl+S，點左側 Source Control，輸入修正說明後 Commit & Push。
-4. 回到 GitHub 的 Actions，等待每日更新部署流程的 build、deploy 皆完成；必要時手動 Run workflow。
-5. 重新開啟 https://lkjfds2222-lang.github.io/；若畫面還是舊版，可按 Ctrl+Shift+R 或關閉分頁重開。
+依照 ZIP 目錄結構新增／覆蓋：
 
-### 不要動的檔案
-- **coupons.json**：保留線上已更新的優惠券，不要用舊快照覆蓋。
-- `.github/workflows/daily-coupons.yml`：只要目前部署流程正常，就不需變更。
-- `scripts/`、`price-history.json` 等：保留現有資料與排程。
+- `index.html`、`v3.js`、`sw.js`
+- `official-offers.json`（新檔；如果已有線上資料請勿覆蓋）
+- `scripts/official_monitor.py`（新檔）
+- `tests/test_official_monitor.py`（新檔）
+- `.github/workflows/daily-coupons.yml`（請確認你目前使用的是本包相同流程；已加入官方巡查與完整檔案部署）
 
-注意：目前的比價結果仍以已收錄的券和可驗證單點資料為準，並非肯德基官方即時報價。
+**不要刪除原本的 `scripts/update_coupons.py`、`scripts/report_alerts.py` 和整個 `tests/`。** 本 ZIP 只包含需要變動的檔案，不包括上述舊程式。
+
+### 部署方式
+
+1. 先在 GitHub 建一個備份分支，再上傳以上檔案至儲存庫根目錄。
+2. 進入 Actions →「雞省研究所｜每日核對與自動更新」→ Run workflow。
+3. 確認 `build` / `deploy` 成功，並在網頁看到「肯德基官方活動・交叉核對」區塊。
+4. 查看 https://你的網站/official-offers.json 是否存在；首次部署會顯示最新官方巡查結果。
+5. 若顯示舊版，強制重新整理 Ctrl+Shift+R 或重開 PWA。
+
+## 本次新增什麼？
+
+- 每日訪問公開肯德基 `/coupon`（查碼入口）與官方首頁，保存來源是否可讀、活動文字候選與巡查時間。
+- 顯示官方原始入口與候選活動，**只作官方活動發現，絕不自動添加成可計算優惠券**。
+- 官網抓取失敗時保留既有候選活動並顯示過時狀態；不清空第三方券資料。
+- 全部新增文案都先安全編碼，避免從外部來源插入 HTML。
+- 官網頁面沒有已公開、穩定的完整優惠券 JSON API；未驗證資料不能假稱官方核價。
+
+## 測試
+
+```bash
+python -m unittest discover -s tests -p 'test_*.py' -v
+node --check v3.js
+python scripts/official_monitor.py --offline --coupon-fixture tests/official_coupon_sample.html --home-fixture tests/official_home_sample.html
+```
+
+第三條為可選的 fixture 測試。本站原本的比價資料來自 KCouper、好康情報誌。肯德基官方頁主要用來核對使用條件，官方首頁僅供查看活動，不代表即時券庫。
