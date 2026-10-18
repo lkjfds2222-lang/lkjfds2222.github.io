@@ -1,5 +1,5 @@
 'use strict';
-/* 雞省研究所 V3.5.1：自訂單點參考價不等於官方核價。比價券仍以 GitHub Actions 審核後的 JSON 為準。 */
+/* 雞省研究所 V3.5.4：待審搜尋/分類/匯出、來源資訊與不完整配餐防誤算。 */
 const FOOD={fried:{name:'咔啦脆雞',emoji:'🍗',unit:'塊',max:14},boneless:{name:'無骨雞腿霸',emoji:'🍖',unit:'塊',max:12},nuggets:{name:'上校雞塊',emoji:'🍗',unit:'塊',max:24,step:4},popcorn:{name:'雞米花',emoji:'🍿',unit:'份',max:8},smallBurger:{name:'小脆雞堡',emoji:'🍔',unit:'個',max:8},burger:{name:'雞腿堡',emoji:'🥪',unit:'個',max:8},anyRice:{name:'飯類（口味不限）',emoji:'🍚',unit:'份',max:8},rice:{name:'雞汁風味飯',emoji:'🍚',unit:'份',max:8},pepperRice:{name:'青花椒醬飯',emoji:'🍚',unit:'份',max:8},creamRice:{name:'蒜香白醬飯',emoji:'🍚',unit:'份',max:8},tart:{name:'原味蛋撻',emoji:'🥧',unit:'顆',max:16},qqBalls:{name:'QQ 球',emoji:'🟠',unit:'顆',max:30,step:5},fries:{name:'香酥脆薯',emoji:'🍟',unit:'份',max:8},hash:{name:'薯餅',emoji:'🥔',unit:'份',max:8},soup:{name:'玉米濃湯',emoji:'🥣',unit:'杯',max:8},drink:{name:'飲料',emoji:'🥤',unit:'杯',max:12}};
 const FOOD_GROUPS=[{title:'🍗 炸雞與雞肉',keys:['fried','boneless','nuggets','popcorn']},{title:'🍔 漢堡與飯類',keys:['smallBurger','burger','anyRice','rice','pepperRice','creamRice']},{title:'🥧 配餐、點心與飲料',keys:['tart','qqBalls','fries','hash','soup','drink']}];
 const KEYS=Object.keys(FOOD),RICE_KEYS=['rice','pepperRice','creamRice'],riceQuantity=items=>RICE_KEYS.reduce((n,k)=>n+(items[k]||0),0),$=id=>document.getElementById(id),money=n=>Number(n).toLocaleString('zh-TW');
@@ -8,6 +8,7 @@ const esc=s=>String(s).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;
 let coupons=SNAPSHOT,selected={fried:4,tart:2,drink:2},party=2,excluded=new Set(),favorite=new Set(),filter='all',status=null;
 let history={},verifiedSingles={},activePlans=[],chosenPlan=0,loadedOnline=false;
 let historyDays=30,lastHistoryCode=null,manualSingles={},enableManualSingles=false;
+let reviewRows=[],reviewUnsupported=0,reviewReasons={},reviewShowCount=15,reviewKind='all',reviewQuery='';
 const MANUAL_STORAGE='kfc_manual_single_prices_v34';
 try{let x=JSON.parse(localStorage.getItem(MANUAL_STORAGE)||'{}');if(x&&typeof x==='object'&&!Array.isArray(x))for(const k of KEYS){let v=Number(x[k]);if(Number.isInteger(v)&&v>=1&&v<=500)manualSingles[k]=v;}}catch(_){}
 const validManualPrice=(v)=>Number.isInteger(v)&&v>=1&&v<=500;
@@ -18,6 +19,9 @@ function updateManualSummary(){let el=$('manual-price-status');if(!el)return;let
 try{favorite=new Set(JSON.parse(localStorage.getItem('kfc_deal_favs')||'[]'))}catch(_){}
 const isValid=c=>Boolean(/^\d{5}$/.test(String(c.code))&&Number.isInteger(c.price)&&c.price>0&&c.price<2000&&/^20\d\d-\d\d-\d\d$/.test(c.end)&&(!c.start||c.start<=DATE_TPE())&&c.end>=DATE_TPE()&&c.items&&typeof c.items==='object'&&Object.values(c.items).every(v=>Number.isInteger(v)&&v>=0)&&Object.keys(c.items).every(k=>KEYS.includes(k)&&k!=='anyRice'));
 const validList=()=>coupons.filter(isValid);
+// 舊券文字列有附餐，但 items 欄位缺少對應數量時不可做完整餐點成本計算。
+// 保留在優惠券瀏覽區、醒目標示；不讓資料不全的候選券進入最省組合。
+const calcReady=c=>isValid(c)&&missingSideItems(c).length===0;
 function toast(msg){$('toast').textContent=msg;$('toast').classList.add('show');clearTimeout(window.__t);window.__t=setTimeout(()=>$('toast').classList.remove('show'),2200)}
 async function copy(txt){try{await navigator.clipboard.writeText(txt);toast('已複製購買資訊')}catch(e){let e2=document.createElement('textarea');e2.value=txt;document.body.append(e2);e2.select();document.execCommand('copy');e2.remove();toast('已複製購買資訊')}}
 function initQuantities(){const target=$('quantity-grid');target.innerHTML=FOOD_GROUPS.map(group=>`<h4 class="qty-group">${group.title}</h4>`+group.keys.map(k=>{let v=selected[k]||0,f=FOOD[k];return `<div class="qty"><div class="qty-info"><span class="food-emoji">${f.emoji}</span><div><div class="name">${f.name}</div><span class="unit">${f.unit} · ${k==='anyRice'?'任選現有飯款；與指定口味份數相加':'至少'}</span></div></div><div class="stepper"><button type="button" aria-label="減少${f.name}" data-key="${k}" data-delta="-${f.step||1}">−</button><output>${v}</output><button type="button" aria-label="增加${f.name}" data-key="${k}" data-delta="${f.step||1}">+</button></div></div>`}).join('')).join('');
@@ -30,7 +34,7 @@ $('excluded-items').addEventListener('change',e=>{let k=e.target.dataset.exclude
 function selectedMode(){return document.querySelector('input[name="mode"]:checked').value}
 // 不推測第三方數字 orderTypes 的意思。只有已人工核對的文字 channels 才能對應特定訂購方式。
 function eligible(c,channel){return channel==='any'||(Array.isArray(c.channels)&&c.channels.includes(channel)&&c.channelVerified===true)}
-function getOptions(req={},repeat=false){let channel=$('channel').value;let opts=validList().filter(c=>eligible(c,channel)&&!Object.keys(c.items).some(k=>excluded.has(k)&&c.items[k]>0));
+function getOptions(req={},repeat=false){let channel=$('channel').value;let opts=coupons.filter(c=>calcReady(c)&&eligible(c,channel)&&!Object.keys(c.items).some(k=>excluded.has(k)&&c.items[k]>0));
  // Each single-item choice is a physical unit. When repeats are disabled, add one bounded
  // copy per requested unit, all with the same canonical code so duplicate compositions collapse.
  // User-entered prices override verified menu prices for the same category only while enabled.
@@ -102,7 +106,7 @@ function planSummary(plan,opts,req){const actual=actualCounts(plan,opts),extra=[
  const unknown=Math.max(0,(actual.anyRice||0)-genericRemaining);
  if(unknown>0)extra.push('未指定口味飯多 '+unknown+'份');
  return {actual,extra};}
-function planText(p,opts){return '肯德基 V3.5.1 比價購買清單\n'+Object.entries(p.counts).map(([code,n])=>{let c=opts.find(x=>x.code===code);return (c?.manual?'自行輸入單點 ':c?.synthetic?'單點 ': '優惠碼 ')+(c?.synthetic?'':code+' × ')+n+'｜'+c.title+'｜'+c.desc+'｜NT$ '+money(c.price*n)}).join('\n')+'\n合計 NT$ '+money(p.cost)+'\n此為已收錄資料試算，請至官方確認實際可用性。'}
+function planText(p,opts){return '肯德基 V3.5.4 比價購買清單\n'+Object.entries(p.counts).map(([code,n])=>{let c=opts.find(x=>x.code===code);return (c?.manual?'自行輸入單點 ':c?.synthetic?'單點 ': '優惠碼 ')+(c?.synthetic?'':code+' × ')+n+'｜'+c.title+'｜'+c.desc+'｜NT$ '+money(c.price*n)}).join('\n')+'\n合計 NT$ '+money(p.cost)+'\n此為已收錄資料試算，請至官方確認實際可用性。'}
 function renderResult(plans,req,context){let target=$('result-body');if(!context){target.innerHTML='<div class="res-empty"><div class="large-icon">🧺</div><h3>先挑選想吃的餐點</h3><p>設定數量後比較優惠券組合。</p></div>';return}
  if(plans?.tooMany){target.innerHTML='<div class="res-empty">🧩 條件過於複雜，請減少餐點種類或數量。系統不會以近似結果冒充最低價。</div>';return}
  if(!plans?.length){const specified=RICE_KEYS.some(k=>req[k]>0),anyRice=req.anyRice>0;
@@ -141,7 +145,7 @@ function drawSelectedPlan(){
  target.querySelectorAll('[data-copy]').forEach(el=>el.onclick=()=>{const code=el.dataset.copy,c=ctx.opts.find(x=>x.code===code);if(!c)return;if(c.synthetic){if(c.sourceUrl)window.open(c.sourceUrl,'_blank','noopener');return;}copy(code)});
  $('copy-plan').onclick=()=>copy(planText(p,ctx.opts));
  $('copy-codes').onclick=()=>copy(codeEntries.map(({code,n})=>n>1?code+' × '+n:code).join('\n'));
- $('share-plan').onclick=async()=>{let u=new URL(location.href);u.searchParams.set('plan',encodeURIComponent(JSON.stringify({selected,excluded:[...excluded],exact:ctx.exact,repeat:ctx.repeat,channel:$('channel').value,budget:ctx.budget})));if(navigator.share){try{await navigator.share({title:'雞省研究所 V3.5.1',url:u.href});return}catch(_){}}copy(u.href)};
+ $('share-plan').onclick=async()=>{let u=new URL(location.href);u.searchParams.set('plan',encodeURIComponent(JSON.stringify({selected,excluded:[...excluded],exact:ctx.exact,repeat:ctx.repeat,channel:$('channel').value,budget:ctx.budget})));if(navigator.share){try{await navigator.share({title:'雞省研究所 V3.5.4',url:u.href});return}catch(_){}}copy(u.href)};
 }
 function restoreShare(){let raw=new URL(location.href).searchParams.get('plan');if(!raw)return;try{let d=JSON.parse(decodeURIComponent(raw));if(d.selected&&typeof d.selected==='object')selected=Object.fromEntries(KEYS.map(k=>[k,Math.max(0,Math.min(FOOD[k].max,Number(d.selected[k])||0))]));excluded=new Set((d.excluded||[]).filter(k=>KEYS.includes(k)&&!selected[k]));party=0;if(d.exact)document.querySelector('input[value="exact"]').checked=true;$('repeat').checked=!!d.repeat;if(['any','pickup','dinein','delivery'].includes(d.channel))$('channel').value=d.channel;if([0,100,200,300,500,800].includes(Number(d.budget)))$('budget').value=Number(d.budget);toast('已載入分享的餐點需求')}catch(_){}}
 function missingSideItems(c){
@@ -161,9 +165,10 @@ function renderCards(){let keyword=$('search').value.trim().toLowerCase(),order=
  if(filter==='confirmed'&&c.crosscheck?.priceAgreement!==true)return false;if(filter==='favorite'&&!favorite.has(c.code))return false;if(filter==='expiring'&&c.end>DATE_TPE()&&Math.ceil((Date.parse(c.end+'T12:00:00+08:00')-Date.parse(DATE_TPE()+'T12:00:00+08:00'))/86400000)>7)return false;if(filter==='under100'&&c.price>=100)return false;if(filter==='burger'&&!(c.items.burger||c.items.smallBurger))return false;if(filter==='rice'&&!['rice','pepperRice','creamRice'].some(k=>c.items[k]))return false;if(filter==='sides'&&!['popcorn','soup','qqBalls'].some(k=>c.items[k])&&!missingSideItems(c).length)return false;if(['fried','tart','nuggets'].includes(filter)&&!c.items[filter])return false;return !keyword||[c.code,c.title,c.desc,sourceLabel(c)].join(' ').toLowerCase().includes(keyword)});
  list.sort((a,b)=>order==='high'?b.price-a.price:order==='expire'?a.end.localeCompare(b.end)||a.price-b.price:order==='discount'?(b.original&&b.original>b.price?1-b.price/b.original:0)-(a.original&&a.original>a.price?1-a.price/a.original:0)||a.price-b.price:a.price-b.price);
  $('stat-coupons').textContent=validList().length;
- $('count-result').textContent=`顯示 ${list.length} 張有效券 · 自動排除未開始及過期券`;
+ $('stat-food-types').textContent=KEYS.length;
+ $('count-result').textContent=`顯示 ${list.length} 張有效券 · ${validList().filter(c=>!calcReady(c)).length} 張配餐明細不完整的券只供瀏覽、不參與最省計算 · 已排除尚未開始及過期券`;
  $('coupon-cards').innerHTML=list.length?list.map(c=>{let gap=Math.round((new Date(c.end+'T12:00:00+08:00')-new Date(DATE_TPE()+'T12:00:00+08:00'))/86400000);let saved=c.original&&c.original>c.price?Math.round((1-c.price/c.original)*100):null;
- return `<article class="coupon-card"><div class="card-top"><div class="card-icon">${c.items.fried?'🍗':c.items.tart?'🥧':c.items.burger||c.items.smallBurger?'🍔':(c.items.rice||c.items.pepperRice||c.items.creamRice)?'🍚':'🎟️'}</div><button class="heart ${favorite.has(c.code)?'active':''}" data-fav="${esc(c.code)}" aria-label="收藏${esc(c.code)}">${favorite.has(c.code)?'♥':'♡'}</button></div><div class="card-title">${esc(c.title)}</div><div class="card-code">優惠代碼 ${esc(c.code)}</div><p class="card-desc">${esc(c.desc)}</p><div class="card-tags"><span class="mini-chip" title="資料來源不等於官方核可">${esc(sourceLabel(c))}</span>${missingSideItems(c).length?'<span class="mini-chip pill-danger">配餐明細待核對</span>':''}${saved?`<span class="mini-chip">參考原價省 ${saved}%</span>`:''}${gap<=7?'<span class="mini-chip pill-danger">即將到期</span>':''}</div><div class="card-end"><div><div class="card-price"><span>NT$</span> ${money(c.price)}</div>${c.original?`<div class="old-price">參考原價 NT$ ${money(c.original)}</div>`:''}</div><div><div class="exp ${gap<=7?'soon':''}">期限至 ${esc(c.end)}</div><button class="copy-btn" data-copy="${esc(c.code)}">複製券碼</button><a class="tiny-btn" href="https://www.kfcclub.com.tw/coupon" target="_blank" rel="noopener noreferrer" title="到肯德基官網輸入這張優惠碼進行核對">官網查證 ↗</a><button class="tiny-btn" data-history="${esc(c.code)}">價格歷史</button></div></div></article>`}).join(''):'<div class="emptycards">找不到符合條件的有效券，請換個品項或關鍵字。</div>';
+ return `<article class="coupon-card"><div class="card-top"><div class="card-icon">${c.items.fried?'🍗':c.items.tart?'🥧':c.items.burger||c.items.smallBurger?'🍔':(c.items.rice||c.items.pepperRice||c.items.creamRice)?'🍚':'🎟️'}</div><button class="heart ${favorite.has(c.code)?'active':''}" data-fav="${esc(c.code)}" aria-label="收藏${esc(c.code)}">${favorite.has(c.code)?'♥':'♡'}</button></div><div class="card-title">${esc(c.title)}</div><div class="card-code">優惠代碼 ${esc(c.code)}</div><p class="card-desc">${esc(c.desc)}</p><div class="card-tags"><span class="mini-chip" title="資料來源不等於官方核可">${esc(sourceLabel(c))}</span>${missingSideItems(c).length?'<span class="mini-chip pill-danger">附餐數量不明・暫不參與比價</span>':''}${saved?`<span class="mini-chip">參考原價省 ${saved}%</span>`:''}${gap<=7?'<span class="mini-chip pill-danger">即將到期</span>':''}</div><div class="card-end"><div><div class="card-price"><span>NT$</span> ${money(c.price)}</div>${c.original?`<div class="old-price">參考原價 NT$ ${money(c.original)}</div>`:''}</div><div><div class="exp ${gap<=7?'soon':''}">期限至 ${esc(c.end)}</div><button class="copy-btn" data-copy="${esc(c.code)}">複製券碼</button><a class="tiny-btn" href="https://www.kfcclub.com.tw/coupon" target="_blank" rel="noopener noreferrer" title="到肯德基官網輸入這張優惠碼進行核對">官網查證 ↗</a><button class="tiny-btn" data-history="${esc(c.code)}">價格歷史</button></div></div></article>`}).join(''):'<div class="emptycards">找不到符合條件的有效券，請換個品項或關鍵字。</div>';
 }
 function renderHistory(code){
  const c=coupons.find(x=>x.code===code);const box=$('history-card');
@@ -213,26 +218,57 @@ function renderStatus(){
    `<div class="source-health">${val.ok?'<span class="pill-green">● 已讀取</span>':'<span class="pill-orange">● 讀取失敗</span>'}　<b>${esc(name)}</b>（${Number(val.verified??val.listed??0)} 筆）</div>`
  ).join('')||'來源狀態尚未取得';
 }
+function normalizeReview(data){
+ const raw=Array.isArray(data?.newCoupons)?data.newCoupons:[];
+ const errors=Array.isArray(data?.uncertainChanges)?data.uncertainChanges:[];
+ // 舊格式相容：將 KCouper 解析不了的高風險候選券移出新券待審；不要誤當作有效新券。
+ const unsupported=x=>x?.source==='KCouper'&&
+  !(/^未識別品項/.test(String(x.reason||''))&&!/加價|跨類|規格|數量不明/.test(String(x.reason||'')));
+ const legacyExcluded=raw.filter(unsupported),actionable=raw.filter(x=>!unsupported(x));
+ const key=x=>String(x.code||'')+'|'+String(x.reason||'')+'|'+String(x.source||'');
+ function clean(rows,kind){const seen=new Set();return rows.filter(x=>x&&typeof x==='object').filter(x=>{const k=key(x);if(seen.has(k))return false;seen.add(k);return true}).map(x=>({...x,_kind:kind}));}
+ reviewRows=[...clean(errors,'差異'),...clean(actionable,'新券')];
+ reviewUnsupported=Number.isFinite(Number(data?.unsupportedCount))&&Number(data.unsupportedCount)>=0?Number(data.unsupportedCount):legacyExcluded.length;
+ reviewReasons=data?.unsupportedReasons&&typeof data.unsupportedReasons==='object'?data.unsupportedReasons:{};
+ return {actionable,errors,newCount:actionable.length,errorCount:errors.length};
+}
+function reviewSubset(){return reviewRows.filter(x=>(reviewKind==='all'||(reviewKind==='new'?x._kind==='新券':x._kind==='差異'))&&
+  (!reviewQuery||[x.code,x.reason,x.source,x.description,x.seenPrice,x.currentPrice,x.callingPrice].map(y=>String(y??'')).join(' ').toLowerCase().includes(reviewQuery)));}
+function renderReviewList(){
+ const filtered=reviewSubset(),view=filtered.slice(0,reviewShowCount);
+ const list=$('upd-details'),counter=$('review-results'),more=$('review-more'),exporter=$('review-export');
+ if(!list||!counter)return;
+ counter.textContent=`符合 ${filtered.length} 項／總計 ${reviewRows.length} 項待核對`;
+ const reasonText=Object.entries(reviewReasons).slice(0,4).map(([reason,count])=>`${esc(reason)} ${Math.max(0,Number(count)||0)}`).join('、');
+ const info=`<div class="review-summary"><strong>分類統計</strong>：需要人工核對 ${reviewRows.filter(x=>x._kind==='新券').length} 張新券，${reviewRows.filter(x=>x._kind==='差異').length} 項價格／內容差異；另外 ${reviewUnsupported} 張暫不支援解析，沒有被加入最低價比價。${reasonText?'<div>不支援原因：'+reasonText+'</div>':''}</div>`;
+ list.innerHTML=info+(view.length?view.map(x=>{
+  const code=String(x.code||'—');const info=[];
+  if(x.source)info.push(String(x.source));
+  if(x.seenPrice!=null&&Number.isFinite(Number(x.seenPrice)))info.push('來源價 NT$ '+Number(x.seenPrice));
+  if(x.currentPrice!=null&&Number.isFinite(Number(x.currentPrice)))info.push('原價 NT$ '+Number(x.currentPrice));
+  if(x.callingPrice!=null&&Number.isFinite(Number(x.callingPrice)))info.push('Calling Taiwan NT$ '+Number(x.callingPrice));
+  return `<div class="review-line"><div class="review-line-head"><span class="review-code">${esc(code)}</span><span class="review-kind ${x._kind==='差異'?'review-risk':''}">${esc(x._kind)}</span>${/^\d{5}$/.test(code)?`<button type="button" class="review-copy" data-review-copy="${esc(code)}" aria-label="複製優惠碼 ${esc(code)}">複製</button>`:''}</div><div>${esc(String(x.reason||'需要核對'))}</div>${info.length?`<div class="review-secondary">${esc(info.join(' · '))}</div>`:''}</div>`;
+ }).join(''):'<div class="review-empty">此分類沒有符合的待確認項目。</div>');
+ more.hidden=filtered.length<=reviewShowCount;
+ exporter.disabled=filtered.length===0;
+}
 function renderPendingReview(data){
- const raw=Array.isArray(data.newCoupons)?data.newCoupons:[];
- const errors=Array.isArray(data.uncertainChanges)?data.uncertainChanges:[];
- // 舊版 pending-review.json 將大量無法解析的 KCouper 券算成新券，這裡先做相容性分類。
- const isKcouperUnsupported=x=>x?.source==='KCouper'&&
-   !(/^未識別品項/.test(String(x.reason||''))&&!/加價|跨類|規格|數量不明/.test(String(x.reason||'')));
- const legacyExcluded=raw.filter(isKcouperUnsupported);
- const actionable=raw.filter(x=>!isKcouperUnsupported(x));
- const excluded=Number(data.unsupportedCount??legacyExcluded.length);
- if(status){
-   $('upd-pending').textContent=actionable.length+' 張';
-   $('upd-review').textContent=errors.length+' 項';
-   $('upd-excluded').textContent=excluded>0?`另有 ${excluded} 張未支援解析（不算新券）`:'未支援格式不計入新券待審';
- }
- const reasons=Object.entries(data.unsupportedReasons||{}).slice(0,4).map(([reason,count])=>`${esc(reason)} ${Number(count)||0}`).join('、');
- const info=`<div class="review-summary"><strong>資料安全分類</strong>：需要確認的新券 ${actionable.length} 張、價格／內容差異 ${errors.length} 項；另有 ${excluded} 張因加價口味、特殊品項等原因暫不參與比價。${reasons?'<div>未支援原因（同一券可能涉及多種）：'+reasons+'</div>':''}此數字不等於官方有效優惠券數。</div>`;
- const list=[...errors.slice(0,4).map(x=>({...x,_kind:'差異'})),...actionable.slice(0,5).map(x=>({...x,_kind:'新券'}))];
- $('upd-details').innerHTML=info+(list.length?list.map(x=>
-   `<div class="review-line"><span class="review-code">${esc(String(x.code||'—'))}</span><strong>${x._kind}</strong>　${esc(String(x.reason||'待確認'))}</div>`
- ).join(''):'<span class="review-empty">目前沒有需要人工核對的異常。</span>');
+ normalizeReview(data);
+ reviewShowCount=15;reviewKind='all';reviewQuery='';
+ const search=$('review-search'),kind=$('review-kind');if(search)search.value='';if(kind)kind.value='all';
+ $('upd-pending').textContent=reviewRows.filter(x=>x._kind==='新券').length+' 張';
+ $('upd-review').textContent=reviewRows.filter(x=>x._kind==='差異').length+' 項';
+ $('upd-excluded').textContent=`另有 ${reviewUnsupported} 張無法安全解析（不算新券）`;
+ renderReviewList();
+}
+// 防止 Excel 把來源內容當成公式；CSV 僅由使用者主動下載，資料不會傳到其他伺服器。
+function csvCell(v){const raw=String(v??'').replace(/^[\t\r\n ]+/,'');const safe=/^[=+@-]/.test(raw)?'\''+raw:raw;return '"'+safe.replace(/"/g,'""')+'"';}
+function exportReviewCsv(){const rows=reviewSubset();if(!rows.length)return;
+ const header=['類型','優惠碼','來源','原因','來源價格','現有價格','Calling Taiwan價格'];
+ const lines=[header,...rows.map(x=>[x._kind,x.code,x.source,x.reason,x.seenPrice,x.currentPrice,x.callingPrice])].map(row=>row.map(csvCell).join(','));
+ const blob=new Blob(['\ufeff'+lines.join('\r\n')],{type:'text/csv;charset=utf-8'});const url=URL.createObjectURL(blob);
+ const a=document.createElement('a');a.href=url;a.download=`kfc-review-${DATE_TPE()}.csv`;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+ toast(`已匯出 ${rows.length} 筆待核對資料`);
 }
 async function fetchJson(name){let r=await fetch('./'+name+'?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error(name+' HTTP '+r.status);return r.json()}
 async function loadData(){if(location.protocol==='file:'){$('data-status').textContent='離線預覽：2026/10/18 的快照；每日自動更新須部署至 GitHub Pages。';return}
@@ -253,5 +289,10 @@ $('clear-manual-prices').addEventListener('click',()=>{manualSingles={};saveManu
 $('history-range').addEventListener('click',e=>{const btn=e.target.closest('[data-history-days]');if(!btn)return;historyDays=Number(btn.dataset.historyDays);if(lastHistoryCode)renderHistory(lastHistoryCode)});
 
 $('history-close').addEventListener('click',()=>$('history-card').classList.remove('show'));
+$('review-search').addEventListener('input',e=>{reviewQuery=e.target.value.trim().toLowerCase();reviewShowCount=15;renderReviewList()});
+$('review-kind').addEventListener('change',e=>{reviewKind=e.target.value;reviewShowCount=15;renderReviewList()});
+$('review-more').addEventListener('click',()=>{reviewShowCount+=20;renderReviewList()});
+$('review-export').addEventListener('click',exportReviewCsv);
+$('upd-details').addEventListener('click',e=>{const btn=e.target.closest('[data-review-copy]');if(btn)copy(btn.dataset.reviewCopy)});
 restoreShare();initQuantities();renderManualPrices();renderCards();calculate();loadData();loadOfficial();
 if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register('./sw.js').catch(()=>{});
