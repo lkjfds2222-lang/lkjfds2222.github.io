@@ -22,7 +22,7 @@ from article_source import PageText, extract
 KCOUPER_URL = 'https://raw.githubusercontent.com/Winedays/KCouper/master/public/coupon.js'
 ARTICLE_URL = 'https://info.talk.tw/kfc-coupon/'
 TPE = timezone(timedelta(hours=8))
-CATEGORIES = {'fried','smallBurger','burger','tart','nuggets','fries','hash','drink','boneless','rice','pepperRice','creamRice'}
+CATEGORIES = {'fried','smallBurger','burger','tart','nuggets','fries','hash','drink','boneless','rice','pepperRice','creamRice','popcorn','soup','qqBalls'}
 DATE_RE = re.compile(r'^20\d\d-\d\d-\d\d$')
 CODE_RE = re.compile(r'^\d{5}$')
 
@@ -72,8 +72,8 @@ def clean_name(s:str)->str:
 
 def multiplier(s:str)->int:
     """識別名稱內固定的包裝數量，不能重複乘算外層 count。"""
-    m=re.search(r'(?:分享盒\()?\(?((?:20|8|6|4|3|2))\s*(?:塊|入|顆)\)?',s)
-    if not m:m=re.search(r'(?:^|\()((?:20|8|6|4|3|2))\s*(?:塊|入|顆)',s)
+    m=re.search(r'(?:分享盒\()?\(?((?:20|12|10|8|6|4|3|2))\s*(?:塊|入|顆)\)?',s)
+    if not m:m=re.search(r'(?:^|\()((?:20|12|10|8|6|4|3|2))\s*(?:塊|入|顆)',s)
     return int(m.group(1)) if m else 1
 
 
@@ -103,6 +103,9 @@ def recognize_item(raw:dict)->tuple[str|None,int,str]:
         if '青花椒醬飯' in value:return 'pepperRice'
         if '蒜香白醬飯' in value:return 'creamRice'
         if any(x in value for x in ('雞汁風味飯','雞汁飯','雞汁風味米飯')):return 'rice'
+        if '玉米濃湯' in value:return 'soup'
+        if re.search(r'QQ\s*球',value,re.I):return 'qqBalls'
+        if '雞米花' in value:return 'popcorn'
         if '薯餅' in value:return 'hash'
         if '無骨雞腿霸' in value:return 'boneless'
         if '上校雞塊' in value or re.search(r'(^|[0-9])雞塊',value):return 'nuggets'
@@ -116,6 +119,8 @@ def recognize_item(raw:dict)->tuple[str|None,int,str]:
     cat=category_of(name)
     if cat is None:return None,0,f'未識別品項：{name[:45]}'
     # 不把中薯大薯當成小薯，也不把不同類型的炸雞誤當咔啦脆雞。
+    if cat=='soup' and any(x in name for x in ('大杯','(大)','中杯')):
+        return None,0,'玉米濃湯規格不同，不推測等價'
     if cat=='fries' and any(x in name for x in ('(中)','(大)','中薯','大薯')):
         return None,0,'大/中薯不可替代小薯'
     if any((other:=category_of(clean_name(str(v.get('name') or '')))) is not None and other!=cat for v in flavors):
@@ -126,7 +131,7 @@ def recognize_item(raw:dict)->tuple[str|None,int,str]:
             for v in flavors if v.get('name')):
         return None,0,'飯類可替換非飯品項，無法保證數量'
     pack=1
-    if cat in ('nuggets','tart','fried'):
+    if cat in ('nuggets','tart','fried','qqBalls'):
         pack=multiplier(name)
     count=qty*pack
     if count>40:return None,0,'計算數量異常'
@@ -284,6 +289,16 @@ def merge(root:Path,kcouper_js:str|None,article_html:str|None,now:datetime,sourc
         if rec.get('end') and rec['end']>item['end']:
             changes.append({'code':code,'field':'end','from':item['end'],'to':rec['end'],'source':'好康情報誌'})
             item['end']=rec['end']
+    # 同券碼、同價格的「兩來源一致」只是第三方交叉參考，不是肯德基官方核價。
+    # 每次執行重算，不沿用過期的來源認證狀態。
+    for code,item in current.items():
+        observed=[]
+        if code in kc and item.get('price')==kc[code].get('price') and item.get('items')==kc[code].get('items'):
+            observed.append('KCouper')
+        if code in article and item.get('price')==article[code].get('price'):
+            observed.append('好康情報誌')
+        item['crosscheck']={'sources':observed,'priceAgreement':len(observed)==2,
+                            'checkedAt':today if observed else None}
     for r in rejected:
         if r['code'] not in current:
             new_pending.append(r)
