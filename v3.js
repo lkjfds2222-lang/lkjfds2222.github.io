@@ -199,14 +199,47 @@ async function loadOfficial(){
  try{renderOfficial(await fetchJson('official-offers.json'))}catch(_){renderOfficial(null)}
 }
 
-function renderStatus(){if(!status)return;let stamp=status.lastChecked||'';$('upd-last').textContent=stamp?stamp.slice(5,16).replace('T',' '):'未核對';$('upd-auto').textContent=(status.autoAdded||0)+' 張';$('upd-pending').textContent=(status.pendingNewCoupons||0)+' 張';$('upd-review').textContent=(status.reviewNeeded||0)+' 項';
- $('upd-sources').innerHTML=Object.entries(status.sources||{}).map(([name,val])=>`${val.ok?'<span class="pill-green">● 成功</span>':'<span class="pill-orange">● 失敗</span>'} ${esc(name)}（${Number(val.verified??val.listed??0)} 筆）`).join('<br>')||'尚未核對';}
+function renderStatus(){
+ if(!status)return;
+ const stamp=status.lastChecked||'';
+ $('upd-last').textContent=stamp?stamp.slice(5,16).replace('T',' '):'未核對';
+ $('upd-auto').textContent=(status.autoAdded||0)+' 張';
+ $('upd-pending').textContent=(status.pendingNewCoupons||0)+' 張';
+ $('upd-review').textContent=(status.reviewNeeded||0)+' 項';
+ const excluded=Number(status.unsupportedCount||0);
+ $('upd-excluded').textContent=excluded>0?`另有 ${excluded} 張不支援格式，未計入新券待審`:'未支援格式不會計入待審';
+ const sources=status.sources||{};
+ $('upd-sources').innerHTML=Object.entries(sources).map(([name,val])=>
+   `<div class="source-health">${val.ok?'<span class="pill-green">● 已讀取</span>':'<span class="pill-orange">● 讀取失敗</span>'}　<b>${esc(name)}</b>（${Number(val.verified??val.listed??0)} 筆）</div>`
+ ).join('')||'來源狀態尚未取得';
+}
+function renderPendingReview(data){
+ const raw=Array.isArray(data.newCoupons)?data.newCoupons:[];
+ const errors=Array.isArray(data.uncertainChanges)?data.uncertainChanges:[];
+ // 舊版 pending-review.json 將大量無法解析的 KCouper 券算成新券，這裡先做相容性分類。
+ const isKcouperUnsupported=x=>x?.source==='KCouper'&&
+   !(/^未識別品項/.test(String(x.reason||''))&&!/加價|跨類|規格|數量不明/.test(String(x.reason||'')));
+ const legacyExcluded=raw.filter(isKcouperUnsupported);
+ const actionable=raw.filter(x=>!isKcouperUnsupported(x));
+ const excluded=Number(data.unsupportedCount??legacyExcluded.length);
+ if(status){
+   $('upd-pending').textContent=actionable.length+' 張';
+   $('upd-review').textContent=errors.length+' 項';
+   $('upd-excluded').textContent=excluded>0?`另有 ${excluded} 張未支援解析（不算新券）`:'未支援格式不計入新券待審';
+ }
+ const reasons=Object.entries(data.unsupportedReasons||{}).slice(0,4).map(([reason,count])=>`${esc(reason)} ${Number(count)||0}`).join('、');
+ const info=`<div class="review-summary"><strong>資料安全分類</strong>：需要確認的新券 ${actionable.length} 張、價格／內容差異 ${errors.length} 項；另有 ${excluded} 張因加價口味、特殊品項等原因暫不參與比價。${reasons?'<div>未支援原因（同一券可能涉及多種）：'+reasons+'</div>':''}此數字不等於官方有效優惠券數。</div>`;
+ const list=[...errors.slice(0,4).map(x=>({...x,_kind:'差異'})),...actionable.slice(0,5).map(x=>({...x,_kind:'新券'}))];
+ $('upd-details').innerHTML=info+(list.length?list.map(x=>
+   `<div class="review-line"><span class="review-code">${esc(String(x.code||'—'))}</span><strong>${x._kind}</strong>　${esc(String(x.reason||'待確認'))}</div>`
+ ).join(''):'<span class="review-empty">目前沒有需要人工核對的異常。</span>');
+}
 async function fetchJson(name){let r=await fetch('./'+name+'?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error(name+' HTTP '+r.status);return r.json()}
 async function loadData(){if(location.protocol==='file:'){$('data-status').textContent='離線預覽：2026/10/18 的快照；每日自動更新須部署至 GitHub Pages。';return}
  try{let incoming=await fetchJson('coupons.json');if(!Array.isArray(incoming)||incoming.length<3||!incoming.every(c=>/^\d{5}$/.test(String(c.code))&&Number.isInteger(c.price)&&c.price>0&&c.price<2000&&/^20\d\d-\d\d-\d\d$/.test(c.end)&&c.items&&typeof c.items==='object'&&Object.keys(c.items).every(k=>KEYS.includes(k)&&k!=='anyRice')&&Object.values(c.items).every(v=>Number.isInteger(v)&&v>=0)))throw new Error('券資料格式有問題');coupons=incoming;loadedOnline=true;
  try{status=await fetchJson('update-status.json');renderStatus()}catch(_){}try{history=await fetchJson('price-history.json')}catch(_){}
  try{let m=await fetchJson('menu-prices.json');verifiedSingles=m.prices||{}}catch(_){}
- try{let r=await fetchJson('pending-review.json');let lines=[...(r.newCoupons||[]).slice(0,5),...(r.uncertainChanges||[]).slice(0,4)];$('upd-details').innerHTML=lines.length?lines.map(x=>`<div>${esc(x.code)}：${esc(x.reason||'待審')}</div>`).join(''):'<span class="pill-green">本次沒有待審資料</span>'}catch(_){}
+ try{let r=await fetchJson('pending-review.json');renderPendingReview(r)}catch(_){}
  let checked=status?.lastChecked,last=checked?Date.parse(checked):NaN,fresh=Number.isFinite(last)&&Date.now()-last<48*3600000;
  $('data-status').textContent=(fresh?'✅':'⚠️')+' 已載入網站優惠資料。'+(checked?'最近核對：'+checked.slice(0,16).replace('T',' ')+'（台灣時間）。':'目前仍未有成功更新的時間。')+' 每日執行成功不代表原始資料當日有變更；請以官方實際可用券為準。';
  }catch(err){$('data-status').textContent='⚠️ 線上資料讀取失敗，使用 2026/10/18 離線快照。'+String(err.message||err)}renderCards();calculate();}

@@ -343,12 +343,34 @@ def merge(root:Path,kcouper_js:str|None,article_html:str|None,now:datetime,sourc
             observed.append('Calling Taiwan')
         item['crosscheck']={'sources':observed,'priceAgreement':len(observed)>=2,
                             'checkedAt':today if observed else None}
+    # KCouper 無法解析的券不是「新券待審」：例如加價口味或無法辨識的餐點。
+    # 這些券不進入比價，僅保留原因分類與少量樣本以供後續改善解析器。
+    # 已收錄且來源不相容者仍列為需要核對的既有資料。
+    excluded=[]
     for r in rejected:
+        reason=str(r.get('reason') or '')
         if r['code'] not in current:
-            new_pending.append(r)
-        elif '加價' in r['reason'] or '跨類' in r['reason']:
+            # 單純「新品項未識別」仍有機會人工建立品項分類，屬可處理的新券。
+            # 涉及加價、跨類替換與規格不確定者，先歸在未支援而非待審。
+            if '未識別品項' in reason and not any(x in reason for x in ('加價','跨類','規格','數量不明')):
+                new_pending.append(r)
+            else:
+                excluded.append(r)
+        elif '加價' in reason or '跨類' in reason:
             uncertain.append(r)
-    # 已存在但未在兩來源辨認到的券不擅自刪除；依既有 end 自動過期。
+    excluded_by_code={str(x['code']):x for x in excluded if x.get('code')}
+    excluded=list(excluded_by_code.values())
+    reason_count=Counter()
+    for row in excluded:
+        # 相同原因可能被多個餐點重複輸出，按券而非餐點統計。
+        reasons={r.strip() for r in str(row.get('reason','未知原因')).split('；') if r.strip()}
+        for reason in reasons:
+            category=('加價／口味替換' if '加價' in reason else
+                      '餐點分類未支援' if '未識別品項' in reason else
+                      '數量／規格限制' if any(x in reason for x in ('規格','數量','薯','選項')) else
+                      '其他不完整資料')
+            reason_count[category]+=1
+    # 已存在但未在各來源辨認到的券不擅自刪除；依既有 end 自動過期。
     seen={};new_pending=[seen.setdefault(x['code'],x) for x in new_pending if x['code'] not in seen]
     pending_codes={x['code'] for x in new_pending}
     if newly:=sorted(pending_codes-seen_before):
@@ -382,9 +404,12 @@ def merge(root:Path,kcouper_js:str|None,article_html:str|None,now:datetime,sourc
           'autoAdded':len(new_autos),'autoAddedCodes':new_autos[:40],
           'callingAutoAdded':calling_autos,
           'updatedFields':len(changes),'pendingNewCoupons':len(new_pending),
-          'reviewNeeded':len(uncertain),'alertsCount':len(alerts),
+          'reviewNeeded':len(uncertain),'unsupportedCount':len(excluded),
+          'alertsCount':len(alerts),
           'note':'新券須通過品項與數量辨識才會自動加入；無法確認的不納入最低價計算。'}
     review={'generatedAt':stamp,'newCoupons':new_pending,'uncertainChanges':uncertain,
+            'unsupportedCount':len(excluded),'unsupportedReasons':dict(reason_count.most_common(8)),
+            'unsupportedSamples':excluded[:12],
             'approvedChanges':changes,'autoAddedCoupons':new_autos}
     alert_file={'generatedAt':stamp,'alerts':alerts,'newAlerts':new_alerts,'sourceErrors':source_errors}
     # 只替當次來源明確出現的券記錄價格歷史，一天同券一筆，保留最近 90 天。
