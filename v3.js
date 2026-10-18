@@ -153,7 +153,7 @@ function missingSideItems(c){
 }
 function sourceLabel(c){
  const x=c.crosscheck;
- if(x&&x.priceAgreement===true&&Array.isArray(x.sources)&&x.sources.includes('KCouper')&&x.sources.includes('好康情報誌'))return '雙來源價格一致（非官方驗證）';
+ if(x&&x.priceAgreement===true&&Array.isArray(x.sources)&&x.sources.length>=2)return x.sources.length+' 個第三方來源價格一致（非官方驗證）';
  const names=(x&&Array.isArray(x.sources)&&x.sources.length)?x.sources:[c.source||'歷史收錄'];
  return names.join('＋')+' · 尚須官網確認';
 }

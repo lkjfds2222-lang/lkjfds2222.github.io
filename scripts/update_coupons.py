@@ -18,6 +18,7 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from typing import Any
 from article_source import PageText, extract
+from calling_taiwan_source import SOURCE_URL as CALLING_URL, parse_calling
 
 KCOUPER_URL = 'https://raw.githubusercontent.com/Winedays/KCouper/master/public/coupon.js'
 ARTICLE_URL = 'https://info.talk.tw/kfc-coupon/'
@@ -209,7 +210,7 @@ def inspect_article(html:str)->dict:
     return extract(p.result())
 
 
-def merge(root:Path,kcouper_js:str|None,article_html:str|None,now:datetime,source_errors:dict|None=None,min_source:int=10)->dict:
+def merge(root:Path,kcouper_js:str|None,article_html:str|None,now:datetime,source_errors:dict|None=None,min_source:int=10,calling_html:str|None=None)->dict:
     source_errors=dict(source_errors or {})
     coupons_path=root/'coupons.json'
     old=json.loads(coupons_path.read_text(encoding='utf-8'))
@@ -231,8 +232,15 @@ def merge(root:Path,kcouper_js:str|None,article_html:str|None,now:datetime,sourc
             article=inspect_article(article_html)
             if len(article)<3:source_errors['好康情報誌']='頁面可讀但辨識不到至少三張優惠券'
         except Exception as e:source_errors['好康情報誌']=str(e)
-    if not kc and len(set(current)&set(article))<3:
-        raise RuntimeError('兩個來源都無法通過校驗；所有優惠資料保持原樣。'+str(source_errors))
+    calling={};calling_rejected=[]
+    if calling_html is not None:
+        try:
+            calling,calling_rejected=parse_calling(calling_html,today,recognize_item)
+            if len(calling)<3:raise ValueError('Calling Taiwan 表格解析不足三張券')
+        except Exception as exc:
+            source_errors['Calling Taiwan']=str(exc);calling={};calling_rejected=[]
+    if not kc and len(set(current)&set(article))<3 and len(set(current)&set(calling))<3:
+        raise RuntimeError('原有兩個來源與新增第三來源均無法通過最低驗證，保留舊資料。'+str(source_errors))
     prev_review={}
     try:prev_review=json.loads((root/'pending-review.json').read_text(encoding='utf8'))
     except (OSError,ValueError):pass
@@ -289,15 +297,51 @@ def merge(root:Path,kcouper_js:str|None,article_html:str|None,now:datetime,sourc
         if rec.get('end') and rec['end']>item['end']:
             changes.append({'code':code,'field':'end','from':item['end'],'to':rec['end'],'source':'好康情報誌'})
             item['end']=rec['end']
-    # 同券碼、同價格的「兩來源一致」只是第三方交叉參考，不是肯德基官方核價。
-    # 每次執行重算，不沿用過期的來源認證狀態。
+    # 第三來源 Calling Taiwan：結構清楚的新券可自動加入；複雜套餐只列待審。
+    # 來源不是官方 API，已收錄券的價格、餐點或期限衝突絕不單憑這裡改寫。
+    calling_autos=0
+    for code,rec in sorted(calling.items(),key=lambda r:(r[1]['end'],r[0])):
+        if code in current:
+            item=current[code]
+            if item['price']!=rec['price']:
+                uncertain.append({'code':code,'reason':'Calling Taiwan 與既有資料價格不一致，未自動改價',
+                                  'currentPrice':item['price'],'callingPrice':rec['price']})
+            if rec['items'] is not None and item.get('items')!=rec['items']:
+                uncertain.append({'code':code,'reason':'Calling Taiwan 餐點數量與已收錄不同，需核對',
+                                  'currentItems':item.get('items'),'callingItems':rec['items']})
+            if rec['end']!=item.get('end'):
+                uncertain.append({'code':code,'reason':'Calling Taiwan 到期日與既有資料不同，未自動改期',
+                                  'currentEnd':item.get('end'),'callingEnd':rec['end']})
+            continue
+        if code in article and article[code]['price']!=rec['price']:
+            new_pending.append({'code':code,'seenPrice':rec['price'],'seenEnd':rec['end'],
+                                'reason':'Calling Taiwan 與好康情報誌價格不同，新券待審','source':'Calling Taiwan'})
+            continue
+        if rec['items'] is None or calling_autos>=30:
+            new_pending.append({'code':code,'seenPrice':rec['price'],'seenEnd':rec['end'],
+                                'description':rec['title'][:160],
+                                'reason':rec['reason'] or '每日新增券數量達安全上限，排入待審',
+                                'source':'Calling Taiwan'})
+            continue
+        current[code]={'code':code,'price':rec['price'],'end':rec['end'],
+                       'title':rec['title'][:90],'desc':rec['title'][:320],
+                       'items':rec['items'],'original':None,
+                       'note':'Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制',
+                       'source':'Calling Taiwan'}
+        new_autos.append(code);calling_autos+=1
+    for finding in calling_rejected:
+        new_pending.append(finding)
+    # 每次重新計算同價的第三方來源數量，不把多來源一致稱為官方驗證。
     for code,item in current.items():
         observed=[]
         if code in kc and item.get('price')==kc[code].get('price') and item.get('items')==kc[code].get('items'):
             observed.append('KCouper')
         if code in article and item.get('price')==article[code].get('price'):
             observed.append('好康情報誌')
-        item['crosscheck']={'sources':observed,'priceAgreement':len(observed)==2,
+        if code in calling and item.get('price')==calling[code].get('price') and (
+                calling[code]['items'] is None or item.get('items')==calling[code]['items']):
+            observed.append('Calling Taiwan')
+        item['crosscheck']={'sources':observed,'priceAgreement':len(observed)>=2,
                             'checkedAt':today if observed else None}
     for r in rejected:
         if r['code'] not in current:
@@ -332,9 +376,11 @@ def merge(root:Path,kcouper_js:str|None,article_html:str|None,now:datetime,sourc
     output=sorted(current.values(),key=lambda c:(-int(c['end'].replace('-','')),c['code']))
     meta={'lastChecked':stamp,'kcouperLastUpdate':source_stamp,'sources':{
               'KCouper':{'ok':bool(kc),'verified':len(kc),'url':KCOUPER_URL},
-              '好康情報誌':{'ok':bool(article),'listed':len(article),'url':ARTICLE_URL}},
+              '好康情報誌':{'ok':bool(article),'listed':len(article),'url':ARTICLE_URL},
+              'Calling Taiwan':{'ok':bool(calling),'listed':len(calling),'url':CALLING_URL}},
           'totalCoupons':len(output),'activeCoupons':sum(1 for c in output if c['end']>=today),
           'autoAdded':len(new_autos),'autoAddedCodes':new_autos[:40],
+          'callingAutoAdded':calling_autos,
           'updatedFields':len(changes),'pendingNewCoupons':len(new_pending),
           'reviewNeeded':len(uncertain),'alertsCount':len(alerts),
           'note':'新券須通過品項與數量辨識才會自動加入；無法確認的不納入最低價計算。'}
@@ -349,7 +395,7 @@ def merge(root:Path,kcouper_js:str|None,article_html:str|None,now:datetime,sourc
     except (OSError,ValueError):history={}
     cutoff=(now.astimezone(TPE).date()-timedelta(days=90)).isoformat()
     for c in output:
-        if c['end']<today or str(c['code']) not in kc and str(c['code']) not in article:continue
+        if c['end']<today or str(c['code']) not in kc and str(c['code']) not in article and str(c['code']) not in calling:continue
         code=str(c['code'])
         old_rows=history.get(code,[])
         if not isinstance(old_rows,list):old_rows=[]
@@ -372,8 +418,10 @@ def main()->int:
     ap.add_argument('--root',default=str(Path(__file__).resolve().parents[1]))
     ap.add_argument('--kcouper-fixture',help='本地 KCouper JS 測試資料')
     ap.add_argument('--article-fixture',help='本地文章 HTML 測試資料')
+    ap.add_argument('--calling-fixture',help='本地 Calling Taiwan HTML 測試資料')
     ap.add_argument('--skip-kcouper',action='store_true')
     ap.add_argument('--skip-article',action='store_true')
+    ap.add_argument('--skip-calling',action='store_true')
     opts=ap.parse_args();errors={}
     def read_source(name:str,url:str,fixture:str|None,skip:bool):
         if skip:return None
@@ -381,7 +429,8 @@ def main()->int:
         except Exception as exc:errors[name]=str(exc);return None
     js=read_source('KCouper',KCOUPER_URL,opts.kcouper_fixture,opts.skip_kcouper)
     html=read_source('好康情報誌',ARTICLE_URL,opts.article_fixture,opts.skip_article)
-    meta=merge(Path(opts.root),js,html,datetime.now(timezone.utc),errors)
+    calling_html=read_source('Calling Taiwan',CALLING_URL,opts.calling_fixture,opts.skip_calling)
+    meta=merge(Path(opts.root),js,html,datetime.now(timezone.utc),errors,calling_html=calling_html)
     print(json.dumps(meta,ensure_ascii=False))
     return 0
 
