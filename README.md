@@ -1,41 +1,41 @@
-# 雞省研究所 V3.2｜官方資料來源巡查與網站強化
+# 雞省研究所 V3.3 — 安全部署與 Node.js 24 相容版
 
-這是 **V3.1 升級補丁**，不是完整資料庫包。保留你現在已經正常更新的 `coupons.json`、`price-history.json`、`alerts.json`、`pending-review.json`、`update-status.json`、`menu-prices.json`。
+這是針對已部署的 V3.2 / V3.1 網站的**增量修正**，不是整站重裝。保留所有線上券資料與價格歷史。
 
-## 上傳到 GitHub
+## 需要上傳的 3 個檔案
 
-依照 ZIP 目錄結構新增／覆蓋：
+- `.github/workflows/daily-coupons.yml`（取代原檔）
+- `scripts/validate_site.py`（新增）
+- `tests/test_site_validator.py`（新增）
 
-- `index.html`、`v3.js`、`sw.js`
-- `official-offers.json`（新檔；如果已有線上資料請勿覆蓋）
-- `scripts/official_monitor.py`（新檔）
-- `tests/test_official_monitor.py`（新檔）
-- `.github/workflows/daily-coupons.yml`（請確認你目前使用的是本包相同流程；已加入官方巡查與完整檔案部署）
+請不要以這個 ZIP 取代 `coupons.json`、`price-history.json`、`official-offers.json` 或 `index.html`。原本的 `scripts/update_coupons.py`、`scripts/official_monitor.py`、`scripts/report_alerts.py` 等全部保留。
 
-**不要刪除原本的 `scripts/update_coupons.py`、`scripts/report_alerts.py` 和整個 `tests/`。** 本 ZIP 只包含需要變動的檔案，不包括上述舊程式。
+## 改善項目
 
-### 部署方式
+1. GitHub Actions 升至 Node.js 24 版本：checkout@v5、setup-python@v6、configure-pages@v6、upload-pages-artifact@v5、deploy-pages@v5。
+2. Runner 固定為 `ubuntu-24.04`，減少映像版本變更影響。
+3. `main` 分支網頁程式或資料檔修改時，自動部署；一般 push 不會重新抓第三方網站。
+4. 每日或手動執行時才抓取 KCouper、優惠文章、官方活動頁，所有官方活動繼續只作待審，不直接加入比價。
+5. 部署前檢查 12 個必要檔案、JSON、優惠券碼/價格/期限/重複券；防止更新把網站發布成空白。
+6. 資料回寫 GitHub 失敗時顯示警告但仍嘗試部署。
+7. 部署成功後對 Pages 的主要檔案執行線上檢查（CDN 同步慢只警告、不誤判部署失敗）。
 
-1. 先在 GitHub 建一個備份分支，再上傳以上檔案至儲存庫根目錄。
-2. 進入 Actions →「雞省研究所｜每日核對與自動更新」→ Run workflow。
-3. 確認 `build` / `deploy` 成功，並在網頁看到「肯德基官方活動・交叉核對」區塊。
-4. 查看 https://你的網站/official-offers.json 是否存在；首次部署會顯示最新官方巡查結果。
-5. 若顯示舊版，強制重新整理 Ctrl+Shift+R 或重開 PWA。
+## 部署
 
-## 本次新增什麼？
+1. 先備份原始 `.github/workflows/daily-coupons.yml`。
+2. 用 GitHub 網頁或 github.dev 覆蓋 3 個檔案，**路徑必須完全一致**。
+3. Commit & Push。新增的 `push` 事件會啟動一次檢查及部署。
+4. GitHub Actions 查看 `build`、`deploy` 的結果；如發生錯誤，請展開「更新後資料安全檢查」或「準備 GitHub Pages 網站」。
+5. 若工作流程未自動開始，到 Actions 手動執行。
 
-- 每日訪問公開肯德基 `/coupon`（查碼入口）與官方首頁，保存來源是否可讀、活動文字候選與巡查時間。
-- 顯示官方原始入口與候選活動，**只作官方活動發現，絕不自動添加成可計算優惠券**。
-- 官網抓取失敗時保留既有候選活動並顯示過時狀態；不清空第三方券資料。
-- 全部新增文案都先安全編碼，避免從外部來源插入 HTML。
-- 官網頁面沒有已公開、穩定的完整優惠券 JSON API；未驗證資料不能假稱官方核價。
+本次未修改網站顯示風格或優惠計算邏輯，避免影響已能正常運作的頁面。未在你的 GitHub 儲存庫實際部署，無法宣稱線上驗收成功。
 
-## 測試
+## 本機測試
 
 ```bash
 python -m unittest discover -s tests -p 'test_*.py' -v
+python scripts/validate_site.py --root .
 node --check v3.js
-python scripts/official_monitor.py --offline --coupon-fixture tests/official_coupon_sample.html --home-fixture tests/official_home_sample.html
 ```
 
-第三條為可選的 fixture 測試。本站原本的比價資料來自 KCouper、好康情報誌。肯德基官方頁主要用來核對使用條件，官方首頁僅供查看活動，不代表即時券庫。
+必要檔案中的任何一份缺失，都會停止新的部署，但不會刪除原本已發布的網站。

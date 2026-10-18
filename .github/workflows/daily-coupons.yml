@@ -1,58 +1,116 @@
 name: 雞省研究所｜每日核對與自動更新
+
 on:
   workflow_dispatch:
   schedule:
-    # 台灣每天 09:17（UTC 01:17）；GitHub 可能延後執行
+    # 台灣時間 09:17（UTC 01:17），排程可能延後
     - cron: '17 1 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'v3.js'
+      - 'sw.js'
+      - 'manifest.webmanifest'
+      - 'app-icon.svg'
+      - '*.json'
+      - 'scripts/**'
+      - 'tests/**'
+      - '.github/workflows/daily-coupons.yml'
+
 permissions:
   contents: write
   issues: write
   pages: write
   id-token: write
+
 concurrency:
-  group: kfc-coupon-check
+  group: kfc-coupon-deploy
   cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: 取得網站檔案
+        uses: actions/checkout@v5
+        with:
+          persist-credentials: true
+
+      - name: 安裝 Python
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
-      - name: 更新腳本單元測試
+
+      - name: 執行離線單元測試
         run: python -m unittest discover -s tests -p 'test_*.py' -v
+
+      # 修改網頁時直接部署，不重複抓取來源；每日排程／手動執行才更新優惠。
       - name: 更新 KCouper 與優惠文章資料
         id: refresh
+        if: github.event_name != 'push'
         continue-on-error: true
         run: python scripts/update_coupons.py
-      - name: 生成警告與 Issues 提醒
-        if: always()
+
+      - name: 巡查肯德基官方優惠券及首頁
+        id: official
+        if: github.event_name != 'push'
+        continue-on-error: true
+        run: python scripts/official_monitor.py
+
+      - name: 生成警告與 GitHub Issues 提醒
+        if: github.event_name != 'push' && always()
         continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/report_alerts.py '${{ steps.refresh.outcome }}'
-      - name: 記錄已通過的更新與待審資訊
-        if: steps.refresh.outcome == 'success'
+
+      # 先擋下空的、格式錯誤的券資料，再考慮寫回 GitHub。
+      - name: 更新後資料安全檢查
+        run: |
+          python scripts/validate_site.py --root .
+          node --check v3.js
+
+      - name: 保存每日優惠券與官方巡查資料
+        id: save_data
+        if: github.event_name != 'push'
+        continue-on-error: true
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add coupons.json update-status.json pending-review.json alerts.json
+          git add -- coupons.json update-status.json pending-review.json alerts.json price-history.json official-offers.json
           if ! git diff --cached --quiet; then
             git commit -m 'chore: refresh KFC coupon checks'
-            git push
+            git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
-      - name: 準備靜態網站
+
+      - name: 顯示 GitHub 寫回警告
+        if: steps.save_data.outcome == 'failure'
         run: |
+          echo '::warning title=資料寫回 GitHub 失敗::網站仍會嘗試部署；請檢查 git push 權限或分支衝突。'
+          echo '### ⚠️ 資料寫回失敗' >> "$GITHUB_STEP_SUMMARY"
+          echo '已略過寫回失敗，網站將嘗試部署；請查看前一步的 git push 紀錄。' >> "$GITHUB_STEP_SUMMARY"
+
+      - name: 準備 GitHub Pages 網站
+        run: |
+          set -euo pipefail
           mkdir -p _site
-          cp index.html v3.js coupons.json update-status.json pending-review.json alerts.json price-history.json menu-prices.json manifest.webmanifest sw.js app-icon.svg _site/
+          for file in index.html v3.js coupons.json update-status.json pending-review.json alerts.json price-history.json menu-prices.json manifest.webmanifest sw.js app-icon.svg official-offers.json; do
+            test -s "$file" || { echo "::error::部署缺少 $file"; exit 1; }
+            cp "$file" _site/
+          done
           touch _site/.nojekyll
-          test -s _site/v3.js
-          test -s _site/coupons.json
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v4
+          python scripts/validate_site.py --root _site
+          node --check _site/v3.js
+
+      - name: 設定 GitHub Pages
+        uses: actions/configure-pages@v6
+
+      - name: 上傳網站成品
+        uses: actions/upload-pages-artifact@v5
         with:
           path: _site
+
   deploy:
     needs: build
     runs-on: ubuntu-24.04
@@ -60,5 +118,43 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - name: 發布 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
+
+      # Pages CDN 有時需要短暫時間同步，檢查失敗會警告但不回滾已成功的部署。
+      - name: 發布後網址檢查
+        continue-on-error: true
+        env:
+          SITE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          python - <<'PY'
+          import json, os, time, urllib.request
+          from urllib.parse import urljoin
+          base=os.environ.get('SITE_URL','')
+          if not base:
+              print('::warning::GitHub Pages 未提供 page_url，跳過線上檢查')
+              raise SystemExit(0)
+          paths=['index.html','v3.js','coupons.json','official-offers.json']
+          for path in paths:
+              url=urljoin(base.rstrip('/')+'/',path)
+              error=''
+              for attempt in range(4):
+                  try:
+                      req=urllib.request.Request(url,headers={'Cache-Control':'no-cache','User-Agent':'KFC-Deal-Lab-Smoke-Test/1.0'})
+                      with urllib.request.urlopen(req, timeout=18) as res:
+                          data=res.read()
+                          if res.status!=200 or not data:
+                              raise RuntimeError('空白回應或 HTTP '+str(res.status))
+                          if path.endswith('.json'):
+                              obj=json.loads(data)
+                              if path=='coupons.json' and (not isinstance(obj,list) or len(obj)<3):
+                                  raise RuntimeError('優惠券數量異常')
+                      print('OK',url)
+                      break
+                  except Exception as exc:
+                      error=str(exc)
+                      if attempt<3: time.sleep(8)
+              else:
+                  print(f'::warning::Pages 線上檢查未通過：{url} → {error}；可能是 CDN 尚未同步')
+          PY
