@@ -1,6 +1,5587 @@
 {
-  "generatedAt": null,
-  "newCoupons": [],
-  "uncertainChanges": [],
-  "approvedChanges": []
+  "generatedAt": "2026-10-18T19:17:55+08:00",
+  "newCoupons": [
+    {
+      "code": "16619",
+      "seenPrice": 110,
+      "seenEnd": "2026-12-20",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16672",
+      "seenPrice": 88,
+      "seenEnd": "2026-12-20",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16399",
+      "seenPrice": 115,
+      "seenEnd": "2026-12-20",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16489",
+      "seenPrice": 239,
+      "seenEnd": "2027-01-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16060",
+      "seenPrice": 300,
+      "seenEnd": "2027-01-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "26647",
+      "seenPrice": 318,
+      "seenEnd": "2027-03-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16350",
+      "seenPrice": 315,
+      "seenEnd": "2026-12-20",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16307",
+      "seenPrice": 427,
+      "seenEnd": "2027-01-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16541",
+      "seenPrice": 289,
+      "seenEnd": "2027-02-28",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16521",
+      "seenPrice": 499,
+      "seenEnd": "2027-02-28",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "26645",
+      "seenPrice": 268,
+      "seenEnd": "2027-03-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "26644",
+      "seenPrice": 268,
+      "seenEnd": "2027-03-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16781",
+      "seenPrice": 268,
+      "seenEnd": "2027-03-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "26860",
+      "seenPrice": 110,
+      "seenEnd": "2026-10-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "26852",
+      "seenPrice": 149,
+      "seenEnd": "2026-10-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "26887",
+      "seenPrice": 40,
+      "seenEnd": null,
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "26891",
+      "seenPrice": 399,
+      "seenEnd": null,
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16093",
+      "seenPrice": 110,
+      "seenEnd": "2026-11-30",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16092",
+      "seenPrice": 83,
+      "seenEnd": "2026-11-30",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "26973",
+      "seenPrice": 158,
+      "seenEnd": "2026-11-30",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "26972",
+      "seenPrice": 369,
+      "seenEnd": null,
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "26974",
+      "seenPrice": 162,
+      "seenEnd": null,
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "26978",
+      "seenPrice": 159,
+      "seenEnd": "2026-11-30",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "26984",
+      "seenPrice": 162,
+      "seenEnd": "2026-11-30",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16179",
+      "seenPrice": 50,
+      "seenEnd": "2026-12-20",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16178",
+      "seenPrice": 80,
+      "seenEnd": "2026-12-20",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16180",
+      "seenPrice": 82,
+      "seenEnd": "2026-12-20",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16181",
+      "seenPrice": 84,
+      "seenEnd": "2026-12-20",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16182",
+      "seenPrice": 93,
+      "seenEnd": "2026-12-20",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16164",
+      "seenPrice": 88,
+      "seenEnd": "2026-12-20",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16700",
+      "seenPrice": 93,
+      "seenEnd": "2026-12-20",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16701",
+      "seenPrice": 139,
+      "seenEnd": "2026-12-20",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16058",
+      "seenPrice": 129,
+      "seenEnd": "2026-12-20",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "26989",
+      "seenPrice": 118,
+      "seenEnd": "2026-12-20",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16270",
+      "seenPrice": 233,
+      "seenEnd": "2026-12-20",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16277",
+      "seenPrice": 303,
+      "seenEnd": "2026-12-20",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16275",
+      "seenPrice": 389,
+      "seenEnd": "2026-12-20",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16244",
+      "seenPrice": 100,
+      "seenEnd": "2026-12-22",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16246",
+      "seenPrice": 130,
+      "seenEnd": "2026-12-22",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16243",
+      "seenPrice": 130,
+      "seenEnd": "2026-12-22",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16238",
+      "seenPrice": 153,
+      "seenEnd": "2026-12-22",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16757",
+      "seenPrice": 156,
+      "seenEnd": "2027-02-28",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16377",
+      "seenPrice": 369,
+      "seenEnd": "2026-12-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16378",
+      "seenPrice": 588,
+      "seenEnd": "2026-12-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16391",
+      "seenPrice": 89,
+      "seenEnd": "2027-01-20",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16392",
+      "seenPrice": 209,
+      "seenEnd": "2027-01-20",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16412",
+      "seenPrice": 39,
+      "seenEnd": "2027-01-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16411",
+      "seenPrice": 59,
+      "seenEnd": "2027-01-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16461",
+      "seenPrice": 145,
+      "seenEnd": "2027-01-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16467",
+      "seenPrice": 159,
+      "seenEnd": "2027-01-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16466",
+      "seenPrice": 162,
+      "seenEnd": "2027-01-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16486",
+      "seenPrice": 138,
+      "seenEnd": "2027-01-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16298",
+      "seenPrice": 159,
+      "seenEnd": "2027-01-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16496",
+      "seenPrice": 355,
+      "seenEnd": "2027-01-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16488",
+      "seenPrice": 499,
+      "seenEnd": "2027-01-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16497",
+      "seenPrice": 319,
+      "seenEnd": "2027-01-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16605",
+      "seenPrice": 162,
+      "seenEnd": "2027-02-28",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16606",
+      "seenPrice": 162,
+      "seenEnd": "2027-02-28",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16835",
+      "seenPrice": 138,
+      "seenEnd": "2027-02-28",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16827",
+      "seenPrice": 159,
+      "seenEnd": "2027-02-28",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16834",
+      "seenPrice": 168,
+      "seenEnd": "2027-02-28",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16838",
+      "seenPrice": 89,
+      "seenEnd": "2027-02-28",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16833",
+      "seenPrice": 98,
+      "seenEnd": "2027-02-28",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16831",
+      "seenPrice": 210,
+      "seenEnd": "2027-02-28",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16826",
+      "seenPrice": 288,
+      "seenEnd": "2027-02-28",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16836",
+      "seenPrice": 388,
+      "seenEnd": "2027-02-28",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16837",
+      "seenPrice": 399,
+      "seenEnd": "2027-02-28",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16585",
+      "seenPrice": 179,
+      "seenEnd": "2027-03-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "26409",
+      "seenPrice": 568,
+      "seenEnd": "2027-03-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16575",
+      "seenPrice": 578,
+      "seenEnd": "2027-03-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "26410",
+      "seenPrice": 598,
+      "seenEnd": "2027-03-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16818",
+      "seenPrice": 245,
+      "seenEnd": "2027-03-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16779",
+      "seenPrice": 159,
+      "seenEnd": "2027-03-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16819",
+      "seenPrice": 268,
+      "seenEnd": "2027-03-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16817",
+      "seenPrice": 278,
+      "seenEnd": "2027-03-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16783",
+      "seenPrice": 599,
+      "seenEnd": "2027-03-31",
+      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
+      "source": "好康情報誌"
+    },
+    {
+      "code": "16217",
+      "seenPrice": 38,
+      "reason": "未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16222",
+      "seenPrice": 40,
+      "reason": "未識別品項：鱈魚圈圈；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16597",
+      "seenPrice": 42,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16083",
+      "seenPrice": 49,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16286",
+      "seenPrice": 49,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16770",
+      "seenPrice": 50,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26843",
+      "seenPrice": 54,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16219",
+      "seenPrice": 54,
+      "reason": "未識別品項：黃金超蝦塊；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26923",
+      "seenPrice": 55,
+      "reason": "未識別品項：玉米濃湯(小)",
+      "source": "KCouper"
+    },
+    {
+      "code": "26889",
+      "seenPrice": 59,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16126",
+      "seenPrice": 59,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16408",
+      "seenPrice": 59,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16416",
+      "seenPrice": 59,
+      "reason": "未識別品項：雙色轉轉QQ球",
+      "source": "KCouper"
+    },
+    {
+      "code": "16508",
+      "seenPrice": 59,
+      "reason": "未識別品項：雙色轉轉QQ球",
+      "source": "KCouper"
+    },
+    {
+      "code": "26890",
+      "seenPrice": 60,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16287",
+      "seenPrice": 62,
+      "reason": "未識別品項：花生起司蛋堡；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16446",
+      "seenPrice": 62,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16500",
+      "seenPrice": 63,
+      "reason": "未識別品項：4塊雞塊+小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16665",
+      "seenPrice": 64,
+      "reason": "未識別品項：草苺起司冰淇淋大福",
+      "source": "KCouper"
+    },
+    {
+      "code": "26498",
+      "seenPrice": 66,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26902",
+      "seenPrice": 66,
+      "reason": "未識別品項：4塊雞塊+小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16447",
+      "seenPrice": 69,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16501",
+      "seenPrice": 69,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16591",
+      "seenPrice": 69,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16595",
+      "seenPrice": 73,
+      "reason": "未識別品項：總匯歐姆蛋燒餅；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16498",
+      "seenPrice": 75,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16592",
+      "seenPrice": 75,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16593",
+      "seenPrice": 75,
+      "reason": "未識別品項：花生起司蛋堡；未識別品項：紅藜燕麥脆雞粥；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16033",
+      "seenPrice": 77,
+      "reason": "有額外加價口味選項；未識別品項：玉米濃湯(小)",
+      "source": "KCouper"
+    },
+    {
+      "code": "16442",
+      "seenPrice": 77,
+      "reason": "未識別品項：草苺起司冰淇淋大福；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16059",
+      "seenPrice": 78,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16323",
+      "seenPrice": 78,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16596",
+      "seenPrice": 78,
+      "reason": "未識別品項：紅藜燕麥脆雞粥；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16284",
+      "seenPrice": 79,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16292",
+      "seenPrice": 79,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16308",
+      "seenPrice": 79,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16314",
+      "seenPrice": 79,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16319",
+      "seenPrice": 79,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16333",
+      "seenPrice": 79,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16340",
+      "seenPrice": 79,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16390",
+      "seenPrice": 79,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16478",
+      "seenPrice": 79,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16495",
+      "seenPrice": 79,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16509",
+      "seenPrice": 79,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16524",
+      "seenPrice": 79,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26994",
+      "seenPrice": 80,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16098",
+      "seenPrice": 80,
+      "reason": "未識別品項：玉米濃湯(小)",
+      "source": "KCouper"
+    },
+    {
+      "code": "16398",
+      "seenPrice": 80,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16702",
+      "seenPrice": 80,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16242",
+      "seenPrice": 81,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16455",
+      "seenPrice": 82,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16106",
+      "seenPrice": 83,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16289",
+      "seenPrice": 83,
+      "reason": "未識別品項：總匯歐姆蛋燒餅；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26903",
+      "seenPrice": 84,
+      "reason": "未識別品項：草苺起司冰淇淋大福；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26905",
+      "seenPrice": 84,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26858",
+      "seenPrice": 85,
+      "reason": "未識別品項：玉米濃湯(小)",
+      "source": "KCouper"
+    },
+    {
+      "code": "26918",
+      "seenPrice": 85,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26939",
+      "seenPrice": 85,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16082",
+      "seenPrice": 85,
+      "reason": "未識別品項：總匯歐姆蛋燒餅；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16251",
+      "seenPrice": 85,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16484",
+      "seenPrice": 85,
+      "reason": "未識別品項：草苺起司冰淇淋大福；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16504",
+      "seenPrice": 85,
+      "reason": "未識別品項：草苺起司冰淇淋大福；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16594",
+      "seenPrice": 85,
+      "reason": "未識別品項：吮指脆雞燒餅；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16787",
+      "seenPrice": 85,
+      "reason": "未識別品項：玉米濃湯(小)",
+      "source": "KCouper"
+    },
+    {
+      "code": "26406",
+      "seenPrice": 88,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26497",
+      "seenPrice": 88,
+      "reason": "未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16057",
+      "seenPrice": 88,
+      "reason": "未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16134",
+      "seenPrice": 88,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16150",
+      "seenPrice": 88,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16154",
+      "seenPrice": 88,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16173",
+      "seenPrice": 88,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16239",
+      "seenPrice": 88,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16245",
+      "seenPrice": 88,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16285",
+      "seenPrice": 88,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16433",
+      "seenPrice": 88,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16444",
+      "seenPrice": 88,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16482",
+      "seenPrice": 88,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16822",
+      "seenPrice": 88,
+      "reason": "未識別品項：玉米濃湯(小)",
+      "source": "KCouper"
+    },
+    {
+      "code": "26792",
+      "seenPrice": 89,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "50475",
+      "seenPrice": 89,
+      "reason": "品項名稱或數量不明",
+      "source": "KCouper"
+    },
+    {
+      "code": "16290",
+      "seenPrice": 89,
+      "reason": "未識別品項：紅藜燕麥脆雞粥；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16389",
+      "seenPrice": 89,
+      "reason": "有額外加價口味選項；未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16445",
+      "seenPrice": 89,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16448",
+      "seenPrice": 89,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16468",
+      "seenPrice": 89,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16472",
+      "seenPrice": 89,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16473",
+      "seenPrice": 89,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16607",
+      "seenPrice": 89,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16634",
+      "seenPrice": 89,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16669",
+      "seenPrice": 89,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16709",
+      "seenPrice": 89,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16471",
+      "seenPrice": 92,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26861",
+      "seenPrice": 94,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16400",
+      "seenPrice": 94,
+      "reason": "未識別品項：草苺起司冰淇淋大福；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16288",
+      "seenPrice": 96,
+      "reason": "未識別品項：吮指脆雞燒餅；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16477",
+      "seenPrice": 97,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16782",
+      "seenPrice": 97,
+      "reason": "有額外加價口味選項；未識別品項：玉米濃湯(小)",
+      "source": "KCouper"
+    },
+    {
+      "code": "16815",
+      "seenPrice": 97,
+      "reason": "大/中薯不可替代小薯；未識別品項：玉米濃湯(小)",
+      "source": "KCouper"
+    },
+    {
+      "code": "16081",
+      "seenPrice": 98,
+      "reason": "未識別品項：吮指脆雞燒餅；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16786",
+      "seenPrice": 98,
+      "reason": "大/中薯不可替代小薯；未識別品項：玉米濃湯(小)",
+      "source": "KCouper"
+    },
+    {
+      "code": "26382",
+      "seenPrice": 99,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26649",
+      "seenPrice": 99,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26931",
+      "seenPrice": 99,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16253",
+      "seenPrice": 99,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16321",
+      "seenPrice": 99,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16367",
+      "seenPrice": 99,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16369",
+      "seenPrice": 99,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16480",
+      "seenPrice": 99,
+      "reason": "未識別品項：紅藜燕麥脆雞粥；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16654",
+      "seenPrice": 99,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16717",
+      "seenPrice": 99,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16730",
+      "seenPrice": 99,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16744",
+      "seenPrice": 99,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16760",
+      "seenPrice": 99,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16793",
+      "seenPrice": 99,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26851",
+      "seenPrice": 100,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26876",
+      "seenPrice": 100,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16099",
+      "seenPrice": 100,
+      "reason": "大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16241",
+      "seenPrice": 100,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16247",
+      "seenPrice": 100,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16564",
+      "seenPrice": 100,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16570",
+      "seenPrice": 100,
+      "reason": "大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16077",
+      "seenPrice": 103,
+      "reason": "未識別品項：花生起司蛋堡；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16614",
+      "seenPrice": 103,
+      "reason": "有額外加價口味選項；未識別品項：黃金超蝦塊；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16615",
+      "seenPrice": 103,
+      "reason": "有額外加價口味選項；未識別品項：草苺起司冰淇淋大福；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "50512",
+      "seenPrice": 105,
+      "reason": "品項名稱或數量不明；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16080",
+      "seenPrice": 105,
+      "reason": "未識別品項：總匯歐姆蛋燒餅；未識別品項：紅藜燕麥脆雞粥；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16255",
+      "seenPrice": 105,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16331",
+      "seenPrice": 105,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16375",
+      "seenPrice": 105,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16526",
+      "seenPrice": 105,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16799",
+      "seenPrice": 105,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26466",
+      "seenPrice": 106,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16252",
+      "seenPrice": 106,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26838",
+      "seenPrice": 108,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16363",
+      "seenPrice": 108,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16441",
+      "seenPrice": 108,
+      "reason": "大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16651",
+      "seenPrice": 108,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26465",
+      "seenPrice": 109,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26641",
+      "seenPrice": 109,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26764",
+      "seenPrice": 109,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16254",
+      "seenPrice": 109,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16291",
+      "seenPrice": 109,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16365",
+      "seenPrice": 109,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16376",
+      "seenPrice": 109,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16384",
+      "seenPrice": 109,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16449",
+      "seenPrice": 109,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16551",
+      "seenPrice": 109,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16558",
+      "seenPrice": 109,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16573",
+      "seenPrice": 109,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16576",
+      "seenPrice": 109,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16589",
+      "seenPrice": 109,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16590",
+      "seenPrice": 109,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16617",
+      "seenPrice": 109,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16652",
+      "seenPrice": 109,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16653",
+      "seenPrice": 109,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16679",
+      "seenPrice": 109,
+      "reason": "未識別品項：草苺起司冰淇淋大福；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16731",
+      "seenPrice": 109,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16746",
+      "seenPrice": 109,
+      "reason": "未識別品項：草苺起司冰淇淋大福；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16784",
+      "seenPrice": 109,
+      "reason": "未識別品項：玉米濃湯(小)",
+      "source": "KCouper"
+    },
+    {
+      "code": "16810",
+      "seenPrice": 109,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16821",
+      "seenPrice": 109,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26844",
+      "seenPrice": 110,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26943",
+      "seenPrice": 110,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16034",
+      "seenPrice": 110,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16107",
+      "seenPrice": 110,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16163",
+      "seenPrice": 110,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16175",
+      "seenPrice": 110,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16183",
+      "seenPrice": 110,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16190",
+      "seenPrice": 110,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16191",
+      "seenPrice": 110,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16196",
+      "seenPrice": 110,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16198",
+      "seenPrice": 110,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16199",
+      "seenPrice": 110,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16233",
+      "seenPrice": 110,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16278",
+      "seenPrice": 110,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16297",
+      "seenPrice": 110,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16299",
+      "seenPrice": 110,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16579",
+      "seenPrice": 110,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16806",
+      "seenPrice": 110,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26771",
+      "seenPrice": 111,
+      "reason": "未識別品項：玉米濃湯(小)",
+      "source": "KCouper"
+    },
+    {
+      "code": "26988",
+      "seenPrice": 111,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16004",
+      "seenPrice": 111,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16078",
+      "seenPrice": 111,
+      "reason": "未識別品項：紅藜燕麥脆雞粥；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16353",
+      "seenPrice": 111,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16454",
+      "seenPrice": 111,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16492",
+      "seenPrice": 111,
+      "reason": "有額外加價口味選項；未識別品項：4塊雞塊+小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16610",
+      "seenPrice": 111,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16611",
+      "seenPrice": 111,
+      "reason": "有額外加價口味選項；未識別品項：4塊雞塊+小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26810",
+      "seenPrice": 115,
+      "reason": "未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16176",
+      "seenPrice": 115,
+      "reason": "未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16184",
+      "seenPrice": 115,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16188",
+      "seenPrice": 115,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16373",
+      "seenPrice": 115,
+      "reason": "未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16450",
+      "seenPrice": 115,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16523",
+      "seenPrice": 115,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16762",
+      "seenPrice": 115,
+      "reason": "未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16528",
+      "seenPrice": 117,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26986",
+      "seenPrice": 118,
+      "reason": "未識別品項：4塊雞塊+小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16008",
+      "seenPrice": 118,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16440",
+      "seenPrice": 118,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16039",
+      "seenPrice": 119,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16230",
+      "seenPrice": 119,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16481",
+      "seenPrice": 119,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16581",
+      "seenPrice": 119,
+      "reason": "未識別品項：鱈魚圈圈；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16655",
+      "seenPrice": 119,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26774",
+      "seenPrice": 120,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16470",
+      "seenPrice": 120,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16613",
+      "seenPrice": 120,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16750",
+      "seenPrice": 120,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16785",
+      "seenPrice": 120,
+      "reason": "未識別品項：玉米濃湯(小)",
+      "source": "KCouper"
+    },
+    {
+      "code": "26865",
+      "seenPrice": 122,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26912",
+      "seenPrice": 122,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16302",
+      "seenPrice": 122,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16775",
+      "seenPrice": 122,
+      "reason": "有額外加價口味選項；未識別品項：玉米濃湯(小)",
+      "source": "KCouper"
+    },
+    {
+      "code": "16436",
+      "seenPrice": 123,
+      "reason": "未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "50513",
+      "seenPrice": 124,
+      "reason": "有額外加價口味選項；品項名稱或數量不明；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16517",
+      "seenPrice": 124,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "15730",
+      "seenPrice": 125,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16229",
+      "seenPrice": 125,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16250",
+      "seenPrice": 125,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16519",
+      "seenPrice": 125,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16580",
+      "seenPrice": 125,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16676",
+      "seenPrice": 125,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16710",
+      "seenPrice": 125,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)",
+      "source": "KCouper"
+    },
+    {
+      "code": "16210",
+      "seenPrice": 126,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16790",
+      "seenPrice": 126,
+      "reason": "有額外加價口味選項；未識別品項：玉米濃湯(小)",
+      "source": "KCouper"
+    },
+    {
+      "code": "26987",
+      "seenPrice": 127,
+      "reason": "未識別品項：4塊雞塊+小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16161",
+      "seenPrice": 128,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16569",
+      "seenPrice": 128,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16820",
+      "seenPrice": 128,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26930",
+      "seenPrice": 129,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "50514",
+      "seenPrice": 129,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16079",
+      "seenPrice": 129,
+      "reason": "未識別品項：吮指脆雞燒餅；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16328",
+      "seenPrice": 129,
+      "reason": "未識別品項：黃金超蝦塊；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16351",
+      "seenPrice": 129,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16372",
+      "seenPrice": 129,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16421",
+      "seenPrice": 129,
+      "reason": "未識別品項：草苺起司冰淇淋大福；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16567",
+      "seenPrice": 129,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16657",
+      "seenPrice": 129,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26831",
+      "seenPrice": 130,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26845",
+      "seenPrice": 130,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16003",
+      "seenPrice": 130,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16007",
+      "seenPrice": 130,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16017",
+      "seenPrice": 130,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16095",
+      "seenPrice": 130,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16127",
+      "seenPrice": 130,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16128",
+      "seenPrice": 130,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16132",
+      "seenPrice": 130,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16157",
+      "seenPrice": 130,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16185",
+      "seenPrice": 130,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16237",
+      "seenPrice": 130,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16677",
+      "seenPrice": 130,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16691",
+      "seenPrice": 130,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16698",
+      "seenPrice": 130,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16711",
+      "seenPrice": 130,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16474",
+      "seenPrice": 131,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16609",
+      "seenPrice": 131,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16279",
+      "seenPrice": 132,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26773",
+      "seenPrice": 133,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26775",
+      "seenPrice": 133,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26811",
+      "seenPrice": 133,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26815",
+      "seenPrice": 133,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26825",
+      "seenPrice": 133,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26826",
+      "seenPrice": 133,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26866",
+      "seenPrice": 133,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26898",
+      "seenPrice": 133,
+      "reason": "大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26913",
+      "seenPrice": 133,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26965",
+      "seenPrice": 133,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16064",
+      "seenPrice": 133,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16067",
+      "seenPrice": 133,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16096",
+      "seenPrice": 133,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16100",
+      "seenPrice": 133,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16201",
+      "seenPrice": 133,
+      "reason": "有額外加價口味選項；未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16202",
+      "seenPrice": 133,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16205",
+      "seenPrice": 133,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16223",
+      "seenPrice": 133,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16434",
+      "seenPrice": 133,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16535",
+      "seenPrice": 133,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16559",
+      "seenPrice": 133,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16674",
+      "seenPrice": 133,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16685",
+      "seenPrice": 133,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16690",
+      "seenPrice": 133,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26809",
+      "seenPrice": 134,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26817",
+      "seenPrice": 134,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26500",
+      "seenPrice": 135,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26776",
+      "seenPrice": 135,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26816",
+      "seenPrice": 135,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26819",
+      "seenPrice": 135,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26820",
+      "seenPrice": 135,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26827",
+      "seenPrice": 135,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26829",
+      "seenPrice": 135,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26922",
+      "seenPrice": 135,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "40610",
+      "seenPrice": 135,
+      "reason": "有額外加價口味選項；品項名稱或數量不明；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16044",
+      "seenPrice": 135,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16046",
+      "seenPrice": 135,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16068",
+      "seenPrice": 135,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16174",
+      "seenPrice": 135,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16240",
+      "seenPrice": 135,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16681",
+      "seenPrice": 135,
+      "reason": "大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16748",
+      "seenPrice": 135,
+      "reason": "大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16751",
+      "seenPrice": 135,
+      "reason": "大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16812",
+      "seenPrice": 135,
+      "reason": "大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16561",
+      "seenPrice": 136,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26504",
+      "seenPrice": 138,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26945",
+      "seenPrice": 138,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16041",
+      "seenPrice": 138,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16045",
+      "seenPrice": 138,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16123",
+      "seenPrice": 138,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16505",
+      "seenPrice": 138,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16529",
+      "seenPrice": 138,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16536",
+      "seenPrice": 138,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16568",
+      "seenPrice": 138,
+      "reason": "未識別品項：4塊雞塊+小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16588",
+      "seenPrice": 138,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16650",
+      "seenPrice": 138,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16776",
+      "seenPrice": 138,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26648",
+      "seenPrice": 139,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16234",
+      "seenPrice": 139,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16281",
+      "seenPrice": 139,
+      "reason": "有額外加價口味選項；未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16295",
+      "seenPrice": 139,
+      "reason": "有額外加價口味選項；未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16329",
+      "seenPrice": 139,
+      "reason": "有額外加價口味選項；未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16330",
+      "seenPrice": 139,
+      "reason": "有額外加價口味選項；未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16397",
+      "seenPrice": 139,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16493",
+      "seenPrice": 139,
+      "reason": "未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16546",
+      "seenPrice": 139,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16548",
+      "seenPrice": 139,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16552",
+      "seenPrice": 139,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16554",
+      "seenPrice": 139,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16557",
+      "seenPrice": 139,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16572",
+      "seenPrice": 139,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16636",
+      "seenPrice": 139,
+      "reason": "未識別品項：4塊雞塊+小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16656",
+      "seenPrice": 139,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16670",
+      "seenPrice": 139,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16673",
+      "seenPrice": 139,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16675",
+      "seenPrice": 139,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16683",
+      "seenPrice": 139,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16686",
+      "seenPrice": 139,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16694",
+      "seenPrice": 139,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26926",
+      "seenPrice": 140,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16729",
+      "seenPrice": 140,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16301",
+      "seenPrice": 141,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16667",
+      "seenPrice": 141,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26919",
+      "seenPrice": 142,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16037",
+      "seenPrice": 142,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26808",
+      "seenPrice": 145,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26924",
+      "seenPrice": 145,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26954",
+      "seenPrice": 145,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16118",
+      "seenPrice": 145,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16177",
+      "seenPrice": 145,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16209",
+      "seenPrice": 145,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16226",
+      "seenPrice": 145,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16336",
+      "seenPrice": 145,
+      "reason": "未識別品項：4塊雞塊+小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16338",
+      "seenPrice": 145,
+      "reason": "未識別品項：4塊雞塊+小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16407",
+      "seenPrice": 145,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16462",
+      "seenPrice": 145,
+      "reason": "有額外加價口味選項；未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16566",
+      "seenPrice": 145,
+      "reason": "大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16042",
+      "seenPrice": 146,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16841",
+      "seenPrice": 146,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26927",
+      "seenPrice": 147,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16453",
+      "seenPrice": 147,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26761",
+      "seenPrice": 149,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26772",
+      "seenPrice": 149,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26790",
+      "seenPrice": 149,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26850",
+      "seenPrice": 149,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26942",
+      "seenPrice": 149,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26946",
+      "seenPrice": 149,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16357",
+      "seenPrice": 149,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16583",
+      "seenPrice": 149,
+      "reason": "未識別品項：黃金超蝦塊；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16635",
+      "seenPrice": 149,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16684",
+      "seenPrice": 149,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16759",
+      "seenPrice": 149,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16761",
+      "seenPrice": 149,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26765",
+      "seenPrice": 150,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26901",
+      "seenPrice": 150,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16225",
+      "seenPrice": 150,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16525",
+      "seenPrice": 150,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16213",
+      "seenPrice": 152,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16494",
+      "seenPrice": 154,
+      "reason": "未識別品項：黃金超蝦塊；未識別品項：鱈魚圈圈；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26496",
+      "seenPrice": 155,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16121",
+      "seenPrice": 155,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16584",
+      "seenPrice": 155,
+      "reason": "未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16640",
+      "seenPrice": 155,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16792",
+      "seenPrice": 155,
+      "reason": "未識別品項：蒜香白醬脆雞飯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16151",
+      "seenPrice": 156,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16622",
+      "seenPrice": 156,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16625",
+      "seenPrice": 156,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16727",
+      "seenPrice": 156,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16743",
+      "seenPrice": 156,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26958",
+      "seenPrice": 158,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16439",
+      "seenPrice": 158,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16587",
+      "seenPrice": 158,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16616",
+      "seenPrice": 158,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16620",
+      "seenPrice": 158,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16724",
+      "seenPrice": 158,
+      "reason": "未識別品項：草苺起司冰淇淋大福",
+      "source": "KCouper"
+    },
+    {
+      "code": "16733",
+      "seenPrice": 158,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16734",
+      "seenPrice": 158,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16735",
+      "seenPrice": 158,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26940",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26963",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26964",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26971",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26979",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "50515",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)；品項名稱或數量不明；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16010",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16016",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16018",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16073",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16110",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16193",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16232",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16316",
+      "seenPrice": 159,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16342",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16383",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16387",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16457",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16463",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16491",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16553",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16608",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16637",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16641",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16661",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16689",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16764",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16766",
+      "seenPrice": 159,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16805",
+      "seenPrice": 159,
+      "reason": "未識別品項：青花椒醬脆雞飯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16811",
+      "seenPrice": 159,
+      "reason": "未識別品項：蒜香白醬脆雞飯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16104",
+      "seenPrice": 160,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16124",
+      "seenPrice": 160,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16556",
+      "seenPrice": 160,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16705",
+      "seenPrice": 160,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16728",
+      "seenPrice": 160,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16148",
+      "seenPrice": 161,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16160",
+      "seenPrice": 161,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26823",
+      "seenPrice": 162,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26830",
+      "seenPrice": 162,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26900",
+      "seenPrice": 162,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16038",
+      "seenPrice": 162,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16465",
+      "seenPrice": 162,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16197",
+      "seenPrice": 163,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16207",
+      "seenPrice": 163,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16456",
+      "seenPrice": 163,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16458",
+      "seenPrice": 165,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16460",
+      "seenPrice": 165,
+      "reason": "有額外加價口味選項；未識別品項：黃金超蝦塊；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16816",
+      "seenPrice": 165,
+      "reason": "未識別品項：蒜香白醬脆雞飯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26822",
+      "seenPrice": 166,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26828",
+      "seenPrice": 166,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26959",
+      "seenPrice": 168,
+      "reason": "有額外加價口味選項；未識別品項：4塊雞塊+小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26995",
+      "seenPrice": 168,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16035",
+      "seenPrice": 168,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16156",
+      "seenPrice": 168,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16187",
+      "seenPrice": 168,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16550",
+      "seenPrice": 168,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16582",
+      "seenPrice": 168,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16612",
+      "seenPrice": 168,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16627",
+      "seenPrice": 168,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16682",
+      "seenPrice": 168,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16765",
+      "seenPrice": 168,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "40680",
+      "seenPrice": 169,
+      "reason": "有額外加價口味選項；品項名稱或數量不明；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16438",
+      "seenPrice": 169,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16459",
+      "seenPrice": 169,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16513",
+      "seenPrice": 169,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16633",
+      "seenPrice": 169,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；未識別品項：4塊雞塊+小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16773",
+      "seenPrice": 169,
+      "reason": "有額外加價口味選項；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16087",
+      "seenPrice": 170,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26920",
+      "seenPrice": 172,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16009",
+      "seenPrice": 172,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16072",
+      "seenPrice": 172,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16109",
+      "seenPrice": 172,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16103",
+      "seenPrice": 178,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16114",
+      "seenPrice": 178,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16117",
+      "seenPrice": 178,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16129",
+      "seenPrice": 178,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16133",
+      "seenPrice": 178,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16142",
+      "seenPrice": 178,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16668",
+      "seenPrice": 178,
+      "reason": "有額外加價口味選項；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26386",
+      "seenPrice": 179,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16687",
+      "seenPrice": 179,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16695",
+      "seenPrice": 179,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16848",
+      "seenPrice": 179,
+      "reason": "未識別品項：黃金超蝦塊；未識別品項：鱈魚圈圈；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26503",
+      "seenPrice": 180,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16021",
+      "seenPrice": 180,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16085",
+      "seenPrice": 180,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16094",
+      "seenPrice": 180,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16101",
+      "seenPrice": 180,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16054",
+      "seenPrice": 182,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16162",
+      "seenPrice": 182,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16215",
+      "seenPrice": 183,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16763",
+      "seenPrice": 187,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26502",
+      "seenPrice": 188,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26977",
+      "seenPrice": 188,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項；未識別品項：玉米濃湯(小)",
+      "source": "KCouper"
+    },
+    {
+      "code": "16012",
+      "seenPrice": 188,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項；未識別品項：玉米濃湯(小)",
+      "source": "KCouper"
+    },
+    {
+      "code": "16075",
+      "seenPrice": 188,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16159",
+      "seenPrice": 188,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項；未識別品項：玉米濃湯(小)",
+      "source": "KCouper"
+    },
+    {
+      "code": "16165",
+      "seenPrice": 188,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16339",
+      "seenPrice": 188,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16341",
+      "seenPrice": 188,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16435",
+      "seenPrice": 188,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16304",
+      "seenPrice": 189,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16464",
+      "seenPrice": 189,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16089",
+      "seenPrice": 192,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16303",
+      "seenPrice": 192,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26947",
+      "seenPrice": 195,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16738",
+      "seenPrice": 196,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26404",
+      "seenPrice": 198,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26960",
+      "seenPrice": 198,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26383",
+      "seenPrice": 199,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26505",
+      "seenPrice": 199,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16663",
+      "seenPrice": 200,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16141",
+      "seenPrice": 202,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16739",
+      "seenPrice": 207,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16502",
+      "seenPrice": 209,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16503",
+      "seenPrice": 209,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16084",
+      "seenPrice": 210,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16578",
+      "seenPrice": 212,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16789",
+      "seenPrice": 216,
+      "reason": "未識別品項：黃金超蝦塊；未識別品項：鱈魚圈圈；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯；未識別品項：玉米濃湯(小)",
+      "source": "KCouper"
+    },
+    {
+      "code": "16317",
+      "seenPrice": 217,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16360",
+      "seenPrice": 217,
+      "reason": "未識別品項：雙色轉轉QQ球",
+      "source": "KCouper"
+    },
+    {
+      "code": "16475",
+      "seenPrice": 217,
+      "reason": "未識別品項：雙色轉轉QQ球",
+      "source": "KCouper"
+    },
+    {
+      "code": "16753",
+      "seenPrice": 219,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16224",
+      "seenPrice": 222,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16737",
+      "seenPrice": 222,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26464",
+      "seenPrice": 225,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16345",
+      "seenPrice": 225,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16798",
+      "seenPrice": 225,
+      "reason": "有額外加價口味選項；未識別品項：青花椒醬脆雞飯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26405",
+      "seenPrice": 228,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16794",
+      "seenPrice": 229,
+      "reason": "未識別品項：玉米濃湯(小)",
+      "source": "KCouper"
+    },
+    {
+      "code": "16203",
+      "seenPrice": 233,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16228",
+      "seenPrice": 233,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16707",
+      "seenPrice": 235,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16603",
+      "seenPrice": 243,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16740",
+      "seenPrice": 245,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16745",
+      "seenPrice": 245,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16490",
+      "seenPrice": 248,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26992",
+      "seenPrice": 249,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16410",
+      "seenPrice": 249,
+      "reason": "未識別品項：草苺起司冰淇淋大福",
+      "source": "KCouper"
+    },
+    {
+      "code": "16542",
+      "seenPrice": 250,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16415",
+      "seenPrice": 252,
+      "reason": "未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16767",
+      "seenPrice": 252,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16666",
+      "seenPrice": 253,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26824",
+      "seenPrice": 254,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16056",
+      "seenPrice": 255,
+      "reason": "未識別品項：雙色轉轉QQ球",
+      "source": "KCouper"
+    },
+    {
+      "code": "16272",
+      "seenPrice": 255,
+      "reason": "未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16671",
+      "seenPrice": 255,
+      "reason": "未識別品項：草苺起司冰淇淋大福",
+      "source": "KCouper"
+    },
+    {
+      "code": "16780",
+      "seenPrice": 255,
+      "reason": "未識別品項：蒜香白醬脆雞飯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16703",
+      "seenPrice": 256,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26766",
+      "seenPrice": 259,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16343",
+      "seenPrice": 259,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16344",
+      "seenPrice": 259,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16300",
+      "seenPrice": 262,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16642",
+      "seenPrice": 263,
+      "reason": "未識別品項：4塊雞塊+小薯",
+      "source": "KCouper"
+    },
+    {
+      "code": "26928",
+      "seenPrice": 265,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16271",
+      "seenPrice": 265,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16577",
+      "seenPrice": 265,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26925",
+      "seenPrice": 266,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16539",
+      "seenPrice": 267,
+      "reason": "有額外加價口味選項；未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26387",
+      "seenPrice": 269,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26499",
+      "seenPrice": 269,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "50508",
+      "seenPrice": 269,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16086",
+      "seenPrice": 269,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16476",
+      "seenPrice": 269,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16678",
+      "seenPrice": 269,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16699",
+      "seenPrice": 269,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26854",
+      "seenPrice": 270,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16370",
+      "seenPrice": 272,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26818",
+      "seenPrice": 277,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26856",
+      "seenPrice": 277,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16638",
+      "seenPrice": 277,
+      "reason": "未識別品項：黃金超蝦塊；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16422",
+      "seenPrice": 278,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "50510",
+      "seenPrice": 279,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16538",
+      "seenPrice": 279,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16428",
+      "seenPrice": 282,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26846",
+      "seenPrice": 283,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16062",
+      "seenPrice": 285,
+      "reason": "未識別品項：玉米濃湯(小)",
+      "source": "KCouper"
+    },
+    {
+      "code": "16361",
+      "seenPrice": 285,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16102",
+      "seenPrice": 288,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16105",
+      "seenPrice": 288,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16122",
+      "seenPrice": 288,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16135",
+      "seenPrice": 288,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16166",
+      "seenPrice": 288,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16167",
+      "seenPrice": 288,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16170",
+      "seenPrice": 288,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16236",
+      "seenPrice": 288,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16385",
+      "seenPrice": 288,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16417",
+      "seenPrice": 288,
+      "reason": "有額外加價口味選項；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16423",
+      "seenPrice": 288,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16544",
+      "seenPrice": 288,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16547",
+      "seenPrice": 288,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16555",
+      "seenPrice": 288,
+      "reason": "有額外加價口味選項；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16560",
+      "seenPrice": 288,
+      "reason": "有額外加價口味選項；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16639",
+      "seenPrice": 288,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16749",
+      "seenPrice": 288,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16755",
+      "seenPrice": 288,
+      "reason": "有額外加價口味選項；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16772",
+      "seenPrice": 288,
+      "reason": "有額外加價口味選項；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "50511",
+      "seenPrice": 289,
+      "reason": "有額外加價口味選項；品項名稱或數量不明；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16194",
+      "seenPrice": 289,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16419",
+      "seenPrice": 289,
+      "reason": "有額外加價口味選項；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16424",
+      "seenPrice": 289,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16425",
+      "seenPrice": 289,
+      "reason": "有額外加價口味選項；未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16426",
+      "seenPrice": 289,
+      "reason": "有額外加價口味選項；未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16427",
+      "seenPrice": 289,
+      "reason": "有額外加價口味選項；未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16857",
+      "seenPrice": 289,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16061",
+      "seenPrice": 290,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16803",
+      "seenPrice": 290,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16144",
+      "seenPrice": 292,
+      "reason": "未識別品項：青花椒醬脆雞飯；有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16479",
+      "seenPrice": 292,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16499",
+      "seenPrice": 292,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16506",
+      "seenPrice": 292,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26857",
+      "seenPrice": 295,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26864",
+      "seenPrice": 296,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16318",
+      "seenPrice": 298,
+      "reason": "有額外加價口味選項；未識別品項：黃金超蝦塊；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16406",
+      "seenPrice": 298,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16437",
+      "seenPrice": 298,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16649",
+      "seenPrice": 298,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16713",
+      "seenPrice": 298,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26384",
+      "seenPrice": 299,
+      "reason": "有額外加價口味選項；未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26763",
+      "seenPrice": 299,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "50509",
+      "seenPrice": 299,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "50537",
+      "seenPrice": 299,
+      "reason": "未識別品項：南洋酸甜醬(大)；未識別品項：BBQ煙燻醬(大)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16282",
+      "seenPrice": 299,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16293",
+      "seenPrice": 299,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16309",
+      "seenPrice": 299,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16356",
+      "seenPrice": 299,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16364",
+      "seenPrice": 299,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16414",
+      "seenPrice": 299,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16545",
+      "seenPrice": 299,
+      "reason": "有額外加價口味選項；未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16680",
+      "seenPrice": 299,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16736",
+      "seenPrice": 299,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16747",
+      "seenPrice": 299,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16791",
+      "seenPrice": 299,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16797",
+      "seenPrice": 299,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16725",
+      "seenPrice": 300,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16726",
+      "seenPrice": 300,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26821",
+      "seenPrice": 303,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16754",
+      "seenPrice": 305,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16404",
+      "seenPrice": 306,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16788",
+      "seenPrice": 308,
+      "reason": "有額外加價口味選項；未識別品項：玉米濃湯(小)",
+      "source": "KCouper"
+    },
+    {
+      "code": "16146",
+      "seenPrice": 315,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16795",
+      "seenPrice": 327,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；未識別品項：青花椒醬脆雞飯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16065",
+      "seenPrice": 333,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16116",
+      "seenPrice": 333,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16276",
+      "seenPrice": 333,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16507",
+      "seenPrice": 333,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16704",
+      "seenPrice": 333,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16813",
+      "seenPrice": 335,
+      "reason": "有額外加價口味選項；未識別品項：青花椒醬脆雞飯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16235",
+      "seenPrice": 338,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16306",
+      "seenPrice": 343,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26962",
+      "seenPrice": 350,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26967",
+      "seenPrice": 350,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16052",
+      "seenPrice": 350,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16055",
+      "seenPrice": 350,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16405",
+      "seenPrice": 350,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16540",
+      "seenPrice": 350,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16732",
+      "seenPrice": 350,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16778",
+      "seenPrice": 350,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項；未識別品項：玉米濃湯(小)",
+      "source": "KCouper"
+    },
+    {
+      "code": "26969",
+      "seenPrice": 355,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16352",
+      "seenPrice": 355,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16543",
+      "seenPrice": 358,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16355",
+      "seenPrice": 359,
+      "reason": "有額外加價口味選項；未識別品項：黃金超蝦塊；未識別品項：鱈魚圈圈；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16715",
+      "seenPrice": 359,
+      "reason": "有額外加價口味選項；未識別品項：4塊雞塊+小薯",
+      "source": "KCouper"
+    },
+    {
+      "code": "16231",
+      "seenPrice": 362,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16147",
+      "seenPrice": 365,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)",
+      "source": "KCouper"
+    },
+    {
+      "code": "26957",
+      "seenPrice": 368,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16208",
+      "seenPrice": 368,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16211",
+      "seenPrice": 368,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16334",
+      "seenPrice": 368,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16418",
+      "seenPrice": 368,
+      "reason": "有額外加價口味選項；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16618",
+      "seenPrice": 368,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16621",
+      "seenPrice": 368,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26495",
+      "seenPrice": 369,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26506",
+      "seenPrice": 369,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26893",
+      "seenPrice": 369,
+      "reason": "有額外加價口味選項；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26970",
+      "seenPrice": 369,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16273",
+      "seenPrice": 369,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16274",
+      "seenPrice": 369,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16280",
+      "seenPrice": 369,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16294",
+      "seenPrice": 369,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16310",
+      "seenPrice": 369,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16313",
+      "seenPrice": 369,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16315",
+      "seenPrice": 369,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16322",
+      "seenPrice": 369,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16347",
+      "seenPrice": 369,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16348",
+      "seenPrice": 369,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16527",
+      "seenPrice": 379,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16537",
+      "seenPrice": 379,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16602",
+      "seenPrice": 379,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16742",
+      "seenPrice": 379,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16800",
+      "seenPrice": 380,
+      "reason": "有額外加價口味選項；未識別品項：青花椒醬飯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16155",
+      "seenPrice": 382,
+      "reason": "有額外加價口味選項；未識別品項：黃金超蝦塊；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26895",
+      "seenPrice": 385,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16483",
+      "seenPrice": 385,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26501",
+      "seenPrice": 386,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26767",
+      "seenPrice": 388,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26955",
+      "seenPrice": 388,
+      "reason": "有額外加價口味選項；未識別品項：黃金超蝦塊；未識別品項：鱈魚圈圈；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26961",
+      "seenPrice": 388,
+      "reason": "有額外加價口味選項；未識別品項：黃金超蝦塊；未識別品項：鱈魚圈圈；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26966",
+      "seenPrice": 388,
+      "reason": "有額外加價口味選項；未識別品項：黃金超蝦塊；未識別品項：鱈魚圈圈；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16066",
+      "seenPrice": 388,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16076",
+      "seenPrice": 388,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16130",
+      "seenPrice": 388,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16145",
+      "seenPrice": 388,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16149",
+      "seenPrice": 388,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16168",
+      "seenPrice": 388,
+      "reason": "未識別品項：草苺起司冰淇淋大福",
+      "source": "KCouper"
+    },
+    {
+      "code": "16169",
+      "seenPrice": 388,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)",
+      "source": "KCouper"
+    },
+    {
+      "code": "16171",
+      "seenPrice": 388,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)",
+      "source": "KCouper"
+    },
+    {
+      "code": "16172",
+      "seenPrice": 388,
+      "reason": "未識別品項：草苺起司冰淇淋大福",
+      "source": "KCouper"
+    },
+    {
+      "code": "16192",
+      "seenPrice": 388,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16227",
+      "seenPrice": 388,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16296",
+      "seenPrice": 388,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16451",
+      "seenPrice": 388,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16716",
+      "seenPrice": 388,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16186",
+      "seenPrice": 389,
+      "reason": "有額外加價口味選項；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16063",
+      "seenPrice": 398,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16131",
+      "seenPrice": 398,
+      "reason": "未識別品項：黃金超蝦塊；未識別品項：鱈魚圈圈；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26543",
+      "seenPrice": 399,
+      "reason": "有額外加價口味選項；未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26760",
+      "seenPrice": 399,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26777",
+      "seenPrice": 399,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26791",
+      "seenPrice": 399,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26867",
+      "seenPrice": 399,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26892",
+      "seenPrice": 399,
+      "reason": "有額外加價口味選項；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26894",
+      "seenPrice": 399,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26914",
+      "seenPrice": 399,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "50467",
+      "seenPrice": 399,
+      "reason": "有額外加價口味選項；大/中薯不可替代小薯；品項名稱或數量不明",
+      "source": "KCouper"
+    },
+    {
+      "code": "50476",
+      "seenPrice": 399,
+      "reason": "有額外加價口味選項；品項名稱或數量不明",
+      "source": "KCouper"
+    },
+    {
+      "code": "16409",
+      "seenPrice": 399,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16443",
+      "seenPrice": 399,
+      "reason": "未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯",
+      "source": "KCouper"
+    },
+    {
+      "code": "16485",
+      "seenPrice": 415,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16189",
+      "seenPrice": 419,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16574",
+      "seenPrice": 420,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16019",
+      "seenPrice": 425,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16022",
+      "seenPrice": 425,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16043",
+      "seenPrice": 425,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16047",
+      "seenPrice": 425,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16074",
+      "seenPrice": 425,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16108",
+      "seenPrice": 425,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16111",
+      "seenPrice": 425,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16115",
+      "seenPrice": 425,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16119",
+      "seenPrice": 425,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16195",
+      "seenPrice": 425,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16200",
+      "seenPrice": 425,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16354",
+      "seenPrice": 425,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16358",
+      "seenPrice": 425,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16320",
+      "seenPrice": 428,
+      "reason": "有額外加價口味選項；未識別品項：黃金超蝦塊；未識別品項：鱈魚圈圈；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16741",
+      "seenPrice": 433,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)",
+      "source": "KCouper"
+    },
+    {
+      "code": "16305",
+      "seenPrice": 438,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16204",
+      "seenPrice": 439,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16371",
+      "seenPrice": 439,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16379",
+      "seenPrice": 439,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16571",
+      "seenPrice": 440,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26941",
+      "seenPrice": 449,
+      "reason": "有額外加價口味選項；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26944",
+      "seenPrice": 449,
+      "reason": "有額外加價口味選項；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16823",
+      "seenPrice": 449,
+      "reason": "有額外加價口味選項；未識別品項：玉米濃湯(小)",
+      "source": "KCouper"
+    },
+    {
+      "code": "26899",
+      "seenPrice": 450,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項；未識別品項：黃金超蝦塊；未識別品項：鱈魚圈圈；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16664",
+      "seenPrice": 459,
+      "reason": "未識別品項：草苺起司冰淇淋大福",
+      "source": "KCouper"
+    },
+    {
+      "code": "16346",
+      "seenPrice": 469,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16332",
+      "seenPrice": 485,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16335",
+      "seenPrice": 485,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16337",
+      "seenPrice": 485,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16091",
+      "seenPrice": 489,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16327",
+      "seenPrice": 489,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16752",
+      "seenPrice": 489,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項；未識別品項：黃金超蝦塊；未識別品項：鱈魚圈圈；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16429",
+      "seenPrice": 498,
+      "reason": "有額外加價口味選項；未識別品項：黃金超蝦塊；未識別品項：鱈魚圈圈；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯",
+      "source": "KCouper"
+    },
+    {
+      "code": "16774",
+      "seenPrice": 498,
+      "reason": "有額外加價口味選項；未識別品項：黃金超蝦塊；未識別品項：鱈魚圈圈；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯",
+      "source": "KCouper"
+    },
+    {
+      "code": "16777",
+      "seenPrice": 498,
+      "reason": "有額外加價口味選項；未識別品項：黃金超蝦塊；未識別品項：鱈魚圈圈；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯",
+      "source": "KCouper"
+    },
+    {
+      "code": "16325",
+      "seenPrice": 499,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16326",
+      "seenPrice": 499,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16522",
+      "seenPrice": 499,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16814",
+      "seenPrice": 509,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16586",
+      "seenPrice": 528,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16396",
+      "seenPrice": 559,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)；未識別品項：黃金超蝦塊；未識別品項：鱈魚圈圈；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯",
+      "source": "KCouper"
+    },
+    {
+      "code": "26921",
+      "seenPrice": 568,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項；未識別品項：黃金超蝦塊；未識別品項：鱈魚圈圈；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16368",
+      "seenPrice": 568,
+      "reason": "有額外加價口味選項；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16562",
+      "seenPrice": 578,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26983",
+      "seenPrice": 580,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26993",
+      "seenPrice": 580,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16359",
+      "seenPrice": 588,
+      "reason": "有額外加價口味選項；未識別品項：黃金超蝦塊；未識別品項：鱈魚圈圈；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯",
+      "source": "KCouper"
+    },
+    {
+      "code": "16362",
+      "seenPrice": 588,
+      "reason": "有額外加價口味選項；未識別品項：黃金超蝦塊；未識別品項：鱈魚圈圈；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯",
+      "source": "KCouper"
+    },
+    {
+      "code": "16366",
+      "seenPrice": 588,
+      "reason": "有額外加價口味選項；未識別品項：黃金超蝦塊；未識別品項：鱈魚圈圈；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯",
+      "source": "KCouper"
+    },
+    {
+      "code": "16374",
+      "seenPrice": 588,
+      "reason": "有額外加價口味選項；未識別品項：黃金超蝦塊；未識別品項：鱈魚圈圈；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯",
+      "source": "KCouper"
+    },
+    {
+      "code": "16382",
+      "seenPrice": 588,
+      "reason": "有額外加價口味選項；未識別品項：黃金超蝦塊；未識別品項：鱈魚圈圈；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯",
+      "source": "KCouper"
+    },
+    {
+      "code": "16386",
+      "seenPrice": 588,
+      "reason": "有額外加價口味選項；未識別品項：黃金超蝦塊；未識別品項：鱈魚圈圈；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯",
+      "source": "KCouper"
+    },
+    {
+      "code": "16706",
+      "seenPrice": 589,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16036",
+      "seenPrice": 689,
+      "reason": "有額外加價口味選項；未識別品項：青花椒香麻脆雞(辣)；未識別品項：黃金超蝦塊；未識別品項：鱈魚圈圈；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16628",
+      "seenPrice": 899,
+      "reason": "有額外加價口味選項；大/中薯不可替代小薯；未識別品項：雙色轉轉QQ球",
+      "source": "KCouper"
+    },
+    {
+      "code": "16629",
+      "seenPrice": 899,
+      "reason": "有額外加價口味選項；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯",
+      "source": "KCouper"
+    },
+    {
+      "code": "16630",
+      "seenPrice": 899,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項；大/中薯不可替代小薯；未識別品項：雙色轉轉QQ球；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16631",
+      "seenPrice": 899,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16632",
+      "seenPrice": 899,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項；未識別品項：黃金超蝦塊；未識別品項：鱈魚圈圈；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯",
+      "source": "KCouper"
+    },
+    {
+      "code": "16771",
+      "seenPrice": 998,
+      "reason": "未識別品項：青花椒香麻脆雞(辣)；有額外加價口味選項；未識別品項：黃金超蝦塊；未識別品項：鱈魚圈圈；未識別品項：雙色轉轉QQ球；大/中薯不可替代小薯",
+      "source": "KCouper"
+    }
+  ],
+  "uncertainChanges": [
+    {
+      "code": "26859",
+      "reason": "來源餐點明細與已收錄內容不同，暫不改寫",
+      "oldItems": {
+        "nuggets": 4,
+        "tart": 1,
+        "drink": 1
+      },
+      "seenItems": {
+        "nuggets": 4,
+        "drink": 1
+      }
+    },
+    {
+      "code": "16221",
+      "seenPrice": 33,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16125",
+      "seenPrice": 50,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16218",
+      "seenPrice": 54,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26907",
+      "seenPrice": 58,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16850",
+      "seenPrice": 59,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16851",
+      "seenPrice": 79,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16388",
+      "seenPrice": 80,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16349",
+      "seenPrice": 99,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16720",
+      "seenPrice": 99,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26990",
+      "seenPrice": 110,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16721",
+      "seenPrice": 111,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16212",
+      "seenPrice": 126,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26853",
+      "seenPrice": 128,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26991",
+      "seenPrice": 130,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16858",
+      "seenPrice": 130,
+      "reason": "有額外加價口味選項；未識別品項：雙色轉轉QQ球",
+      "source": "KCouper"
+    },
+    {
+      "code": "16088",
+      "seenPrice": 133,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16845",
+      "seenPrice": 135,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26985",
+      "seenPrice": 139,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16839",
+      "seenPrice": 139,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26975",
+      "seenPrice": 141,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16842",
+      "seenPrice": 163,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16844",
+      "seenPrice": 167,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16840",
+      "seenPrice": 168,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16843",
+      "seenPrice": 169,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "50551",
+      "seenPrice": 175,
+      "reason": "有額外加價口味選項；品項名稱或數量不明；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16859",
+      "seenPrice": 189,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16828",
+      "seenPrice": 206,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16852",
+      "seenPrice": 219,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16854",
+      "seenPrice": 223,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16090",
+      "seenPrice": 232,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16849",
+      "seenPrice": 239,
+      "reason": "大/中薯不可替代小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16216",
+      "seenPrice": 244,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16853",
+      "seenPrice": 245,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26855",
+      "seenPrice": 250,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16855",
+      "seenPrice": 280,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26646",
+      "seenPrice": 288,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16846",
+      "seenPrice": 295,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16856",
+      "seenPrice": 299,
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26863",
+      "seenPrice": 302,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "50529",
+      "seenPrice": 333,
+      "reason": "有額外加價口味選項；品項名稱或數量不明",
+      "source": "KCouper"
+    }
+  ],
+  "approvedChanges": [
+    {
+      "code": "16220",
+      "field": "end",
+      "from": "2026-12-20",
+      "to": "2026-12-30",
+      "source": "KCouper"
+    },
+    {
+      "code": "16214",
+      "field": "end",
+      "from": "2026-12-20",
+      "to": "2026-12-30",
+      "source": "KCouper"
+    }
+  ],
+  "autoAddedCoupons": [
+    "26906",
+    "26910",
+    "26911",
+    "16413",
+    "16598",
+    "16599",
+    "26888",
+    "16801",
+    "16802",
+    "16804",
+    "26832",
+    "16659",
+    "16708",
+    "40670",
+    "50516",
+    "16430",
+    "50544",
+    "16796",
+    "16469",
+    "16712",
+    "16053",
+    "16324",
+    "16158",
+    "16097",
+    "16283",
+    "16624",
+    "16658",
+    "16714",
+    "16832",
+    "16311",
+    "16312",
+    "26952",
+    "26385",
+    "16688",
+    "16693",
+    "26953",
+    "16563",
+    "16565",
+    "16646",
+    "26904",
+    "16549",
+    "16623",
+    "16626",
+    "16645",
+    "16643",
+    "16644",
+    "16648",
+    "50552",
+    "16647",
+    "26909",
+    "16660",
+    "16662",
+    "16420",
+    "16604",
+    "26968"
+  ]
 }

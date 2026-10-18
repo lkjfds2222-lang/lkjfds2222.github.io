@@ -1,164 +1,445 @@
 [
   {
-    "code": "50551",
-    "price": 175,
-    "end": "2026-10-19",
-    "title": "限時炸雞買一送一",
+    "code": "16658",
+    "price": 148,
+    "end": "2027-03-31",
+    "title": "避暑基地午茶",
     "items": {
-      "fried": 4,
-      "drink": 2
+      "tart": 4,
+      "drink": 1
     },
-    "desc": "咔啦脆雞 4 塊＋小杯無糖綠茶 2 杯",
-    "original": 350,
-    "note": "限時優惠，請確認供餐及適用門市"
+    "desc": "2入原味蛋撻超極酥 × 2 ＋ 瓶裝百事可樂 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-08-05",
+    "orderTypes": [
+      2
+    ]
   },
   {
-    "code": "50529",
-    "price": 333,
-    "end": "2026-10-26",
-    "title": "經典澎派桶",
+    "code": "16659",
+    "price": 89,
+    "end": "2027-03-31",
+    "title": "國泰app霸氣",
     "items": {
-      "fried": 6,
-      "tart": 6
-    },
-    "desc": "咔啦脆雞 6 塊＋原味蛋撻 6 顆",
-    "original": 720,
-    "note": "依門市及官方結帳為準"
-  },
-  {
-    "code": "50528",
-    "price": 333,
-    "end": "2026-10-26",
-    "title": "無骨澎派桶",
-    "items": {
-      "boneless": 6,
-      "tart": 6
-    },
-    "desc": "無骨雞腿霸 6 塊＋原味蛋撻 6 顆＋任選沾醬",
-    "original": 736,
-    "note": "依門市及官方結帳為準"
-  },
-  {
-    "code": "16349",
-    "price": 99,
-    "end": "2026-12-20",
-    "title": "康是美美麗",
-    "items": {
-      "smallBurger": 1,
       "tart": 2,
       "drink": 1
     },
-    "desc": "原味脆雞堡（小）1 個＋原味蛋撻 2 顆＋小杯綠茶 1 杯",
+    "desc": "2入原味蛋撻超極酥 × 1 ＋ 瓶裝百事可樂 × 1",
     "original": null,
-    "note": "依門市及官方結帳為準"
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-08-12",
+    "orderTypes": [
+      2
+    ]
   },
   {
-    "code": "16720",
-    "price": 99,
-    "end": "2026-12-29",
-    "title": "雙堡年終慶 A 餐",
+    "code": "16660",
+    "price": 338,
+    "end": "2027-03-31",
+    "title": "國泰app中秋",
     "items": {
-      "smallBurger": 2,
-      "drink": 2
+      "nuggets": 20,
+      "tart": 6,
+      "drink": 1
     },
-    "desc": "原味脆雞堡（小）2 個＋小杯無糖綠茶 2 杯",
-    "original": 178,
-    "note": "依門市及官方結帳為準"
+    "desc": "上校雞塊 × 20 ＋ 原味蛋撻 × 6 ＋ 瓶裝百事可樂 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-08-12",
+    "orderTypes": [
+      2
+    ]
   },
   {
-    "code": "16721",
-    "price": 111,
-    "end": "2026-12-29",
-    "title": "雙堡年終慶 B 餐",
+    "code": "16662",
+    "price": 338,
+    "end": "2027-03-31",
+    "title": "中秋愛獻禮A",
     "items": {
-      "smallBurger": 2,
-      "drink": 2
+      "nuggets": 20,
+      "tart": 6,
+      "drink": 1
     },
-    "desc": "花生脆雞堡（小）2 個＋小杯無糖綠茶 2 杯",
-    "original": 196,
-    "note": "提供花生口味小漢堡，不等同原味口味"
+    "desc": "上校雞塊 × 20 ＋ 原味蛋撻 × 6 ＋ 瓶裝百事可樂 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-08-13",
+    "orderTypes": [
+      2
+    ]
   },
   {
-    "code": "16722",
-    "price": 118,
-    "end": "2026-12-29",
-    "title": "雙堡年終慶 C 餐",
+    "code": "16712",
+    "price": 119,
+    "end": "2027-03-31",
+    "title": "奶茶控周年慶D",
     "items": {
-      "smallBurger": 2,
+      "burger": 1,
+      "hash": 1,
+      "drink": 1
+    },
+    "desc": "咔啦雞腿堡(辣) × 1 ＋ 薯餅 × 1 ＋ 經典冰奶茶 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-09-02",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16804",
+    "price": 77,
+    "end": "2027-03-31",
+    "title": "新竹大小事薯",
+    "items": {
+      "smallBurger": 1,
       "hash": 2
     },
-    "desc": "原味脆雞堡（小）2 個＋薯餅 2 份",
-    "original": 192,
-    "note": "依門市及官方結帳為準"
+    "desc": "原味脆雞堡(小) × 1 ＋ 薯餅 × 2",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-09-16",
+    "orderTypes": [
+      2
+    ]
   },
   {
-    "code": "16723",
-    "price": 133,
-    "end": "2026-12-29",
-    "title": "雙堡年終慶 D 餐",
+    "code": "16846",
+    "price": 295,
+    "end": "2027-03-31",
+    "title": "歡聚分享 7 件組",
     "items": {
-      "smallBurger": 2,
-      "hash": 2
+      "fried": 5,
+      "tart": 2
     },
-    "desc": "花生脆雞堡（小）2 個＋薯餅 2 份",
-    "original": 210,
+    "desc": "炸雞 5 塊桶＋蛋撻 2 顆",
+    "original": 453,
     "note": "依門市及官方結帳為準"
   },
   {
-    "code": "16845",
-    "price": 135,
+    "code": "26646",
+    "price": 288,
+    "end": "2027-03-31",
+    "title": "秋冬就饗這樣點",
+    "items": {
+      "fried": 5,
+      "tart": 1,
+      "drink": 1
+    },
+    "desc": "炸雞 5 塊桶＋蛋撻 1 顆＋中杯無糖綠茶",
+    "original": 442,
+    "note": "依門市及官方結帳為準"
+  },
+  {
+    "code": "16549",
+    "price": 265,
     "end": "2027-02-28",
-    "title": "4 件好時光",
+    "title": "統一證券中秋",
+    "items": {
+      "nuggets": 8,
+      "tart": 6,
+      "drink": 1
+    },
+    "desc": "上校雞塊8塊 × 1 ＋ 原味蛋撻 × 6 ＋ 蘋果汁 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-07-28",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16563",
+    "price": 209,
+    "end": "2027-02-28",
+    "title": "街口支付中秋",
+    "items": {
+      "nuggets": 4,
+      "tart": 6
+    },
+    "desc": "上校雞塊4塊 × 1 ＋ 原味蛋撻 × 6",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-08-05",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16565",
+    "price": 239,
+    "end": "2027-02-28",
+    "title": "玉山APP中秋",
+    "items": {
+      "nuggets": 8,
+      "tart": 6
+    },
+    "desc": "上校雞塊8塊 × 1 ＋ 原味蛋撻 × 6",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-08-05",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16604",
+    "price": 356,
+    "end": "2027-02-28",
+    "title": "Goodlife賞月",
+    "items": {
+      "nuggets": 20,
+      "tart": 6,
+      "drink": 2
+    },
+    "desc": "上校雞塊 × 20 ＋ 原味蛋撻 × 6 ＋ 經典冰奶茶 × 2",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-07-28",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16623",
+    "price": 266,
+    "end": "2027-02-28",
+    "title": "玉山信用卡秋月",
+    "items": {
+      "burger": 1,
+      "tart": 6,
+      "drink": 1
+    },
+    "desc": "咔啦雞腿堡(辣) × 1 ＋ 原味蛋撻 × 6 ＋ 瓶裝百事可樂 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-08-05",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16624",
+    "price": 147,
+    "end": "2027-02-28",
+    "title": "玉山信用卡堡味",
     "items": {
       "burger": 1,
       "tart": 1,
+      "drink": 1
+    },
+    "desc": "青花椒香麻咔啦雞腿堡 × 1 ＋ 1顆原味蛋撻 +1份香酥脆薯(小) × 1 ＋ 經典冰奶茶 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-08-05",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16643",
+    "price": 269,
+    "end": "2027-02-28",
+    "title": "中秋禮盒預購B",
+    "items": {
       "fries": 1,
+      "tart": 6,
       "drink": 1
     },
-    "desc": "咔啦雞腿堡 1 個＋蛋撻 1 顆＋小薯 1 份＋小可樂 1 杯",
-    "original": 218,
+    "desc": "10顆雙色轉轉QQ球+1份香酥脆薯(小) × 1 ＋ 原味蛋撻 × 6 ＋ 瓶裝百事可樂 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-08-05",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16644",
+    "price": 273,
+    "end": "2027-02-28",
+    "title": "中秋禮盒預購C",
+    "items": {
+      "tart": 7,
+      "drink": 1
+    },
+    "desc": "10顆雙色轉轉QQ球+1顆原味蛋撻 × 1 ＋ 原味蛋撻 × 6 ＋ 瓶裝百事可樂 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-08-05",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16645",
+    "price": 268,
+    "end": "2027-02-28",
+    "title": "中秋禮盒預購D",
+    "items": {
+      "nuggets": 4,
+      "tart": 6,
+      "drink": 1
+    },
+    "desc": "4塊上校雞塊+1顆原味蛋撻 × 1 ＋ 原味蛋撻 × 6 ＋ 瓶裝百事可樂 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-08-05",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16646",
+    "price": 263,
+    "end": "2027-02-28",
+    "title": "中秋禮盒預購E",
+    "items": {
+      "tart": 7,
+      "drink": 1
+    },
+    "desc": "1顆原味蛋撻 +1份香酥脆薯(小) × 1 ＋ 原味蛋撻 × 6 ＋ 瓶裝百事可樂 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-08-04",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16647",
+    "price": 305,
+    "end": "2027-02-28",
+    "title": "中秋禮盒預購F",
+    "items": {
+      "nuggets": 4,
+      "tart": 6,
+      "drink": 1
+    },
+    "desc": "4塊上校雞塊+1顆原味蛋撻+10顆雙色轉轉QQ球 × 1 ＋ 原味蛋撻 × 6 ＋ 瓶裝百事可樂 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-08-05",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16648",
+    "price": 293,
+    "end": "2027-02-28",
+    "title": "中秋禮盒預購G",
+    "items": {
+      "nuggets": 1,
+      "tart": 6,
+      "drink": 1
+    },
+    "desc": "4雞塊+原蛋+小薯 × 1 ＋ 原味蛋撻 × 6 ＋ 瓶裝百事可樂 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-08-06",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16714",
+    "price": 148,
+    "end": "2027-02-28",
+    "title": "永豐餘繽紛",
+    "items": {
+      "tart": 4,
+      "drink": 1
+    },
+    "desc": "2入原味蛋撻超極酥 × 2 ＋ 瓶裝百事可樂 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-09-16",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16828",
+    "price": 206,
+    "end": "2027-02-28",
+    "title": "秋冬嚴選禮盒",
+    "items": {
+      "tart": 6,
+      "fries": 1
+    },
+    "desc": "蛋撻禮盒 6 顆＋小薯 1 份",
+    "original": 335,
     "note": "依門市及官方結帳為準"
   },
   {
-    "code": "16844",
-    "price": 167,
+    "code": "16829",
+    "price": 227,
     "end": "2027-02-28",
-    "title": "雙層暖心點",
+    "title": "經典雙享下午茶",
+    "items": {
+      "tart": 6,
+      "drink": 2
+    },
+    "desc": "蛋撻禮盒 6 顆＋冰經典奶茶 2 杯",
+    "original": 370,
+    "note": "依門市及官方結帳為準",
+    "source": "KCouper",
+    "orderTypes": [
+      2
+    ],
+    "start": "2026-09-30"
+  },
+  {
+    "code": "16830",
+    "price": 229,
+    "end": "2027-02-28",
+    "title": "蛋撻濃湯暖心饗",
+    "items": {
+      "tart": 6
+    },
+    "desc": "蛋撻禮盒 6 顆＋玉米濃湯 2 杯",
+    "original": 374,
+    "note": "依門市及官方結帳為準"
+  },
+  {
+    "code": "16832",
+    "price": 154,
+    "end": "2027-02-28",
+    "title": "青花奶茶四件",
     "items": {
       "burger": 1,
       "tart": 1,
       "drink": 1
     },
-    "desc": "雙層咔啦雞腿堡 1 個＋蛋撻 1 顆＋小杯綠茶 1 杯",
-    "original": 227,
-    "note": "雙層堡以 1 個雞腿堡計算，請注意尺寸差異"
-  },
-  {
-    "code": "16843",
-    "price": 169,
-    "end": "2027-02-28",
-    "title": "花生好事多",
-    "items": {
-      "burger": 1,
-      "tart": 1,
-      "fries": 1,
-      "drink": 1
-    },
-    "desc": "花生熔岩咔啦雞腿堡 1 個＋蛋撻 1 顆＋小薯 1 份＋小杯綠茶",
-    "original": 250,
-    "note": "依門市及官方結帳為準"
-  },
-  {
-    "code": "16858",
-    "price": 130,
-    "end": "2027-02-28",
-    "title": "QQ 雞套餐",
-    "items": {
-      "fried": 2
-    },
-    "desc": "咔啦脆雞 2 塊＋雙色轉轉 QQ 球 10 顆",
-    "original": 201,
-    "note": "依門市及官方結帳為準"
+    "desc": "青花椒香麻咔啦雞腿堡 × 1 ＋ 1顆原味蛋撻 +1份香酥脆薯(小) × 1 ＋ 經典冰奶茶 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-09-30",
+    "orderTypes": [
+      2
+    ]
   },
   {
     "code": "16839",
@@ -172,21 +453,6 @@
     },
     "desc": "咔啦脆雞 2 塊＋上校雞塊 4 塊＋小杯綠茶 1 杯",
     "original": 224,
-    "note": "依門市及官方結帳為準"
-  },
-  {
-    "code": "16842",
-    "price": 163,
-    "end": "2027-02-28",
-    "title": "炸雞經典餐",
-    "items": {
-      "fried": 2,
-      "tart": 1,
-      "fries": 1,
-      "drink": 1
-    },
-    "desc": "咔啦脆雞 2 塊＋蛋撻 1 顆＋小薯 1 份＋小杯綠茶 1 杯",
-    "original": 265,
     "note": "依門市及官方結帳為準"
   },
   {
@@ -205,16 +471,62 @@
     "note": "依門市及官方結帳為準"
   },
   {
-    "code": "16859",
-    "price": 189,
+    "code": "16842",
+    "price": 163,
     "end": "2027-02-28",
-    "title": "雞塊富翁餐",
+    "title": "炸雞經典餐",
     "items": {
-      "nuggets": 20,
+      "fried": 2,
+      "tart": 1,
+      "fries": 1,
       "drink": 1
     },
-    "desc": "上校雞塊 20 塊＋小杯綠茶 1 杯",
-    "original": 278,
+    "desc": "咔啦脆雞 2 塊＋蛋撻 1 顆＋小薯 1 份＋小杯綠茶 1 杯",
+    "original": 265,
+    "note": "依門市及官方結帳為準"
+  },
+  {
+    "code": "16843",
+    "price": 169,
+    "end": "2027-02-28",
+    "title": "花生好事多",
+    "items": {
+      "burger": 1,
+      "tart": 1,
+      "fries": 1,
+      "drink": 1
+    },
+    "desc": "花生熔岩咔啦雞腿堡 1 個＋蛋撻 1 顆＋小薯 1 份＋小杯綠茶",
+    "original": 250,
+    "note": "依門市及官方結帳為準"
+  },
+  {
+    "code": "16844",
+    "price": 167,
+    "end": "2027-02-28",
+    "title": "雙層暖心點",
+    "items": {
+      "burger": 1,
+      "tart": 1,
+      "drink": 1
+    },
+    "desc": "雙層咔啦雞腿堡 1 個＋蛋撻 1 顆＋小杯綠茶 1 杯",
+    "original": 227,
+    "note": "雙層堡以 1 個雞腿堡計算，請注意尺寸差異"
+  },
+  {
+    "code": "16845",
+    "price": 135,
+    "end": "2027-02-28",
+    "title": "4 件好時光",
+    "items": {
+      "burger": 1,
+      "tart": 1,
+      "fries": 1,
+      "drink": 1
+    },
+    "desc": "咔啦雞腿堡 1 個＋蛋撻 1 顆＋小薯 1 份＋小可樂 1 杯",
+    "original": 218,
     "note": "依門市及官方結帳為準"
   },
   {
@@ -228,33 +540,52 @@
     },
     "desc": "原味蛋撻禮盒 6 顆＋上校雞塊 4 塊",
     "original": 343,
+    "note": "依門市及官方結帳為準",
+    "source": "KCouper",
+    "orderTypes": [
+      2
+    ],
+    "start": "2026-09-30"
+  },
+  {
+    "code": "16849",
+    "price": 239,
+    "end": "2027-02-28",
+    "title": "雞塊宵夜 B 組合",
+    "items": {
+      "nuggets": 20,
+      "fries": 1,
+      "drink": 2
+    },
+    "desc": "上校雞塊 20 塊＋大薯 1 份＋小杯綠茶 2 杯",
+    "original": 342,
     "note": "依門市及官方結帳為準"
   },
   {
-    "code": "26646",
-    "price": 288,
-    "end": "2027-03-31",
-    "title": "秋冬就饗這樣點",
+    "code": "16850",
+    "price": 59,
+    "end": "2027-02-28",
+    "title": "宵夜炸雞 A 組合",
     "items": {
-      "fried": 5,
-      "tart": 1,
+      "fried": 1,
       "drink": 1
     },
-    "desc": "炸雞 5 塊桶＋蛋撻 1 顆＋中杯無糖綠茶",
-    "original": 442,
+    "desc": "咔啦脆雞 1 塊＋小杯綠茶 1 杯",
+    "original": 104,
     "note": "依門市及官方結帳為準"
   },
   {
-    "code": "16846",
-    "price": 295,
-    "end": "2027-03-31",
-    "title": "歡聚分享 7 件組",
+    "code": "16851",
+    "price": 79,
+    "end": "2027-02-28",
+    "title": "宵夜炸雞 D 組合",
     "items": {
-      "fried": 5,
-      "tart": 2
+      "fried": 1,
+      "hash": 1,
+      "drink": 1
     },
-    "desc": "炸雞 5 塊桶＋蛋撻 2 顆",
-    "original": 453,
+    "desc": "咔啦脆雞 1 塊＋薯餅 1 份＋小杯綠茶 1 杯",
+    "original": 144,
     "note": "依門市及官方結帳為準"
   },
   {
@@ -336,71 +667,158 @@
     "note": "依門市及官方結帳為準"
   },
   {
-    "code": "16849",
-    "price": 239,
+    "code": "16858",
+    "price": 130,
     "end": "2027-02-28",
-    "title": "雞塊宵夜 B 組合",
+    "title": "QQ 雞套餐",
+    "items": {
+      "fried": 2
+    },
+    "desc": "咔啦脆雞 2 塊＋雙色轉轉 QQ 球 10 顆",
+    "original": 201,
+    "note": "依門市及官方結帳為準"
+  },
+  {
+    "code": "16859",
+    "price": 189,
+    "end": "2027-02-28",
+    "title": "雞塊富翁餐",
     "items": {
       "nuggets": 20,
-      "fries": 1,
-      "drink": 2
-    },
-    "desc": "上校雞塊 20 塊＋大薯 1 份＋小杯綠茶 2 杯",
-    "original": 342,
-    "note": "依門市及官方結帳為準"
-  },
-  {
-    "code": "16850",
-    "price": 59,
-    "end": "2027-02-28",
-    "title": "宵夜炸雞 A 組合",
-    "items": {
-      "fried": 1,
       "drink": 1
     },
-    "desc": "咔啦脆雞 1 塊＋小杯綠茶 1 杯",
-    "original": 104,
+    "desc": "上校雞塊 20 塊＋小杯綠茶 1 杯",
+    "original": 278,
     "note": "依門市及官方結帳為準"
   },
   {
-    "code": "16851",
-    "price": 79,
-    "end": "2027-02-28",
-    "title": "宵夜炸雞 D 組合",
+    "code": "16053",
+    "price": 123,
+    "end": "2027-01-31",
+    "title": "東森購物開學",
     "items": {
-      "fried": 1,
-      "hash": 1,
-      "drink": 1
-    },
-    "desc": "咔啦脆雞 1 塊＋薯餅 1 份＋小杯綠茶 1 杯",
-    "original": 144,
-    "note": "依門市及官方結帳為準"
-  },
-  {
-    "code": "16125",
-    "price": 50,
-    "end": "2026-11-30",
-    "title": "蘋安蛋生午茶組",
-    "items": {
+      "boneless": 1,
       "tart": 1,
       "drink": 1
     },
-    "desc": "原味蛋撻 1 顆＋小杯綠茶 1 杯",
-    "original": 82,
-    "note": "依門市及官方結帳為準"
+    "desc": "爆脆無骨雞腿霸(不辣) × 1 ＋ 1顆原味蛋撻 +1份香酥脆薯(小) × 1 ＋ 經典冰奶茶 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-07-22",
+    "orderTypes": [
+      2
+    ]
   },
   {
-    "code": "26833",
-    "price": 85,
-    "end": "2026-10-31",
-    "title": "蘋安蛋生午茶組",
+    "code": "16158",
+    "price": 144,
+    "end": "2027-01-31",
+    "title": "明台產物午茶",
     "items": {
+      "tart": 4,
+      "drink": 1
+    },
+    "desc": "2入原味蛋撻超極酥 × 2 ＋ 經典冰奶茶 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-05-20",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16311",
+    "price": 159,
+    "end": "2027-01-31",
+    "title": "匯豐完美",
+    "items": {
+      "burger": 1,
       "tart": 2,
       "drink": 1
     },
-    "desc": "原味蛋撻 2 顆＋蘋果汁 1 瓶",
-    "original": 138,
-    "note": "飲品為蘋果汁，不可當作無糖綠茶"
+    "desc": "咔啦雞腿堡(辣) × 1 ＋ 2入原味蛋撻超極酥 × 1 ＋ 蘋果汁 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-06-18",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16413",
+    "price": 38,
+    "end": "2027-01-31",
+    "title": "特賣會飲爆",
+    "items": {
+      "drink": 2
+    },
+    "desc": "經典冰奶茶 × 2",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-07-15",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16420",
+    "price": 339,
+    "end": "2027-01-31",
+    "title": "中華電信秋月圓",
+    "items": {
+      "nuggets": 20,
+      "tart": 6,
+      "drink": 1
+    },
+    "desc": "上校雞塊 × 20 ＋ 原味蛋撻 × 6 ＋ 瓶裝百事可樂 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-07-15",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16469",
+    "price": 114,
+    "end": "2027-01-31",
+    "title": "特賣會快樂",
+    "items": {
+      "nuggets": 8,
+      "tart": 1,
+      "drink": 1
+    },
+    "desc": "上校雞塊8塊 × 1 ＋ 原味蛋撻 × 1 ＋ 經典冰奶茶 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-07-15",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16688",
+    "price": 208,
+    "end": "2027-01-31",
+    "title": "富邦產險金喜",
+    "items": {
+      "tart": 6,
+      "drink": 1
+    },
+    "desc": "原味蛋撻 × 6 ＋ 瓶裝百事可樂 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-08-12",
+    "orderTypes": [
+      2
+    ]
   },
   {
     "code": "16388",
@@ -416,178 +834,449 @@
     "note": "依門市及官方結帳為準"
   },
   {
-    "code": "26975",
-    "price": 141,
-    "end": "2026-11-30",
-    "title": "金甲好康五件組",
+    "code": "16598",
+    "price": 38,
+    "end": "2026-12-31",
+    "title": "一日三餐就饗D",
     "items": {
-      "tart": 4,
-      "drink": 1
-    },
-    "desc": "原味蛋撻 4 顆＋小杯綠茶 1 杯",
-    "original": 229,
-    "note": "依門市及官方結帳為準"
-  },
-  {
-    "code": "26976",
-    "price": 310,
-    "end": "2026-11-30",
-    "title": "春暖花開澎派點",
-    "items": {
-      "tart": 6,
-      "nuggets": 20
-    },
-    "desc": "原味蛋撻禮盒 6 顆＋上校雞塊 20 塊",
-    "original": 504,
-    "note": "依門市及官方結帳為準"
-  },
-  {
-    "code": "16828",
-    "price": 206,
-    "end": "2027-02-28",
-    "title": "秋冬嚴選禮盒",
-    "items": {
-      "tart": 6,
-      "fries": 1
-    },
-    "desc": "蛋撻禮盒 6 顆＋小薯 1 份",
-    "original": 335,
-    "note": "依門市及官方結帳為準"
-  },
-  {
-    "code": "16829",
-    "price": 227,
-    "end": "2027-02-28",
-    "title": "經典雙享下午茶",
-    "items": {
-      "tart": 6,
       "drink": 2
     },
-    "desc": "蛋撻禮盒 6 顆＋冰經典奶茶 2 杯",
-    "original": 370,
-    "note": "依門市及官方結帳為準"
+    "desc": "經典熱奶茶(中) × 2",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-08-05",
+    "orderTypes": [
+      2
+    ]
   },
   {
-    "code": "16830",
-    "price": 229,
-    "end": "2027-02-28",
-    "title": "蛋撻濃湯暖心饗",
+    "code": "16599",
+    "price": 38,
+    "end": "2026-12-31",
+    "title": "一日三餐就饗E",
     "items": {
-      "tart": 6
+      "drink": 2
     },
-    "desc": "蛋撻禮盒 6 顆＋玉米濃湯 2 杯",
-    "original": 374,
-    "note": "依門市及官方結帳為準"
+    "desc": "經典冰奶茶 × 2",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-08-05",
+    "orderTypes": [
+      2
+    ]
   },
   {
-    "code": "26862",
-    "price": 42,
-    "end": "2026-10-31",
-    "title": "雙薯好時光",
+    "code": "40670",
+    "price": 99,
+    "end": "2026-12-31",
+    "title": "優惠券",
     "items": {
-      "hash": 2
+      "nuggets": 4
     },
-    "desc": "薯餅 2 份",
-    "original": 80,
-    "note": "依門市及官方結帳為準"
+    "desc": "4塊上校雞塊+1顆原味蛋撻+10顆雙色轉轉QQ球 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2025-05-29",
+    "orderTypes": [
+      2
+    ]
   },
   {
-    "code": "26859",
-    "price": 85,
-    "end": "2026-10-31",
-    "title": "春夏午茶點",
+    "code": "50516",
+    "price": 99,
+    "end": "2026-12-31",
+    "title": "優惠券",
     "items": {
-      "nuggets": 4,
+      "hash": 1,
       "tart": 1,
       "drink": 1
     },
-    "desc": "上校雞塊 4 塊＋蛋撻 1 顆＋冰奶茶 1 杯",
-    "original": 138,
-    "note": "依門市及官方結帳為準"
+    "desc": "薯餅 × 1 ＋ 原味蛋撻 × 1 ＋ 經典冰奶茶 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-05-20",
+    "orderTypes": [
+      1,
+      2
+    ]
   },
   {
-    "code": "26853",
-    "price": 128,
-    "end": "2026-10-31",
-    "title": "春夏薯於堡足感",
+    "code": "50544",
+    "price": 101,
+    "end": "2026-12-31",
+    "title": "紅豆奶皇蛋撻嚐鮮券",
     "items": {
-      "burger": 1,
-      "hash": 2,
-      "drink": 1
+      "tart": 2
     },
-    "desc": "咔啦雞腿堡 1 個＋薯餅 2 份＋小杯綠茶 1 杯",
-    "original": 184,
-    "note": "依門市及官方結帳為準"
+    "desc": "原味蛋撻 × 1 ＋ 紅豆奶皇蛋撻 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-09-02",
+    "orderTypes": [
+      1,
+      2
+    ]
   },
   {
-    "code": "26855",
-    "price": 250,
-    "end": "2026-10-31",
-    "title": "雙堡好時光",
+    "code": "16214",
+    "price": 258,
+    "end": "2026-12-30",
+    "title": "夏日雙人愉快",
     "items": {
-      "burger": 2,
-      "tart": 2,
-      "nuggets": 4,
-      "drink": 2
+      "nuggets": 20,
+      "tart": 4
     },
-    "desc": "咔啦雞腿堡 2 個＋蛋撻 2 顆＋雞塊 4 塊＋小杯綠茶 2 杯",
-    "original": 403,
-    "note": "依門市及官方結帳為準"
+    "desc": "上校雞塊 20 塊＋蛋撻 4 顆",
+    "original": 406,
+    "note": "依門市及官方結帳為準",
+    "source": "KCouper",
+    "orderTypes": [
+      2
+    ],
+    "start": "2026-05-20"
   },
   {
-    "code": "26863",
-    "price": 302,
-    "end": "2026-10-31",
-    "title": "我們的雙饗時光",
-    "items": {
-      "fried": 2,
-      "burger": 1,
-      "tart": 2,
-      "fries": 1,
-      "nuggets": 4,
-      "drink": 2
-    },
-    "desc": "炸雞 2 塊＋雞腿堡 1 個＋蛋撻 2 顆＋小薯 1 份＋雞塊 4 塊＋綠茶 2 杯",
-    "original": 491,
-    "note": "依門市及官方結帳為準"
-  },
-  {
-    "code": "26908",
+    "code": "16220",
     "price": 38,
-    "end": "2026-10-31",
-    "title": "幸福杯杯 1+1",
+    "end": "2026-12-30",
+    "title": "夏日喝茶杯杯 1+1",
     "items": {
       "drink": 2
     },
     "desc": "五款飲品任選 2 杯（中杯）",
     "original": 76,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "source": "KCouper",
+    "orderTypes": [
+      2
+    ],
+    "start": "2026-05-20"
   },
   {
-    "code": "26907",
-    "price": 58,
-    "end": "2026-10-31",
-    "title": "我的薯薯讚起來",
+    "code": "16430",
+    "price": 99,
+    "end": "2026-12-29",
+    "title": "Yahoo一日三餐",
     "items": {
+      "smallBurger": 1,
       "hash": 2,
+      "drink": 1
+    },
+    "desc": "花生脆雞堡(小) × 1 ＋ 薯餅 × 2 ＋ 經典冰奶茶 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-09-09",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16708",
+    "price": 89,
+    "end": "2026-12-29",
+    "title": "台新銀行午茶",
+    "items": {
+      "tart": 2,
+      "drink": 1
+    },
+    "desc": "2入原味蛋撻超極酥 × 1 ＋ 瓶裝百事可樂 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-09-02",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16720",
+    "price": 99,
+    "end": "2026-12-29",
+    "title": "雙堡年終慶 A 餐",
+    "items": {
+      "smallBurger": 2,
       "drink": 2
     },
-    "desc": "薯餅 2 份＋小杯綠茶 2 杯",
-    "original": 73,
+    "desc": "原味脆雞堡（小）2 個＋小杯無糖綠茶 2 杯",
+    "original": 178,
     "note": "依門市及官方結帳為準"
   },
   {
-    "code": "26985",
-    "price": 139,
-    "end": "2026-11-30",
-    "title": "經典四件組",
+    "code": "16721",
+    "price": 111,
+    "end": "2026-12-29",
+    "title": "雙堡年終慶 B 餐",
+    "items": {
+      "smallBurger": 2,
+      "drink": 2
+    },
+    "desc": "花生脆雞堡（小）2 個＋小杯無糖綠茶 2 杯",
+    "original": 196,
+    "note": "提供花生口味小漢堡，不等同原味口味"
+  },
+  {
+    "code": "16722",
+    "price": 118,
+    "end": "2026-12-29",
+    "title": "雙堡年終慶 C 餐",
+    "items": {
+      "smallBurger": 2,
+      "hash": 2
+    },
+    "desc": "原味脆雞堡（小）2 個＋薯餅 2 份",
+    "original": 192,
+    "note": "依門市及官方結帳為準",
+    "source": "KCouper",
+    "orderTypes": [
+      2
+    ],
+    "start": "2026-09-02"
+  },
+  {
+    "code": "16723",
+    "price": 133,
+    "end": "2026-12-29",
+    "title": "雙堡年終慶 D 餐",
+    "items": {
+      "smallBurger": 2,
+      "hash": 2
+    },
+    "desc": "花生脆雞堡（小）2 個＋薯餅 2 份",
+    "original": 210,
+    "note": "依門市及官方結帳為準",
+    "source": "KCouper",
+    "orderTypes": [
+      2
+    ],
+    "start": "2026-09-02"
+  },
+  {
+    "code": "16796",
+    "price": 105,
+    "end": "2026-12-28",
+    "title": "中華電信雙堡",
+    "items": {
+      "smallBurger": 2,
+      "drink": 1
+    },
+    "desc": "原味脆雞堡(小) × 2 ＋ 經典冰奶茶 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-09-16",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16801",
+    "price": 58,
+    "end": "2026-12-28",
+    "title": "晨光好食客",
+    "items": {
+      "smallBurger": 1,
+      "hash": 1
+    },
+    "desc": "原味脆雞堡(小) × 1 ＋ 薯餅 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-09-17",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16802",
+    "price": 66,
+    "end": "2026-12-28",
+    "title": "良晨花生好事",
+    "items": {
+      "smallBurger": 1,
+      "hash": 1
+    },
+    "desc": "花生脆雞堡(小) × 1 ＋ 薯餅 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-09-16",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16693",
+    "price": 208,
+    "end": "2026-12-22",
+    "title": "大大寬頻禮盒",
+    "items": {
+      "tart": 6,
+      "drink": 1
+    },
+    "desc": "原味蛋撻 × 6 ＋ 瓶裝百事可樂 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-09-02",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16212",
+    "price": 126,
+    "end": "2026-12-20",
+    "title": "雙人堡時光",
+    "items": {
+      "smallBurger": 2,
+      "drink": 2
+    },
+    "desc": "原味脆雞堡 1 個＋花生脆雞堡 1 個＋綠茶 2 杯",
+    "original": 187,
+    "note": "依門市及官方結帳為準"
+  },
+  {
+    "code": "16216",
+    "price": 244,
+    "end": "2026-12-20",
+    "title": "夏日最強食雞",
+    "items": {
+      "fried": 4,
+      "tart": 2
+    },
+    "desc": "咔啦脆雞 4 塊＋蛋撻 2 顆",
+    "original": 382,
+    "note": "依門市及官方結帳為準"
+  },
+  {
+    "code": "16218",
+    "price": 54,
+    "end": "2026-12-20",
+    "title": "夏日午茶霸氣推薦",
+    "items": {
+      "boneless": 1,
+      "drink": 1
+    },
+    "desc": "爆脆無骨雞腿霸 1 塊＋小杯綠茶 1 杯",
+    "original": 104,
+    "note": "依門市及官方結帳為準"
+  },
+  {
+    "code": "16221",
+    "price": 33,
+    "end": "2026-12-20",
+    "title": "夏日薯日子",
+    "items": {
+      "fries": 1,
+      "drink": 1
+    },
+    "desc": "香酥脆薯（小）1 份＋小杯綠茶 1 杯",
+    "original": 74,
+    "note": "依門市及官方結帳為準"
+  },
+  {
+    "code": "16312",
+    "price": 159,
+    "end": "2026-12-20",
+    "title": "台東東日閃耀",
     "items": {
       "burger": 1,
       "tart": 2,
       "drink": 1
     },
-    "desc": "咔啦雞腿堡 1 個＋蛋撻 2 顆＋小杯綠茶 1 杯",
-    "original": 226,
+    "desc": "咔啦雞腿堡(辣) × 1 ＋ 2入原味蛋撻超極酥 × 1 ＋ 蘋果汁 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-06-17",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16324",
+    "price": 138,
+    "end": "2026-12-20",
+    "title": "國泰神坊雙堡",
+    "items": {
+      "smallBurger": 2,
+      "tart": 2
+    },
+    "desc": "原味脆雞堡(小) × 2 ＋ 2入原味蛋撻超極酥 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-06-17",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "16349",
+    "price": 99,
+    "end": "2026-12-20",
+    "title": "康是美美麗",
+    "items": {
+      "smallBurger": 1,
+      "tart": 2,
+      "drink": 1
+    },
+    "desc": "原味脆雞堡（小）1 個＋原味蛋撻 2 顆＋小杯綠茶 1 杯",
+    "original": null,
+    "note": "依門市及官方結帳為準"
+  },
+  {
+    "code": "16626",
+    "price": 266,
+    "end": "2026-12-20",
+    "title": "新光人壽秋月",
+    "items": {
+      "burger": 1,
+      "tart": 6,
+      "drink": 1
+    },
+    "desc": "咔啦雞腿堡(辣) × 1 ＋ 原味蛋撻 × 6 ＋ 瓶裝百事可樂 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-08-05",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "26990",
+    "price": 110,
+    "end": "2026-12-20",
+    "title": "春夏四件組",
+    "items": {
+      "smallBurger": 1,
+      "tart": 1,
+      "fries": 1,
+      "drink": 1
+    },
+    "desc": "原味脆雞堡 1 個＋蛋撻 1 顆＋小薯 1 份＋綠茶 1 杯",
+    "original": 179,
+    "note": "依門市及官方結帳為準"
+  },
+  {
+    "code": "26991",
+    "price": 130,
+    "end": "2026-12-20",
+    "title": "讓自己塊樂點",
+    "items": {
+      "smallBurger": 1,
+      "nuggets": 8,
+      "drink": 1
+    },
+    "desc": "原味脆雞堡 1 個＋雞塊 8 塊＋綠茶 1 杯",
+    "original": 187,
     "note": "依門市及官方結帳為準"
   },
   {
@@ -620,109 +1309,474 @@
     "note": "依門市及官方結帳為準"
   },
   {
-    "code": "26990",
-    "price": 110,
-    "end": "2026-12-20",
-    "title": "春夏四件組",
+    "code": "16097",
+    "price": 145,
+    "end": "2026-11-30",
+    "title": "Goodlife下午",
     "items": {
-      "smallBurger": 1,
-      "tart": 1,
-      "fries": 1,
-      "drink": 1
-    },
-    "desc": "原味脆雞堡 1 個＋蛋撻 1 顆＋小薯 1 份＋綠茶 1 杯",
-    "original": 179,
-    "note": "依門市及官方結帳為準"
-  },
-  {
-    "code": "26991",
-    "price": 130,
-    "end": "2026-12-20",
-    "title": "讓自己塊樂點",
-    "items": {
-      "smallBurger": 1,
+      "tart": 2,
       "nuggets": 8,
       "drink": 1
     },
-    "desc": "原味脆雞堡 1 個＋雞塊 8 塊＋綠茶 1 杯",
-    "original": 187,
-    "note": "依門市及官方結帳為準"
+    "desc": "2入原味蛋撻超極酥 × 1 ＋ 上校雞塊8塊 × 1 ＋ 經典冰奶茶 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-05-06",
+    "orderTypes": [
+      2
+    ]
   },
   {
-    "code": "16218",
-    "price": 54,
-    "end": "2026-12-20",
-    "title": "夏日午茶霸氣推薦",
+    "code": "16125",
+    "price": 50,
+    "end": "2026-11-30",
+    "title": "蘋安蛋生午茶組",
     "items": {
-      "boneless": 1,
+      "tart": 1,
       "drink": 1
     },
-    "desc": "爆脆無骨雞腿霸 1 塊＋小杯綠茶 1 杯",
-    "original": 104,
+    "desc": "原味蛋撻 1 顆＋小杯綠茶 1 杯",
+    "original": 82,
     "note": "依門市及官方結帳為準"
   },
   {
-    "code": "16220",
+    "code": "16283",
+    "price": 145,
+    "end": "2026-11-30",
+    "title": "PK網路互導3送2",
+    "items": {
+      "tart": 4,
+      "drink": 1
+    },
+    "desc": "2入原味蛋撻超極酥 × 2 ＋ 蘋果汁 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-06-03",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "26385",
+    "price": 208,
+    "end": "2026-11-30",
+    "title": "自由時報中秋",
+    "items": {
+      "tart": 6,
+      "drink": 1
+    },
+    "desc": "原味蛋撻 × 6 ＋ 瓶裝百事可樂 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-09-03",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "26968",
+    "price": 388,
+    "end": "2026-11-30",
+    "title": "MOMO26母親C",
+    "items": {
+      "tart": 12,
+      "drink": 1
+    },
+    "desc": "原味蛋撻 × 12 ＋ 瓶裝百事可樂 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-04-08",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "26975",
+    "price": 141,
+    "end": "2026-11-30",
+    "title": "金甲好康五件組",
+    "items": {
+      "tart": 4,
+      "drink": 1
+    },
+    "desc": "原味蛋撻 4 顆＋小杯綠茶 1 杯",
+    "original": 229,
+    "note": "依門市及官方結帳為準"
+  },
+  {
+    "code": "26976",
+    "price": 310,
+    "end": "2026-11-30",
+    "title": "春暖花開澎派點",
+    "items": {
+      "tart": 6,
+      "nuggets": 20
+    },
+    "desc": "原味蛋撻禮盒 6 顆＋上校雞塊 20 塊",
+    "original": 504,
+    "note": "依門市及官方結帳為準",
+    "source": "KCouper",
+    "orderTypes": [
+      2
+    ],
+    "start": "2026-03-26"
+  },
+  {
+    "code": "26985",
+    "price": 139,
+    "end": "2026-11-30",
+    "title": "經典四件組",
+    "items": {
+      "burger": 1,
+      "tart": 2,
+      "drink": 1
+    },
+    "desc": "咔啦雞腿堡 1 個＋蛋撻 2 顆＋小杯綠茶 1 杯",
+    "original": 226,
+    "note": "依門市及官方結帳為準"
+  },
+  {
+    "code": "26832",
+    "price": 85,
+    "end": "2026-10-31",
+    "title": "京站女王春夏",
+    "items": {
+      "tart": 2,
+      "drink": 1
+    },
+    "desc": "2入原味蛋撻超極酥 × 1 ＋ 蘋果汁 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-03-12",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "26833",
+    "price": 85,
+    "end": "2026-10-31",
+    "title": "蘋安蛋生午茶組",
+    "items": {
+      "tart": 2,
+      "drink": 1
+    },
+    "desc": "原味蛋撻 2 顆＋蘋果汁 1 瓶",
+    "original": 138,
+    "note": "飲品為蘋果汁，不可當作無糖綠茶",
+    "source": "KCouper",
+    "orderTypes": [
+      2
+    ],
+    "start": "2026-03-12"
+  },
+  {
+    "code": "26853",
+    "price": 128,
+    "end": "2026-10-31",
+    "title": "春夏薯於堡足感",
+    "items": {
+      "burger": 1,
+      "hash": 2,
+      "drink": 1
+    },
+    "desc": "咔啦雞腿堡 1 個＋薯餅 2 份＋小杯綠茶 1 杯",
+    "original": 184,
+    "note": "依門市及官方結帳為準"
+  },
+  {
+    "code": "26855",
+    "price": 250,
+    "end": "2026-10-31",
+    "title": "雙堡好時光",
+    "items": {
+      "burger": 2,
+      "tart": 2,
+      "nuggets": 4,
+      "drink": 2
+    },
+    "desc": "咔啦雞腿堡 2 個＋蛋撻 2 顆＋雞塊 4 塊＋小杯綠茶 2 杯",
+    "original": 403,
+    "note": "依門市及官方結帳為準"
+  },
+  {
+    "code": "26859",
+    "price": 85,
+    "end": "2026-10-31",
+    "title": "春夏午茶點",
+    "items": {
+      "nuggets": 4,
+      "tart": 1,
+      "drink": 1
+    },
+    "desc": "上校雞塊 4 塊＋蛋撻 1 顆＋冰奶茶 1 杯",
+    "original": 138,
+    "note": "依門市及官方結帳為準"
+  },
+  {
+    "code": "26862",
+    "price": 42,
+    "end": "2026-10-31",
+    "title": "雙薯好時光",
+    "items": {
+      "hash": 2
+    },
+    "desc": "薯餅 2 份",
+    "original": 80,
+    "note": "依門市及官方結帳為準",
+    "source": "KCouper",
+    "orderTypes": [
+      2
+    ],
+    "start": "2026-03-12"
+  },
+  {
+    "code": "26863",
+    "price": 302,
+    "end": "2026-10-31",
+    "title": "我們的雙饗時光",
+    "items": {
+      "fried": 2,
+      "burger": 1,
+      "tart": 2,
+      "fries": 1,
+      "nuggets": 4,
+      "drink": 2
+    },
+    "desc": "炸雞 2 塊＋雞腿堡 1 個＋蛋撻 2 顆＋小薯 1 份＋雞塊 4 塊＋綠茶 2 杯",
+    "original": 491,
+    "note": "依門市及官方結帳為準"
+  },
+  {
+    "code": "26888",
+    "price": 39,
+    "end": "2026-10-31",
+    "title": "Sunny吃喝經典",
+    "items": {
+      "drink": 2
+    },
+    "desc": "經典冰奶茶 × 2",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-03-19",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "26904",
+    "price": 264,
+    "end": "2026-10-31",
+    "title": "Goodlife分享",
+    "items": {
+      "nuggets": 20,
+      "tart": 2
+    },
+    "desc": "上校雞塊 × 20 ＋ 1顆原味蛋撻 +1份香酥脆薯(小) × 2",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-03-19",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "26906",
     "price": 38,
-    "end": "2026-12-20",
-    "title": "夏日喝茶杯杯 1+1",
+    "end": "2026-10-31",
+    "title": "Goodlife飲爆",
+    "items": {
+      "drink": 2
+    },
+    "desc": "經典冰奶茶 × 2",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-03-19",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "26907",
+    "price": 58,
+    "end": "2026-10-31",
+    "title": "我的薯薯讚起來",
+    "items": {
+      "hash": 2,
+      "drink": 2
+    },
+    "desc": "薯餅 2 份＋小杯綠茶 2 杯",
+    "original": 73,
+    "note": "依門市及官方結帳為準"
+  },
+  {
+    "code": "26908",
+    "price": 38,
+    "end": "2026-10-31",
+    "title": "幸福杯杯 1+1",
     "items": {
       "drink": 2
     },
     "desc": "五款飲品任選 2 杯（中杯）",
     "original": 76,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "source": "KCouper",
+    "orderTypes": [
+      2
+    ],
+    "start": "2026-03-19"
   },
   {
-    "code": "16221",
-    "price": 33,
-    "end": "2026-12-20",
-    "title": "夏日薯日子",
-    "items": {
-      "fries": 1,
-      "drink": 1
-    },
-    "desc": "香酥脆薯（小）1 份＋小杯綠茶 1 杯",
-    "original": 74,
-    "note": "依門市及官方結帳為準"
-  },
-  {
-    "code": "16212",
-    "price": 126,
-    "end": "2026-12-20",
-    "title": "雙人堡時光",
-    "items": {
-      "smallBurger": 2,
-      "drink": 2
-    },
-    "desc": "原味脆雞堡 1 個＋花生脆雞堡 1 個＋綠茶 2 杯",
-    "original": 187,
-    "note": "依門市及官方結帳為準"
-  },
-  {
-    "code": "16214",
-    "price": 258,
-    "end": "2026-12-20",
-    "title": "夏日雙人愉快",
+    "code": "26909",
+    "price": 310,
+    "end": "2026-10-31",
+    "title": "特賣會春夏",
     "items": {
       "nuggets": 20,
-      "tart": 4
+      "tart": 6
     },
-    "desc": "上校雞塊 20 塊＋蛋撻 4 顆",
-    "original": 406,
+    "desc": "上校雞塊 × 20 ＋ 原味蛋撻 × 6",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-03-19",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "26910",
+    "price": 38,
+    "end": "2026-10-31",
+    "title": "悠遊卡喝一杯",
+    "items": {
+      "drink": 2
+    },
+    "desc": "經典冰奶茶 × 2",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-03-19",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "26911",
+    "price": 38,
+    "end": "2026-10-31",
+    "title": "Sunny吃喝好茶",
+    "items": {
+      "drink": 2
+    },
+    "desc": "經典冰奶茶 × 2",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-03-19",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "26952",
+    "price": 205,
+    "end": "2026-10-31",
+    "title": "蛋撻神券205蘋",
+    "items": {
+      "tart": 6,
+      "drink": 1
+    },
+    "desc": "原味蛋撻 × 6 ＋ 蘋果汁 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-03-26",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "26953",
+    "price": 209,
+    "end": "2026-10-31",
+    "title": "蛋撻神券209可",
+    "items": {
+      "tart": 6,
+      "drink": 1
+    },
+    "desc": "原味蛋撻 × 6 ＋ 瓶裝百事可樂 × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-03-26",
+    "orderTypes": [
+      2
+    ]
+  },
+  {
+    "code": "50528",
+    "price": 333,
+    "end": "2026-10-26",
+    "title": "無骨澎派桶",
+    "items": {
+      "boneless": 6,
+      "tart": 6
+    },
+    "desc": "無骨雞腿霸 6 塊＋原味蛋撻 6 顆＋任選沾醬",
+    "original": 736,
     "note": "依門市及官方結帳為準"
   },
   {
-    "code": "16216",
-    "price": 244,
-    "end": "2026-12-20",
-    "title": "夏日最強食雞",
+    "code": "50529",
+    "price": 333,
+    "end": "2026-10-26",
+    "title": "經典澎派桶",
+    "items": {
+      "fried": 6,
+      "tart": 6
+    },
+    "desc": "咔啦脆雞 6 塊＋原味蛋撻 6 顆",
+    "original": 720,
+    "note": "依門市及官方結帳為準"
+  },
+  {
+    "code": "50551",
+    "price": 175,
+    "end": "2026-10-19",
+    "title": "限時炸雞買一送一",
     "items": {
       "fried": 4,
-      "tart": 2
+      "drink": 2
     },
-    "desc": "咔啦脆雞 4 塊＋蛋撻 2 顆",
-    "original": 382,
-    "note": "依門市及官方結帳為準"
+    "desc": "咔啦脆雞 4 塊＋小杯無糖綠茶 2 杯",
+    "original": 350,
+    "note": "限時優惠，請確認供餐及適用門市"
+  },
+  {
+    "code": "50552",
+    "price": 294,
+    "end": "2026-10-19",
+    "title": "原味蛋撻買6顆送6顆紅豆奶皇",
+    "items": {
+      "tart": 12
+    },
+    "desc": "原味蛋撻 × 6 ＋ 紅豆奶皇蛋撻 × 6",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-09-22",
+    "orderTypes": [
+      1,
+      2
+    ]
   }
 ]
