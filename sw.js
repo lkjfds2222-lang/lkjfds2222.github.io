@@ -1,10 +1,15 @@
-/* 離線顯示最近已瀏覽的網頁：每日 JSON 採網路優先，不把過期資料當即時。 */
-const CACHE='kfc-v3-shell-v1';
-const CORE=['./','./index.html','./v3.js','./manifest.webmanifest','./app-icon.svg'];
-self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting())));
-self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
-self.addEventListener('fetch',e=>{
- const r=e.request;if(r.method!=='GET'||new URL(r.url).origin!==self.location.origin)return;
- if(/\.json(?:\?|$)/.test(new URL(r.url).pathname)){e.respondWith(fetch(r).then(resp=>{if(resp.ok){const cp=resp.clone();caches.open(CACHE).then(c=>c.put(r,cp))}return resp}).catch(()=>caches.match(r)));return}
- e.respondWith(fetch(r).then(resp=>{if(resp.ok){const cp=resp.clone();caches.open(CACHE).then(c=>c.put(r,cp))}return resp}).catch(()=>caches.match(r)));
+/* 雞省研究所 V3.1：最新資料優先，僅離線時使用上次載入的靜態網站。 */
+const CACHE='kfc-v31-shell-v1';
+const SHELL=['./','./index.html','./v3.js?v=3.1.0','./manifest.webmanifest','./app-icon.svg'];
+self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting())));
+self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE&&key.startsWith('kfc-')).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
+self.addEventListener('fetch',event=>{
+ const request=event.request,url=new URL(request.url);
+ if(request.method!=='GET'||url.origin!==self.location.origin)return;
+ // 資料檔絕不存入 App Shell 快取；失敗時由網頁顯示離線快照並標示狀態。
+ if(url.pathname.endsWith('.json')){event.respondWith(fetch(request,{cache:'no-store'}));return;}
+ event.respondWith(fetch(request).then(response=>{
+   if(response.ok){const clone=response.clone();event.waitUntil(caches.open(CACHE).then(cache=>cache.put(request,clone)));}
+   return response;
+ }).catch(async()=>{const hit=await caches.match(request);if(hit)return hit;if(request.mode==='navigate')return caches.match('./index.html');return Response.error();}));
 });
