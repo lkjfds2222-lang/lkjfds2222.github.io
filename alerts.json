@@ -1,11 +1,137 @@
 {
-  "generatedAt": "2026-10-18T20:42:27+08:00",
+  "generatedAt": "2026-10-19T09:46:54+08:00",
   "alerts": [
     {
       "kind": "verification-required",
       "code": "26859",
       "reason": "來源餐點明細與已收錄內容不同，暫不改寫",
       "fingerprint": "{\"code\": \"26859\", \"oldItems\": {\"drink\": 1, \"nuggets\": 4, \"tart\": 1}, \"reason\": \"來源餐點明細與已收錄內容不同，暫不改寫\", \"seenItems\": {\"drink\": 1, \"nuggets\": 4}}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "40670",
+      "reason": "來源餐點明細與已收錄內容不同，暫不改寫",
+      "fingerprint": "{\"code\": \"40670\", \"oldItems\": {\"nuggets\": 4}, \"reason\": \"來源餐點明細與已收錄內容不同，暫不改寫\", \"seenItems\": {\"qqBalls\": 4}}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16643",
+      "reason": "來源餐點明細與已收錄內容不同，暫不改寫",
+      "fingerprint": "{\"code\": \"16643\", \"oldItems\": {\"drink\": 1, \"fries\": 1, \"tart\": 6}, \"reason\": \"來源餐點明細與已收錄內容不同，暫不改寫\", \"seenItems\": {\"drink\": 1, \"qqBalls\": 10, \"tart\": 6}}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16644",
+      "reason": "來源餐點明細與已收錄內容不同，暫不改寫",
+      "fingerprint": "{\"code\": \"16644\", \"oldItems\": {\"drink\": 1, \"tart\": 7}, \"reason\": \"來源餐點明細與已收錄內容不同，暫不改寫\", \"seenItems\": {\"drink\": 1, \"qqBalls\": 10, \"tart\": 6}}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16647",
+      "reason": "來源餐點明細與已收錄內容不同，暫不改寫",
+      "fingerprint": "{\"code\": \"16647\", \"oldItems\": {\"drink\": 1, \"nuggets\": 4, \"tart\": 6}, \"reason\": \"來源餐點明細與已收錄內容不同，暫不改寫\", \"seenItems\": {\"drink\": 1, \"qqBalls\": 4, \"tart\": 6}}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16214",
+      "reason": "Calling Taiwan 到期日與既有資料不同，未自動改期",
+      "fingerprint": "{\"callingEnd\": \"2026-12-20\", \"code\": \"16214\", \"currentEnd\": \"2026-12-30\", \"reason\": \"Calling Taiwan 到期日與既有資料不同，未自動改期\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16220",
+      "reason": "Calling Taiwan 到期日與既有資料不同，未自動改期",
+      "fingerprint": "{\"callingEnd\": \"2026-12-20\", \"code\": \"16220\", \"currentEnd\": \"2026-12-30\", \"reason\": \"Calling Taiwan 到期日與既有資料不同，未自動改期\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16360",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"qqBalls\": 10, \"tart\": 6}, \"code\": \"16360\", \"currentItems\": {\"qqBalls\": 1, \"tart\": 6}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16411",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"qqBalls\": 20}, \"code\": \"16411\", \"currentItems\": {\"qqBalls\": 2}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16416",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"qqBalls\": 20}, \"code\": \"16416\", \"currentItems\": {\"qqBalls\": 2}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16643",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"drink\": 1, \"fries\": 1, \"qqBalls\": 10, \"tart\": 6}, \"code\": \"16643\", \"currentItems\": {\"drink\": 1, \"fries\": 1, \"tart\": 6}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16644",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"drink\": 1, \"qqBalls\": 10, \"tart\": 7}, \"code\": \"16644\", \"currentItems\": {\"drink\": 1, \"tart\": 7}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16645",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"drink\": 1, \"nuggets\": 4, \"tart\": 7}, \"code\": \"16645\", \"currentItems\": {\"drink\": 1, \"nuggets\": 4, \"tart\": 6}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16646",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"drink\": 1, \"fries\": 1, \"tart\": 7}, \"code\": \"16646\", \"currentItems\": {\"drink\": 1, \"tart\": 7}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16647",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"drink\": 1, \"nuggets\": 4, \"qqBalls\": 10, \"tart\": 7}, \"code\": \"16647\", \"currentItems\": {\"drink\": 1, \"nuggets\": 4, \"tart\": 6}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16648",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"drink\": 1, \"fries\": 1, \"nuggets\": 4, \"tart\": 7}, \"code\": \"16648\", \"currentItems\": {\"drink\": 1, \"nuggets\": 1, \"tart\": 6}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16830",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"soup\": 2, \"tart\": 6}, \"code\": \"16830\", \"currentItems\": {\"tart\": 6}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16832",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"burger\": 1, \"drink\": 1, \"fries\": 1, \"tart\": 1}, \"code\": \"16832\", \"currentItems\": {\"burger\": 1, \"drink\": 1, \"tart\": 1}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16839",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"drink\": 1, \"fried\": 2, \"nuggets\": 8}, \"code\": \"16839\", \"currentItems\": {\"drink\": 1, \"fried\": 2, \"nuggets\": 4}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16840",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"drink\": 1, \"fried\": 2, \"nuggets\": 8, \"tart\": 1}, \"code\": \"16840\", \"currentItems\": {\"drink\": 1, \"fried\": 2, \"nuggets\": 4, \"tart\": 1}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16846",
+      "reason": "Calling Taiwan 到期日與既有資料不同，未自動改期",
+      "fingerprint": "{\"callingEnd\": \"2027-02-28\", \"code\": \"16846\", \"currentEnd\": \"2027-03-31\", \"reason\": \"Calling Taiwan 到期日與既有資料不同，未自動改期\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16858",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"fried\": 2, \"qqBalls\": 10}, \"code\": \"16858\", \"currentItems\": {\"fried\": 2}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
     },
     {
       "kind": "verification-required",
@@ -39,6 +165,12 @@
     },
     {
       "kind": "verification-required",
+      "code": "16033",
+      "reason": "有額外加價口味選項；替換選項會改變餐點類別",
+      "fingerprint": "{\"code\": \"16033\", \"reason\": \"有額外加價口味選項；替換選項會改變餐點類別\", \"seenPrice\": 77, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
       "code": "16851",
       "reason": "有額外加價口味選項；有額外加價口味選項",
       "fingerprint": "{\"code\": \"16851\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 79, \"source\": \"KCouper\"}"
@@ -48,6 +180,30 @@
       "code": "16388",
       "reason": "有額外加價口味選項",
       "fingerprint": "{\"code\": \"16388\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 80, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16092",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16092\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 83, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "26918",
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"26918\", \"reason\": \"有額外加價口味選項；有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 85, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "26861",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"26861\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 94, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16253",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16253\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 99, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
@@ -63,15 +219,51 @@
     },
     {
       "kind": "verification-required",
+      "code": "26851",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"26851\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 100, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16252",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16252\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 106, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
       "code": "26990",
       "reason": "有額外加價口味選項",
       "fingerprint": "{\"code\": \"26990\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 110, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
+      "code": "16034",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16034\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 110, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16004",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16004\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 111, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
       "code": "16721",
       "reason": "有額外加價口味選項",
       "fingerprint": "{\"code\": \"16721\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 111, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "26810",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"26810\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 115, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16039",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16039\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 119, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
@@ -94,8 +286,14 @@
     {
       "kind": "verification-required",
       "code": "16858",
-      "reason": "有額外加價口味選項；未識別品項：雙色轉轉QQ球",
-      "fingerprint": "{\"code\": \"16858\", \"reason\": \"有額外加價口味選項；未識別品項：雙色轉轉QQ球\", \"seenPrice\": 130, \"source\": \"KCouper\"}"
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16858\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 130, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "26775",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"26775\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 133, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
@@ -105,9 +303,33 @@
     },
     {
       "kind": "verification-required",
+      "code": "16535",
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16535\", \"reason\": \"有額外加價口味選項；有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 133, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "26776",
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"26776\", \"reason\": \"有額外加價口味選項；有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 135, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "26819",
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"26819\", \"reason\": \"有額外加價口味選項；有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 135, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
       "code": "16845",
       "reason": "有額外加價口味選項",
       "fingerprint": "{\"code\": \"16845\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 135, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16536",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16536\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 138, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
@@ -123,9 +345,51 @@
     },
     {
       "kind": "verification-required",
+      "code": "26926",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"26926\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 140, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
       "code": "26975",
       "reason": "有額外加價口味選項",
       "fingerprint": "{\"code\": \"26975\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 141, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16037",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16037\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 142, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "26924",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"26924\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 145, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "26850",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"26850\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 149, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "26978",
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"26978\", \"reason\": \"有額外加價口味選項；有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 159, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16073",
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16073\", \"reason\": \"有額外加價口味選項；有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 159, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "26823",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"26823\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 162, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
@@ -141,6 +405,12 @@
     },
     {
       "kind": "verification-required",
+      "code": "16035",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16035\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 168, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
       "code": "16840",
       "reason": "有額外加價口味選項；有額外加價口味選項",
       "fingerprint": "{\"code\": \"16840\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 168, \"source\": \"KCouper\"}"
@@ -153,9 +423,33 @@
     },
     {
       "kind": "verification-required",
+      "code": "16087",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16087\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 170, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "26920",
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"26920\", \"reason\": \"有額外加價口味選項；有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 172, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
       "code": "50551",
       "reason": "有額外加價口味選項；品項名稱或數量不明；有額外加價口味選項",
       "fingerprint": "{\"code\": \"50551\", \"reason\": \"有額外加價口味選項；品項名稱或數量不明；有額外加價口味選項\", \"seenPrice\": 175, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16085",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16085\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 180, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16101",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16101\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 180, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
@@ -186,68 +480,309 @@
       "code": "16090",
       "reason": "有額外加價口味選項；有額外加價口味選項",
       "fingerprint": "{\"code\": \"16090\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 232, \"source\": \"KCouper\"}"
+    }
+  ],
+  "newAlerts": [
+    {
+      "kind": "verification-required",
+      "code": "40670",
+      "reason": "來源餐點明細與已收錄內容不同，暫不改寫",
+      "fingerprint": "{\"code\": \"40670\", \"oldItems\": {\"nuggets\": 4}, \"reason\": \"來源餐點明細與已收錄內容不同，暫不改寫\", \"seenItems\": {\"qqBalls\": 4}}"
     },
     {
       "kind": "verification-required",
-      "code": "16849",
-      "reason": "大/中薯不可替代小薯；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16849\", \"reason\": \"大/中薯不可替代小薯；有額外加價口味選項\", \"seenPrice\": 239, \"source\": \"KCouper\"}"
+      "code": "16643",
+      "reason": "來源餐點明細與已收錄內容不同，暫不改寫",
+      "fingerprint": "{\"code\": \"16643\", \"oldItems\": {\"drink\": 1, \"fries\": 1, \"tart\": 6}, \"reason\": \"來源餐點明細與已收錄內容不同，暫不改寫\", \"seenItems\": {\"drink\": 1, \"qqBalls\": 10, \"tart\": 6}}"
     },
     {
       "kind": "verification-required",
-      "code": "16216",
-      "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16216\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 244, \"source\": \"KCouper\"}"
+      "code": "16644",
+      "reason": "來源餐點明細與已收錄內容不同，暫不改寫",
+      "fingerprint": "{\"code\": \"16644\", \"oldItems\": {\"drink\": 1, \"tart\": 7}, \"reason\": \"來源餐點明細與已收錄內容不同，暫不改寫\", \"seenItems\": {\"drink\": 1, \"qqBalls\": 10, \"tart\": 6}}"
     },
     {
       "kind": "verification-required",
-      "code": "16853",
-      "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16853\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 245, \"source\": \"KCouper\"}"
+      "code": "16647",
+      "reason": "來源餐點明細與已收錄內容不同，暫不改寫",
+      "fingerprint": "{\"code\": \"16647\", \"oldItems\": {\"drink\": 1, \"nuggets\": 4, \"tart\": 6}, \"reason\": \"來源餐點明細與已收錄內容不同，暫不改寫\", \"seenItems\": {\"drink\": 1, \"qqBalls\": 4, \"tart\": 6}}"
     },
     {
       "kind": "verification-required",
-      "code": "26855",
-      "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"26855\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 250, \"source\": \"KCouper\"}"
+      "code": "16214",
+      "reason": "Calling Taiwan 到期日與既有資料不同，未自動改期",
+      "fingerprint": "{\"callingEnd\": \"2026-12-20\", \"code\": \"16214\", \"currentEnd\": \"2026-12-30\", \"reason\": \"Calling Taiwan 到期日與既有資料不同，未自動改期\"}"
     },
     {
       "kind": "verification-required",
-      "code": "16855",
-      "reason": "有額外加價口味選項；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16855\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 280, \"source\": \"KCouper\"}"
+      "code": "16220",
+      "reason": "Calling Taiwan 到期日與既有資料不同，未自動改期",
+      "fingerprint": "{\"callingEnd\": \"2026-12-20\", \"code\": \"16220\", \"currentEnd\": \"2026-12-30\", \"reason\": \"Calling Taiwan 到期日與既有資料不同，未自動改期\"}"
     },
     {
       "kind": "verification-required",
-      "code": "26646",
-      "reason": "有額外加價口味選項；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"26646\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 288, \"source\": \"KCouper\"}"
+      "code": "16360",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"qqBalls\": 10, \"tart\": 6}, \"code\": \"16360\", \"currentItems\": {\"qqBalls\": 1, \"tart\": 6}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16411",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"qqBalls\": 20}, \"code\": \"16411\", \"currentItems\": {\"qqBalls\": 2}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16416",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"qqBalls\": 20}, \"code\": \"16416\", \"currentItems\": {\"qqBalls\": 2}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16643",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"drink\": 1, \"fries\": 1, \"qqBalls\": 10, \"tart\": 6}, \"code\": \"16643\", \"currentItems\": {\"drink\": 1, \"fries\": 1, \"tart\": 6}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16644",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"drink\": 1, \"qqBalls\": 10, \"tart\": 7}, \"code\": \"16644\", \"currentItems\": {\"drink\": 1, \"tart\": 7}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16645",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"drink\": 1, \"nuggets\": 4, \"tart\": 7}, \"code\": \"16645\", \"currentItems\": {\"drink\": 1, \"nuggets\": 4, \"tart\": 6}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16646",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"drink\": 1, \"fries\": 1, \"tart\": 7}, \"code\": \"16646\", \"currentItems\": {\"drink\": 1, \"tart\": 7}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16647",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"drink\": 1, \"nuggets\": 4, \"qqBalls\": 10, \"tart\": 7}, \"code\": \"16647\", \"currentItems\": {\"drink\": 1, \"nuggets\": 4, \"tart\": 6}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16648",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"drink\": 1, \"fries\": 1, \"nuggets\": 4, \"tart\": 7}, \"code\": \"16648\", \"currentItems\": {\"drink\": 1, \"nuggets\": 1, \"tart\": 6}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16830",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"soup\": 2, \"tart\": 6}, \"code\": \"16830\", \"currentItems\": {\"tart\": 6}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16832",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"burger\": 1, \"drink\": 1, \"fries\": 1, \"tart\": 1}, \"code\": \"16832\", \"currentItems\": {\"burger\": 1, \"drink\": 1, \"tart\": 1}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16839",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"drink\": 1, \"fried\": 2, \"nuggets\": 8}, \"code\": \"16839\", \"currentItems\": {\"drink\": 1, \"fried\": 2, \"nuggets\": 4}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16840",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"drink\": 1, \"fried\": 2, \"nuggets\": 8, \"tart\": 1}, \"code\": \"16840\", \"currentItems\": {\"drink\": 1, \"fried\": 2, \"nuggets\": 4, \"tart\": 1}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
     },
     {
       "kind": "verification-required",
       "code": "16846",
-      "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16846\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 295, \"source\": \"KCouper\"}"
+      "reason": "Calling Taiwan 到期日與既有資料不同，未自動改期",
+      "fingerprint": "{\"callingEnd\": \"2027-02-28\", \"code\": \"16846\", \"currentEnd\": \"2027-03-31\", \"reason\": \"Calling Taiwan 到期日與既有資料不同，未自動改期\"}"
     },
     {
       "kind": "verification-required",
-      "code": "16856",
-      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16856\", \"reason\": \"有額外加價口味選項；有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 299, \"source\": \"KCouper\"}"
+      "code": "16858",
+      "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
+      "fingerprint": "{\"callingItems\": {\"fried\": 2, \"qqBalls\": 10}, \"code\": \"16858\", \"currentItems\": {\"fried\": 2}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
     },
     {
       "kind": "verification-required",
-      "code": "26863",
+      "code": "16033",
+      "reason": "有額外加價口味選項；替換選項會改變餐點類別",
+      "fingerprint": "{\"code\": \"16033\", \"reason\": \"有額外加價口味選項；替換選項會改變餐點類別\", \"seenPrice\": 77, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16092",
       "reason": "有額外加價口味選項；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"26863\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 302, \"source\": \"KCouper\"}"
+      "fingerprint": "{\"code\": \"16092\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 83, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
-      "code": "50529",
-      "reason": "有額外加價口味選項；品項名稱或數量不明",
-      "fingerprint": "{\"code\": \"50529\", \"reason\": \"有額外加價口味選項；品項名稱或數量不明\", \"seenPrice\": 333, \"source\": \"KCouper\"}"
+      "code": "26918",
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"26918\", \"reason\": \"有額外加價口味選項；有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 85, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "26861",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"26861\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 94, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16253",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16253\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 99, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "26851",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"26851\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 100, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16252",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16252\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 106, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16034",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16034\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 110, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16004",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16004\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 111, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "26810",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"26810\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 115, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16039",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16039\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 119, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16858",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16858\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 130, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "26775",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"26775\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 133, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16535",
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16535\", \"reason\": \"有額外加價口味選項；有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 133, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "26776",
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"26776\", \"reason\": \"有額外加價口味選項；有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 135, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "26819",
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"26819\", \"reason\": \"有額外加價口味選項；有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 135, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16536",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16536\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 138, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "26926",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"26926\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 140, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16037",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16037\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 142, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "26924",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"26924\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 145, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "26850",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"26850\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 149, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "26978",
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"26978\", \"reason\": \"有額外加價口味選項；有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 159, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16073",
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16073\", \"reason\": \"有額外加價口味選項；有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 159, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "26823",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"26823\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 162, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16035",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16035\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 168, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16087",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16087\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 170, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "26920",
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"26920\", \"reason\": \"有額外加價口味選項；有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 172, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16085",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16085\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 180, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16101",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16101\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 180, \"source\": \"KCouper\"}"
     }
   ],
-  "newAlerts": [],
   "sourceErrors": {}
 }

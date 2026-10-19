@@ -15,7 +15,16 @@
     "start": "2026-08-05",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16659",
@@ -33,7 +42,14 @@
     "start": "2026-08-12",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16660",
@@ -52,7 +68,14 @@
     "start": "2026-08-12",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16662",
@@ -71,7 +94,15 @@
     "start": "2026-08-13",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16712",
@@ -90,7 +121,15 @@
     "start": "2026-09-02",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16804",
@@ -108,7 +147,14 @@
     "start": "2026-09-16",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16846",
@@ -121,7 +167,15 @@
     },
     "desc": "炸雞 5 塊桶＋蛋撻 2 顆",
     "original": 453,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "26646",
@@ -135,7 +189,39 @@
     },
     "desc": "炸雞 5 塊桶＋蛋撻 1 顆＋中杯無糖綠茶",
     "original": 442,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "16508",
+    "price": 59,
+    "end": "2027-02-28",
+    "title": "遠傳幸福1+1",
+    "items": {
+      "qqBalls": 2
+    },
+    "desc": "雙色轉轉QQ球 × 2",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-09-17",
+    "orderTypes": [
+      2
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16549",
@@ -154,7 +240,15 @@
     "start": "2026-07-28",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16563",
@@ -172,7 +266,14 @@
     "start": "2026-08-05",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16565",
@@ -190,7 +291,14 @@
     "start": "2026-08-05",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16604",
@@ -209,7 +317,15 @@
     "start": "2026-07-28",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16623",
@@ -228,7 +344,14 @@
     "start": "2026-08-05",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16624",
@@ -247,7 +370,14 @@
     "start": "2026-08-05",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16643",
@@ -266,7 +396,12 @@
     "start": "2026-08-05",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [],
+      "priceAgreement": false,
+      "checkedAt": null
+    }
   },
   {
     "code": "16644",
@@ -284,7 +419,12 @@
     "start": "2026-08-05",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [],
+      "priceAgreement": false,
+      "checkedAt": null
+    }
   },
   {
     "code": "16645",
@@ -303,7 +443,14 @@
     "start": "2026-08-05",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16646",
@@ -321,7 +468,14 @@
     "start": "2026-08-04",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16647",
@@ -340,7 +494,12 @@
     "start": "2026-08-05",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [],
+      "priceAgreement": false,
+      "checkedAt": null
+    }
   },
   {
     "code": "16648",
@@ -359,7 +518,14 @@
     "start": "2026-08-06",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16714",
@@ -377,7 +543,14 @@
     "start": "2026-09-16",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16828",
@@ -390,7 +563,15 @@
     },
     "desc": "蛋撻禮盒 6 顆＋小薯 1 份",
     "original": 335,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16829",
@@ -408,7 +589,16 @@
     "orderTypes": [
       2
     ],
-    "start": "2026-09-30"
+    "start": "2026-09-30",
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16830",
@@ -420,7 +610,14 @@
     },
     "desc": "蛋撻禮盒 6 顆＋玉米濃湯 2 杯",
     "original": 374,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16832",
@@ -439,7 +636,15 @@
     "start": "2026-09-30",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "好康情報誌"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16839",
@@ -453,7 +658,14 @@
     },
     "desc": "咔啦脆雞 2 塊＋上校雞塊 4 塊＋小杯綠茶 1 杯",
     "original": 224,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16840",
@@ -468,7 +680,14 @@
     },
     "desc": "咔啦脆雞 2 塊＋雞塊 4 塊＋蛋撻 1 顆＋小杯綠茶 1 杯",
     "original": 273,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16842",
@@ -483,7 +702,15 @@
     },
     "desc": "咔啦脆雞 2 塊＋蛋撻 1 顆＋小薯 1 份＋小杯綠茶 1 杯",
     "original": 265,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16843",
@@ -498,7 +725,15 @@
     },
     "desc": "花生熔岩咔啦雞腿堡 1 個＋蛋撻 1 顆＋小薯 1 份＋小杯綠茶",
     "original": 250,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16844",
@@ -512,7 +747,15 @@
     },
     "desc": "雙層咔啦雞腿堡 1 個＋蛋撻 1 顆＋小杯綠茶 1 杯",
     "original": 227,
-    "note": "雙層堡以 1 個雞腿堡計算，請注意尺寸差異"
+    "note": "雙層堡以 1 個雞腿堡計算，請注意尺寸差異",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16845",
@@ -527,7 +770,15 @@
     },
     "desc": "咔啦雞腿堡 1 個＋蛋撻 1 顆＋小薯 1 份＋小可樂 1 杯",
     "original": 218,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16847",
@@ -545,7 +796,16 @@
     "orderTypes": [
       2
     ],
-    "start": "2026-09-30"
+    "start": "2026-09-30",
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16849",
@@ -559,7 +819,14 @@
     },
     "desc": "上校雞塊 20 塊＋大薯 1 份＋小杯綠茶 2 杯",
     "original": 342,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16850",
@@ -572,7 +839,14 @@
     },
     "desc": "咔啦脆雞 1 塊＋小杯綠茶 1 杯",
     "original": 104,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16851",
@@ -586,7 +860,14 @@
     },
     "desc": "咔啦脆雞 1 塊＋薯餅 1 份＋小杯綠茶 1 杯",
     "original": 144,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16852",
@@ -601,7 +882,14 @@
     },
     "desc": "雞塊 8 塊＋咔啦雞腿堡 1 個＋蛋撻 2 顆＋小杯綠茶 2 杯",
     "original": 357,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16853",
@@ -617,7 +905,14 @@
     },
     "desc": "咔啦雞腿堡 2 個＋蛋撻 1 顆＋小薯 1 份＋雞塊 4 塊＋小杯綠茶 2 杯",
     "original": 395,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16854",
@@ -631,7 +926,14 @@
     },
     "desc": "青花椒堡 1 個＋咔啦雞腿堡 1 個＋蛋撻 2 顆＋小杯綠茶 2 杯",
     "original": 364,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16855",
@@ -648,7 +950,14 @@
     },
     "desc": "青花椒雞腿堡 1 個＋炸雞 2 塊＋雞塊 4 塊＋蛋撻 1 顆＋小薯＋綠茶 2 杯",
     "original": 452,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16856",
@@ -664,7 +973,14 @@
     },
     "desc": "花生熔岩雞腿堡 1 個＋炸雞 2 塊＋蛋撻 2 顆＋小薯＋綠茶 2 杯",
     "original": 474,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16858",
@@ -676,7 +992,14 @@
     },
     "desc": "咔啦脆雞 2 塊＋雙色轉轉 QQ 球 10 顆",
     "original": 201,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16859",
@@ -689,7 +1012,15 @@
     },
     "desc": "上校雞塊 20 塊＋小杯綠茶 1 杯",
     "original": 278,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16053",
@@ -708,7 +1039,14 @@
     "start": "2026-07-22",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16158",
@@ -726,7 +1064,15 @@
     "start": "2026-05-20",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16311",
@@ -745,7 +1091,64 @@
     "start": "2026-06-18",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "16360",
+    "price": 217,
+    "end": "2027-01-31",
+    "title": "省錢主婦甜蜜",
+    "items": {
+      "qqBalls": 1,
+      "tart": 6
+    },
+    "desc": "雙色轉轉QQ球 × 1 ＋ 原味蛋撻 × 6",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-07-01",
+    "orderTypes": [
+      2
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "16411",
+    "price": 59,
+    "end": "2027-01-31",
+    "title": "特賣會圓形",
+    "items": {
+      "qqBalls": 2
+    },
+    "desc": "雙色轉轉QQ球 × 2",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-07-14",
+    "orderTypes": [
+      2
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "好康情報誌"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16413",
@@ -762,7 +1165,40 @@
     "start": "2026-07-15",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "16416",
+    "price": 59,
+    "end": "2027-01-31",
+    "title": "悠遊卡熱銷",
+    "items": {
+      "qqBalls": 2
+    },
+    "desc": "雙色轉轉QQ球 × 2",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-07-16",
+    "orderTypes": [
+      2
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16420",
@@ -781,7 +1217,15 @@
     "start": "2026-07-15",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16469",
@@ -800,7 +1244,41 @@
     "start": "2026-07-15",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "16475",
+    "price": 217,
+    "end": "2027-01-31",
+    "title": "Sunny吃喝中秋",
+    "items": {
+      "qqBalls": 1,
+      "tart": 6
+    },
+    "desc": "雙色轉轉QQ球 × 1 ＋ 原味蛋撻 × 6",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-07-15",
+    "orderTypes": [
+      2
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16688",
@@ -818,7 +1296,15 @@
     "start": "2026-08-12",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16388",
@@ -831,7 +1317,15 @@
     },
     "desc": "原味蛋撻 2 顆＋小杯綠茶 1 杯",
     "original": 131,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16598",
@@ -848,7 +1342,15 @@
     "start": "2026-08-05",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16599",
@@ -865,7 +1367,15 @@
     "start": "2026-08-05",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "40670",
@@ -882,7 +1392,12 @@
     "start": "2025-05-29",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [],
+      "priceAgreement": false,
+      "checkedAt": null
+    }
   },
   {
     "code": "50516",
@@ -902,7 +1417,14 @@
     "orderTypes": [
       1,
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "50544",
@@ -920,7 +1442,14 @@
     "orderTypes": [
       1,
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16214",
@@ -938,7 +1467,15 @@
     "orderTypes": [
       2
     ],
-    "start": "2026-05-20"
+    "start": "2026-05-20",
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16220",
@@ -955,7 +1492,15 @@
     "orderTypes": [
       2
     ],
-    "start": "2026-05-20"
+    "start": "2026-05-20",
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16430",
@@ -974,7 +1519,14 @@
     "start": "2026-09-09",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16708",
@@ -992,7 +1544,14 @@
     "start": "2026-09-02",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16720",
@@ -1005,7 +1564,14 @@
     },
     "desc": "原味脆雞堡（小）2 個＋小杯無糖綠茶 2 杯",
     "original": 178,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16721",
@@ -1018,7 +1584,14 @@
     },
     "desc": "花生脆雞堡（小）2 個＋小杯無糖綠茶 2 杯",
     "original": 196,
-    "note": "提供花生口味小漢堡，不等同原味口味"
+    "note": "提供花生口味小漢堡，不等同原味口味",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16722",
@@ -1036,7 +1609,15 @@
     "orderTypes": [
       2
     ],
-    "start": "2026-09-02"
+    "start": "2026-09-02",
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16723",
@@ -1054,7 +1635,15 @@
     "orderTypes": [
       2
     ],
-    "start": "2026-09-02"
+    "start": "2026-09-02",
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16796",
@@ -1072,7 +1661,14 @@
     "start": "2026-09-16",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16801",
@@ -1090,7 +1686,15 @@
     "start": "2026-09-17",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16802",
@@ -1108,7 +1712,15 @@
     "start": "2026-09-16",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16693",
@@ -1126,7 +1738,14 @@
     "start": "2026-09-02",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16212",
@@ -1139,7 +1758,14 @@
     },
     "desc": "原味脆雞堡 1 個＋花生脆雞堡 1 個＋綠茶 2 杯",
     "original": 187,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16216",
@@ -1152,7 +1778,14 @@
     },
     "desc": "咔啦脆雞 4 塊＋蛋撻 2 顆",
     "original": 382,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16218",
@@ -1165,7 +1798,14 @@
     },
     "desc": "爆脆無骨雞腿霸 1 塊＋小杯綠茶 1 杯",
     "original": 104,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16221",
@@ -1178,7 +1818,14 @@
     },
     "desc": "香酥脆薯（小）1 份＋小杯綠茶 1 杯",
     "original": 74,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16312",
@@ -1197,7 +1844,14 @@
     "start": "2026-06-17",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16324",
@@ -1215,7 +1869,14 @@
     "start": "2026-06-17",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16349",
@@ -1229,7 +1890,14 @@
     },
     "desc": "原味脆雞堡（小）1 個＋原味蛋撻 2 顆＋小杯綠茶 1 杯",
     "original": null,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16626",
@@ -1248,7 +1916,14 @@
     "start": "2026-08-05",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "26990",
@@ -1263,7 +1938,15 @@
     },
     "desc": "原味脆雞堡 1 個＋蛋撻 1 顆＋小薯 1 份＋綠茶 1 杯",
     "original": 179,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "26991",
@@ -1277,7 +1960,87 @@
     },
     "desc": "原味脆雞堡 1 個＋雞塊 8 塊＋綠茶 1 杯",
     "original": 187,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "16101",
+    "price": 180,
+    "end": "2026-12-12",
+    "title": "【凱基人壽】咔啦脆雞 × 1 + 咔啦雞腿堡 × 1 + 原味蛋撻 × 1 + 香酥脆薯(小)× 1 + 冰無糖綠茶(小)× 1",
+    "desc": "【凱基人壽】咔啦脆雞 × 1 + 咔啦雞腿堡 × 1 + 原味蛋撻 × 1 + 香酥脆薯(小)× 1 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "fried": 1,
+      "burger": 1,
+      "tart": 1,
+      "fries": 1,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "16056",
+    "price": 255,
+    "end": "2026-11-30",
+    "title": "兆豐粽夏",
+    "items": {
+      "qqBalls": 2,
+      "tart": 6
+    },
+    "desc": "雙色轉轉QQ球 × 2 ＋ 原味蛋撻 × 6",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-05-06",
+    "orderTypes": [
+      2
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "16073",
+    "price": 159,
+    "end": "2026-11-30",
+    "title": "【富邦產險】咔啦雞腿堡 × 1 + 咔啦脆雞 × 1 + 香酥脆薯(小)× 1 + 冰無糖綠茶(小)× 1",
+    "desc": "【富邦產險】咔啦雞腿堡 × 1 + 咔啦脆雞 × 1 + 香酥脆薯(小)× 1 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "burger": 1,
+      "fried": 1,
+      "fries": 1,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16088",
@@ -1291,7 +2054,14 @@
     },
     "desc": "爆脆無骨雞腿霸 2 塊＋小薯 1 份＋小杯綠茶 1 杯",
     "original": 216,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16090",
@@ -1306,7 +2076,59 @@
     },
     "desc": "咔啦脆雞 2 塊＋無骨雞腿霸 2 塊＋蛋撻 1 顆＋綠茶 1 杯",
     "original": null,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "16091",
+    "price": 489,
+    "end": "2026-11-30",
+    "title": "【冠軍之路爭霸讚】原味蛋撻禮盒(6入)× 2 + 上校雞塊 × 20 + 冰無糖綠茶(小)× 2",
+    "desc": "【冠軍之路爭霸讚】原味蛋撻禮盒(6入)× 2 + 上校雞塊 × 20 + 冰無糖綠茶(小)× 2",
+    "items": {
+      "tart": 12,
+      "nuggets": 20,
+      "drink": 2
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "16092",
+    "price": 83,
+    "end": "2026-11-30",
+    "title": "【特賣會情報粉絲團】原味脆雞堡 × 1 + 香酥脆薯(小)× 1 + 冰無糖綠茶(小)× 1",
+    "desc": "【特賣會情報粉絲團】原味脆雞堡 × 1 + 香酥脆薯(小)× 1 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "smallBurger": 1,
+      "fries": 1,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16097",
@@ -1325,7 +2147,36 @@
     "start": "2026-05-06",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "16098",
+    "price": 80,
+    "end": "2026-11-30",
+    "title": "【超級避薯】原味蛋撻 × 1 + 香酥脆薯(小)× 1 + 玉米濃湯(小)× 1",
+    "desc": "【超級避薯】原味蛋撻 × 1 + 香酥脆薯(小)× 1 + 玉米濃湯(小)× 1",
+    "items": {
+      "tart": 1,
+      "fries": 1,
+      "soup": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16125",
@@ -1338,7 +2189,15 @@
     },
     "desc": "原味蛋撻 1 顆＋小杯綠茶 1 杯",
     "original": 82,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "16283",
@@ -1356,7 +2215,58 @@
     "start": "2026-06-03",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "16535",
+    "price": 133,
+    "end": "2026-11-30",
+    "title": "【絕讚時刻】咔啦脆雞 × 2 + 香酥脆薯(小)× 1 + 冰無糖綠茶(小)× 1",
+    "desc": "【絕讚時刻】咔啦脆雞 × 2 + 香酥脆薯(小)× 1 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "fried": 2,
+      "fries": 1,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "16536",
+    "price": 138,
+    "end": "2026-11-30",
+    "title": "【絕讚時刻】咔啦雞腿堡 × 1 + 原味蛋撻 × 2 + 百事可樂(小)× 1",
+    "desc": "【絕讚時刻】咔啦雞腿堡 × 1 + 原味蛋撻 × 2 + 百事可樂(小)× 1",
+    "items": {
+      "burger": 1,
+      "tart": 2,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "26385",
@@ -1374,7 +2284,14 @@
     "start": "2026-09-03",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "26968",
@@ -1392,7 +2309,14 @@
     "start": "2026-04-08",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "26975",
@@ -1405,7 +2329,15 @@
     },
     "desc": "原味蛋撻 4 顆＋小杯綠茶 1 杯",
     "original": 229,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "26976",
@@ -1423,7 +2355,40 @@
     "orderTypes": [
       2
     ],
-    "start": "2026-03-26"
+    "start": "2026-03-26",
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "26978",
+    "price": 159,
+    "end": "2026-11-30",
+    "title": "【特賣會情報粉絲團】咔啦脆雞 × 1 + 咔啦雞腿堡 × 1 + 香酥脆薯(小)× 1 + 冰無糖綠茶(小)× 1",
+    "desc": "【特賣會情報粉絲團】咔啦脆雞 × 1 + 咔啦雞腿堡 × 1 + 香酥脆薯(小)× 1 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "fried": 1,
+      "burger": 1,
+      "fries": 1,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "26985",
@@ -1437,7 +2402,351 @@
     },
     "desc": "咔啦雞腿堡 1 個＋蛋撻 2 顆＋小杯綠茶 1 杯",
     "original": 226,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "16004",
+    "price": 111,
+    "end": "2026-10-31",
+    "title": "【上海商銀】咔啦脆雞 × 1 + 原味脆雞堡 × 1 + 冰無糖綠茶(小)× 1",
+    "desc": "【上海商銀】咔啦脆雞 × 1 + 原味脆雞堡 × 1 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "fried": 1,
+      "smallBurger": 1,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "16033",
+    "price": 77,
+    "end": "2026-10-31",
+    "title": "【2026畢業季】咔啦脆雞 × 1 + 玉米濃湯(小)× 1",
+    "desc": "【2026畢業季】咔啦脆雞 × 1 + 玉米濃湯(小)× 1",
+    "items": {
+      "fried": 1,
+      "soup": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "16034",
+    "price": 110,
+    "end": "2026-10-31",
+    "title": "【2026畢業季】原味脆雞堡 × 1 + 原味蛋撻 × 1 + 香酥脆薯(小)× 1 + 冰無糖綠茶(小)× 1",
+    "desc": "【2026畢業季】原味脆雞堡 × 1 + 原味蛋撻 × 1 + 香酥脆薯(小)× 1 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "smallBurger": 1,
+      "tart": 1,
+      "fries": 1,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "16035",
+    "price": 168,
+    "end": "2026-10-31",
+    "title": "【2026畢業季】咔啦脆雞 × 2 + 原味蛋撻 × 2 + 冰無糖綠茶(小)× 1",
+    "desc": "【2026畢業季】咔啦脆雞 × 2 + 原味蛋撻 × 2 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "fried": 2,
+      "tart": 2,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "16037",
+    "price": 142,
+    "end": "2026-10-31",
+    "title": "【2026畢業季】咔啦脆雞堡 × 1 + 上校雞塊 × 4 + 原味蛋撻 × 1 + 冰無糖綠茶(小)× 1",
+    "desc": "【2026畢業季】咔啦脆雞堡 × 1 + 上校雞塊 × 4 + 原味蛋撻 × 1 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "fried": 1,
+      "nuggets": 4,
+      "tart": 1,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "16039",
+    "price": 119,
+    "end": "2026-10-31",
+    "title": "【2026畢業季】咔啦脆雞 × 1 + 原味蛋撻 × 1 + 香酥脆薯(小)× 1 + 百事可樂(小)× 1",
+    "desc": "【2026畢業季】咔啦脆雞 × 1 + 原味蛋撻 × 1 + 香酥脆薯(小)× 1 + 百事可樂(小)× 1",
+    "items": {
+      "fried": 1,
+      "tart": 1,
+      "fries": 1,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "16085",
+    "price": 180,
+    "end": "2026-10-31",
+    "title": "【世界足球冠軍讚】咔啦脆雞 × 1 + 咔啦雞腿堡 × 1 + 原味蛋撻 × 1 + 香酥脆薯(小)× 1 + 冰無糖綠茶(小)× 1",
+    "desc": "【世界足球冠軍讚】咔啦脆雞 × 1 + 咔啦雞腿堡 × 1 + 原味蛋撻 × 1 + 香酥脆薯(小)× 1 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "fried": 1,
+      "burger": 1,
+      "tart": 1,
+      "fries": 1,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "16087",
+    "price": 170,
+    "end": "2026-10-31",
+    "title": "【世界足球冠軍讚】咔啦雞腿堡 × 2 + 冰無糖綠茶(小)× 2",
+    "desc": "【世界足球冠軍讚】咔啦雞腿堡 × 2 + 冰無糖綠茶(小)× 2",
+    "items": {
+      "burger": 2,
+      "drink": 2
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "16252",
+    "price": 106,
+    "end": "2026-10-31",
+    "title": "【J-MART佳瑪】咔啦雞腿堡 × 1 + 薯餅 × 1 + 冰無糖綠茶(小)× 1",
+    "desc": "【J-MART佳瑪】咔啦雞腿堡 × 1 + 薯餅 × 1 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "burger": 1,
+      "hash": 1,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "16253",
+    "price": 99,
+    "end": "2026-10-31",
+    "title": "【J-MART佳瑪】咔啦脆雞 × 1 + 薯餅 × 1 + 冰無糖綠茶(小)× 1",
+    "desc": "【J-MART佳瑪】咔啦脆雞 × 1 + 薯餅 × 1 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "fried": 1,
+      "hash": 1,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "26775",
+    "price": 133,
+    "end": "2026-10-31",
+    "title": "【星展銀行】咔啦雞腿堡 × 1 + 原味蛋撻 × 1 + 香酥脆薯(小)× 1 + 立頓檸檬風味紅茶(小)× 1",
+    "desc": "【星展銀行】咔啦雞腿堡 × 1 + 原味蛋撻 × 1 + 香酥脆薯(小)× 1 + 立頓檸檬風味紅茶(小)× 1",
+    "items": {
+      "burger": 1,
+      "tart": 1,
+      "fries": 1,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "26776",
+    "price": 135,
+    "end": "2026-10-31",
+    "title": "【星展銀行】咔啦脆雞 × 2 + 雞汁風味飯 × 1 + 冰無糖綠茶(小)× 1",
+    "desc": "【星展銀行】咔啦脆雞 × 2 + 雞汁風味飯 × 1 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "fried": 2,
+      "rice": 1,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "26810",
+    "price": 115,
+    "end": "2026-10-31",
+    "title": "【悠遊卡悠遊付】咔啦雞腿堡 × 1 + 雙色轉轉QQ球 × 10 + 冰無糖綠茶(小)× 1",
+    "desc": "【悠遊卡悠遊付】咔啦雞腿堡 × 1 + 雙色轉轉QQ球 × 10 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "burger": 1,
+      "qqBalls": 10,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "26819",
+    "price": 135,
+    "end": "2026-10-31",
+    "title": "【春季野餐攻略】咔啦脆雞 × 2 + 雞汁風味飯 × 1 + 冰無糖綠茶(小)× 1",
+    "desc": "【春季野餐攻略】咔啦脆雞 × 2 + 雞汁風味飯 × 1 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "fried": 2,
+      "rice": 1,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "26823",
+    "price": 162,
+    "end": "2026-10-31",
+    "title": "【春季野餐攻略】咔啦雞腿堡 × 1 + 上校雞塊 × 4 + 原味蛋撻 × 1 + 香酥脆薯(小)× 1 + 冰無糖綠茶(小)× 1",
+    "desc": "【春季野餐攻略】咔啦雞腿堡 × 1 + 上校雞塊 × 4 + 原味蛋撻 × 1 + 香酥脆薯(小)× 1 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "burger": 1,
+      "nuggets": 4,
+      "tart": 1,
+      "fries": 1,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "26832",
@@ -1455,7 +2764,14 @@
     "start": "2026-03-12",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "26833",
@@ -1473,7 +2789,59 @@
     "orderTypes": [
       2
     ],
-    "start": "2026-03-12"
+    "start": "2026-03-12",
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "好康情報誌"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "26850",
+    "price": 149,
+    "end": "2026-10-31",
+    "title": "【Sunny吃喝遊樂粉絲團】咔啦脆雞 × 2 + 薯餅 × 2 + 冰無糖綠茶(小)× 1",
+    "desc": "【Sunny吃喝遊樂粉絲團】咔啦脆雞 × 2 + 薯餅 × 2 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "fried": 2,
+      "hash": 2,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "26851",
+    "price": 100,
+    "end": "2026-10-31",
+    "title": "【GoodLife粉絲團】咔啦脆雞 × 1 + 薯餅 × 2 + 冰無糖綠茶(小)× 1",
+    "desc": "【GoodLife粉絲團】咔啦脆雞 × 1 + 薯餅 × 2 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "fried": 1,
+      "hash": 2,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "26853",
@@ -1487,7 +2855,14 @@
     },
     "desc": "咔啦雞腿堡 1 個＋薯餅 2 份＋小杯綠茶 1 杯",
     "original": 184,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "26855",
@@ -1502,7 +2877,14 @@
     },
     "desc": "咔啦雞腿堡 2 個＋蛋撻 2 顆＋雞塊 4 塊＋小杯綠茶 2 杯",
     "original": 403,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "26859",
@@ -1516,7 +2898,36 @@
     },
     "desc": "上校雞塊 4 塊＋蛋撻 1 顆＋冰奶茶 1 杯",
     "original": 138,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "26861",
+    "price": 94,
+    "end": "2026-10-31",
+    "title": "【Sunny吃喝遊樂粉絲團】上校雞塊 × 8 + 薯餅 × 1 + 冰無糖綠茶(小)× 1",
+    "desc": "【Sunny吃喝遊樂粉絲團】上校雞塊 × 8 + 薯餅 × 1 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "nuggets": 8,
+      "hash": 1,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "26862",
@@ -1533,7 +2944,15 @@
     "orderTypes": [
       2
     ],
-    "start": "2026-03-12"
+    "start": "2026-03-12",
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "好康情報誌"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "26863",
@@ -1550,7 +2969,41 @@
     },
     "desc": "炸雞 2 塊＋雞腿堡 1 個＋蛋撻 2 顆＋小薯 1 份＋雞塊 4 塊＋綠茶 2 杯",
     "original": 491,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "26887",
+    "price": 40,
+    "end": "2026-10-31",
+    "title": "特賣會最強",
+    "items": {
+      "soup": 1,
+      "drink": 1
+    },
+    "desc": "玉米濃湯 × 1 ＋ 冰無糖綠茶(中) × 1",
+    "original": null,
+    "note": "KCouper 公開資料整理；僅供比價，請以肯德基官方結帳為準",
+    "source": "KCouper",
+    "start": "2026-03-19",
+    "orderTypes": [
+      2
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "26888",
@@ -1567,7 +3020,15 @@
     "start": "2026-03-19",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "26904",
@@ -1585,7 +3046,14 @@
     "start": "2026-03-19",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "26906",
@@ -1602,7 +3070,15 @@
     "start": "2026-03-19",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "26907",
@@ -1615,7 +3091,15 @@
     },
     "desc": "薯餅 2 份＋小杯綠茶 2 杯",
     "original": 73,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "26908",
@@ -1632,7 +3116,16 @@
     "orderTypes": [
       2
     ],
-    "start": "2026-03-19"
+    "start": "2026-03-19",
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "26909",
@@ -1650,7 +3143,15 @@
     "start": "2026-03-19",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "26910",
@@ -1667,7 +3168,14 @@
     "start": "2026-03-19",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "26911",
@@ -1684,7 +3192,105 @@
     "start": "2026-03-19",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "26918",
+    "price": 85,
+    "end": "2026-10-31",
+    "title": "【澱堂級饗宴】咔啦脆雞 × 1 + 雞汁風味飯 × 1 + 冰無糖綠茶(小)× 1",
+    "desc": "【澱堂級饗宴】咔啦脆雞 × 1 + 雞汁風味飯 × 1 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "fried": 1,
+      "rice": 1,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "26920",
+    "price": 172,
+    "end": "2026-10-31",
+    "title": "【澱堂級饗宴】咔啦脆雞 × 2 + 雞汁風味飯 × 1 + 上校雞塊 × 4 + 冰無糖綠茶(小)× 1",
+    "desc": "【澱堂級饗宴】咔啦脆雞 × 2 + 雞汁風味飯 × 1 + 上校雞塊 × 4 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "fried": 2,
+      "rice": 1,
+      "nuggets": 4,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "26924",
+    "price": 145,
+    "end": "2026-10-31",
+    "title": "【發票特務】咔啦脆雞 × 2 + 上校雞塊 × 4 + 冰無糖綠茶(小)× 1",
+    "desc": "【發票特務】咔啦脆雞 × 2 + 上校雞塊 × 4 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "fried": 2,
+      "nuggets": 4,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
+  },
+  {
+    "code": "26926",
+    "price": 140,
+    "end": "2026-10-31",
+    "title": "【發票特務】青花椒咔啦雞腿堡 × 1 + 原味蛋撻 × 1 + 香酥脆薯(小)× 1 + 冰無糖綠茶(小)× 1",
+    "desc": "【發票特務】青花椒咔啦雞腿堡 × 1 + 原味蛋撻 × 1 + 香酥脆薯(小)× 1 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "burger": 1,
+      "tart": 1,
+      "fries": 1,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "26952",
@@ -1702,7 +3308,16 @@
     "start": "2026-03-26",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "26953",
@@ -1720,7 +3335,16 @@
     "start": "2026-03-26",
     "orderTypes": [
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper",
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "50528",
@@ -1733,7 +3357,12 @@
     },
     "desc": "無骨雞腿霸 6 塊＋原味蛋撻 6 顆＋任選沾醬",
     "original": 736,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [],
+      "priceAgreement": false,
+      "checkedAt": null
+    }
   },
   {
     "code": "50529",
@@ -1746,7 +3375,12 @@
     },
     "desc": "咔啦脆雞 6 塊＋原味蛋撻 6 顆",
     "original": 720,
-    "note": "依門市及官方結帳為準"
+    "note": "依門市及官方結帳為準",
+    "crosscheck": {
+      "sources": [],
+      "priceAgreement": false,
+      "checkedAt": null
+    }
   },
   {
     "code": "50551",
@@ -1759,7 +3393,14 @@
     },
     "desc": "咔啦脆雞 4 塊＋小杯無糖綠茶 2 杯",
     "original": 350,
-    "note": "限時優惠，請確認供餐及適用門市"
+    "note": "限時優惠，請確認供餐及適用門市",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   },
   {
     "code": "50552",
@@ -1777,6 +3418,13 @@
     "orderTypes": [
       1,
       2
-    ]
+    ],
+    "crosscheck": {
+      "sources": [
+        "KCouper"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-19"
+    }
   }
 ]
