@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T09:46:54+08:00",
+  "generatedAt": "2026-10-20T09:48:20+08:00",
   "newCoupons": [
     {
       "code": "16619",
@@ -121,13 +121,6 @@
       "source": "好康情報誌"
     },
     {
-      "code": "16092",
-      "seenPrice": 83,
-      "seenEnd": "2026-11-30",
-      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
-      "source": "好康情報誌"
-    },
-    {
       "code": "26973",
       "seenPrice": 158,
       "seenEnd": "2026-11-30",
@@ -145,13 +138,6 @@
       "code": "26974",
       "seenPrice": 162,
       "seenEnd": null,
-      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
-      "source": "好康情報誌"
-    },
-    {
-      "code": "26978",
-      "seenPrice": 159,
-      "seenEnd": "2026-11-30",
       "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
       "source": "好康情報誌"
     },
@@ -904,14 +890,6 @@
       "source": "Calling Taiwan"
     },
     {
-      "code": "16061",
-      "seenPrice": 290,
-      "seenEnd": "2026-12-20",
-      "description": "【特賣會情報粉絲團】原味蛋撻禮盒(6入)× 1 + 雙層咔啦雞腿堡 × 1 + 冰無糖綠茶(小)× 1",
-      "reason": "每日新增券數量達安全上限，排入待審",
-      "source": "Calling Taiwan"
-    },
-    {
       "code": "16077",
       "seenPrice": 103,
       "seenEnd": "2026-12-20",
@@ -960,22 +938,6 @@
       "source": "Calling Taiwan"
     },
     {
-      "code": "16083",
-      "seenPrice": 49,
-      "seenEnd": "2026-12-20",
-      "description": "【早安旺紅星七天-早餐時段】薯餅 × 2 + 立頓檸檬風味紅茶(小)× 1",
-      "reason": "每日新增券數量達安全上限，排入待審",
-      "source": "Calling Taiwan"
-    },
-    {
-      "code": "16106",
-      "seenPrice": 83,
-      "seenEnd": "2026-12-20",
-      "description": "【全球人壽】原味脆雞堡 × 1 + 香酥脆薯(小)× 1 + 冰無糖綠茶(小)× 1",
-      "reason": "每日新增券數量達安全上限，排入待審",
-      "source": "Calling Taiwan"
-    },
-    {
       "code": "16107",
       "seenPrice": 110,
       "seenEnd": "2026-12-20",
@@ -1008,14 +970,6 @@
       "source": "Calling Taiwan"
     },
     {
-      "code": "16129",
-      "seenPrice": 178,
-      "seenEnd": "2026-12-20",
-      "description": "【和泰產險】咔啦雞腿堡 × 2 + 冰無糖綠茶(小)× 2",
-      "reason": "每日新增券數量達安全上限，排入待審",
-      "source": "Calling Taiwan"
-    },
-    {
       "code": "16130",
       "seenPrice": 388,
       "seenEnd": "2026-12-20",
@@ -1037,14 +991,6 @@
       "seenEnd": "2026-12-20",
       "description": "【統一證券】香草紙包雞 × 1 + 原味蛋撻 × 1 + 冰無糖綠茶(小)× 1",
       "reason": "未識別品項：【統一證券】香草紙包雞",
-      "source": "Calling Taiwan"
-    },
-    {
-      "code": "16133",
-      "seenPrice": 178,
-      "seenEnd": "2026-12-20",
-      "description": "【統一證券】咔啦雞腿堡 × 2 + 冰無糖綠茶(小)× 2",
-      "reason": "每日新增券數量達安全上限，排入待審",
       "source": "Calling Taiwan"
     },
     {
@@ -1096,22 +1042,6 @@
       "source": "Calling Taiwan"
     },
     {
-      "code": "16167",
-      "seenPrice": 288,
-      "seenEnd": "2026-12-20",
-      "description": "【悠遊卡悠遊付】上校雞塊 × 20 + 原味蛋撻 × 3 + 香酥脆薯(小)× 1 + 冰無糖綠茶(小)× 2",
-      "reason": "每日新增券數量達安全上限，排入待審",
-      "source": "Calling Taiwan"
-    },
-    {
-      "code": "16170",
-      "seenPrice": 288,
-      "seenEnd": "2026-12-20",
-      "description": "【悠遊卡悠遊付】咔啦脆雞 × 2 + 咔啦雞腿堡 × 1 + 上校雞塊 × 4 + 原味蛋撻 × 1 + 雙色轉轉QQ球 × 10 + 冰無糖綠茶(小)× 2",
-      "reason": "每日新增券數量達安全上限，排入待審",
-      "source": "Calling Taiwan"
-    },
-    {
       "code": "16171",
       "seenPrice": 388,
       "seenEnd": "2026-12-20",
@@ -1133,22 +1063,6 @@
       "seenEnd": "2026-12-20",
       "description": "【2026我們的夏天】青花椒咔啦脆雞 × 1 + 咔啦脆雞 × 1 + 原味蛋撻 × 2",
       "reason": "特殊口味／規格無相對應分類",
-      "source": "Calling Taiwan"
-    },
-    {
-      "code": "16215",
-      "seenPrice": 183,
-      "seenEnd": "2026-12-20",
-      "description": "【2026我們的夏天】青花椒咔啦雞腿堡 × 1 + 咔啦雞腿堡 × 1 + 冰無糖綠茶(小)× 2",
-      "reason": "每日新增券數量達安全上限，排入待審",
-      "source": "Calling Taiwan"
-    },
-    {
-      "code": "16217",
-      "seenPrice": 38,
-      "seenEnd": "2026-12-20",
-      "description": "【我們的夏午茶】雙色轉轉QQ球 × 10 + 冰無糖綠茶(小)× 1",
-      "reason": "每日新增券數量達安全上限，排入待審",
       "source": "Calling Taiwan"
     },
     {
@@ -1200,27 +1114,11 @@
       "source": "Calling Taiwan"
     },
     {
-      "code": "16284",
-      "seenPrice": 79,
-      "seenEnd": "2026-12-20",
-      "description": "【一日三餐】原味脆雞堡 × 1 + 薯餅 × 1 + 冰無糖綠茶(小)× 1",
-      "reason": "每日新增券數量達安全上限，排入待審",
-      "source": "Calling Taiwan"
-    },
-    {
       "code": "16285",
       "seenPrice": 88,
       "seenEnd": "2026-12-20",
       "description": "【一日三餐】花生脆雞堡 × 1 + 薯餅 × 1 + 冰無糖綠茶(中)× 1",
       "reason": "特殊口味／規格無相對應分類",
-      "source": "Calling Taiwan"
-    },
-    {
-      "code": "16286",
-      "seenPrice": 49,
-      "seenEnd": "2026-12-20",
-      "description": "【一日三餐】薯餅 × 2 + 冰無糖綠茶(小)× 1",
-      "reason": "每日新增券數量達安全上限，排入待審",
       "source": "Calling Taiwan"
     },
     {
@@ -1264,27 +1162,11 @@
       "source": "Calling Taiwan"
     },
     {
-      "code": "16323",
-      "seenPrice": 78,
-      "seenEnd": "2026-12-20",
-      "description": "【foodpanda】咔啦脆雞 × 1 + 薯餅 × 1 + 冰無糖綠茶(小)× 1",
-      "reason": "每日新增券數量達安全上限，排入待審",
-      "source": "Calling Taiwan"
-    },
-    {
       "code": "16586",
       "seenPrice": 528,
       "seenEnd": "2026-12-20",
       "description": "【新唐人電視台】5 塊雞(桶)× 1 + 香草紙包雞 × 1 + 上校雞塊 × 8 + 原味蛋撻 × 2 + 雙色轉轉QQ球 × 10 + 香酥脆薯(小)× 1 + 冰無糖綠茶(小)× 2",
       "reason": "含選項／複合拼盤／加購等限制，待人工確認",
-      "source": "Calling Taiwan"
-    },
-    {
-      "code": "16587",
-      "seenPrice": 158,
-      "seenEnd": "2026-12-20",
-      "description": "【新唐人電視台】咔啦脆雞 × 1 + 咔啦雞腿堡 × 1 + 原味蛋撻 × 1 + 冰無糖紅茶(小)× 1",
-      "reason": "每日新增券數量達安全上限，排入待審",
       "source": "Calling Taiwan"
     },
     {
@@ -1296,35 +1178,11 @@
       "source": "Calling Taiwan"
     },
     {
-      "code": "16676",
-      "seenPrice": 125,
-      "seenEnd": "2026-12-20",
-      "description": "【臺北律師公會】咔啦雞腿堡 × 1 + 薯餅 × 2 + 冰無糖紅茶(小)× 1",
-      "reason": "每日新增券數量達安全上限，排入待審",
-      "source": "Calling Taiwan"
-    },
-    {
       "code": "16677",
       "seenPrice": 130,
       "seenEnd": "2026-12-20",
       "description": "【臺北律師公會】香草紙包雞 × 1 + 原味蛋撻 × 1 + 冰無糖綠茶(小)× 1",
       "reason": "未識別品項：【臺北律師公會】香草紙包雞",
-      "source": "Calling Taiwan"
-    },
-    {
-      "code": "16678",
-      "seenPrice": 269,
-      "seenEnd": "2026-12-20",
-      "description": "【臺北律師公會】咔啦脆雞 × 5 + 冰無糖綠茶(小)× 2",
-      "reason": "每日新增券數量達安全上限，排入待審",
-      "source": "Calling Taiwan"
-    },
-    {
-      "code": "16690",
-      "seenPrice": 133,
-      "seenEnd": "2026-12-20",
-      "description": "【時代騎輪節】咔啦雞腿堡 × 1 + 原味蛋撻 × 1 + 香酥脆薯(小)× 1 + 冰無糖綠茶(小)× 1",
-      "reason": "每日新增券數量達安全上限，排入待審",
       "source": "Calling Taiwan"
     },
     {
@@ -1336,51 +1194,11 @@
       "source": "Calling Taiwan"
     },
     {
-      "code": "16698",
-      "seenPrice": 130,
-      "seenEnd": "2026-12-20",
-      "description": "【GoodLife粉絲團】咔啦脆雞 × 1 + 雙色轉轉QQ球 × 10 + 原味蛋撻 × 1 + 百事可樂(小)× 1",
-      "reason": "每日新增券數量達安全上限，排入待審",
-      "source": "Calling Taiwan"
-    },
-    {
-      "code": "16704",
-      "seenPrice": 333,
-      "seenEnd": "2026-12-20",
-      "description": "【特賣會情報粉絲團】咔啦脆雞 × 4 + 原味蛋撻 × 4 + 1.25L 可樂 × 1",
-      "reason": "每日新增券數量達安全上限，排入待審",
-      "source": "Calling Taiwan"
-    },
-    {
-      "code": "16707",
-      "seenPrice": 235,
-      "seenEnd": "2026-12-20",
-      "description": "【悠遊卡悠遊付】咔啦脆雞 × 2 + 原味蛋撻 × 4 + 1.25L 可樂 × 1",
-      "reason": "每日新增券數量達安全上限，排入待審",
-      "source": "Calling Taiwan"
-    },
-    {
-      "code": "26986",
-      "seenPrice": 118,
-      "seenEnd": "2026-12-20",
-      "description": "【中華電信】原味脆雞堡 × 1 + 上校雞塊 × 8 + 香酥脆薯(小)× 1 + 冰無糖綠茶(小)× 1",
-      "reason": "每日新增券數量達安全上限，排入待審",
-      "source": "Calling Taiwan"
-    },
-    {
       "code": "16237",
       "seenPrice": 130,
       "seenEnd": "2026-12-22",
       "description": "【悠遊卡悠遊付】香草紙包雞 × 1 + 薯餅 × 1 + 冰無糖綠茶(小)× 1",
       "reason": "未識別品項：【悠遊卡悠遊付】香草紙包雞",
-      "source": "Calling Taiwan"
-    },
-    {
-      "code": "16239",
-      "seenPrice": 88,
-      "seenEnd": "2026-12-22",
-      "description": "【Sunny吃喝遊樂粉絲團】花生脆雞堡 × 1 + 薯餅 × 1 + 冰無糖綠茶(小)× 1",
-      "reason": "每日新增券數量達安全上限，排入待審",
       "source": "Calling Taiwan"
     },
     {
@@ -1392,27 +1210,11 @@
       "source": "Calling Taiwan"
     },
     {
-      "code": "16245",
-      "seenPrice": 88,
+      "code": "16694",
+      "seenPrice": 139,
       "seenEnd": "2026-12-22",
-      "description": "【悠遊卡悠遊付】花生脆雞堡 × 1 + 薯餅 × 1 + 冰無糖綠茶(小)× 1",
-      "reason": "每日新增券數量達安全上限，排入待審",
-      "source": "Calling Taiwan"
-    },
-    {
-      "code": "16784",
-      "seenPrice": 109,
-      "seenEnd": "2026-12-28",
-      "description": "【商業早中晚餐】原味脆雞堡(小)× 2 + 玉米濃湯(小)× 1",
-      "reason": "每日新增券數量達安全上限，排入待審",
-      "source": "Calling Taiwan"
-    },
-    {
-      "code": "16785",
-      "seenPrice": 120,
-      "seenEnd": "2026-12-28",
-      "description": "【商業早中晚餐】花生脆雞堡(小)× 2 + 玉米濃湯(小)× 1",
-      "reason": "每日新增券數量達安全上限，排入待審",
+      "description": "【大大寬頻】青花椒香麻脆雞 × 1 + 咔啦脆雞 × 1 + 原味蛋撻 × 1 + 冰無糖綠茶(小)× 1",
+      "reason": "特殊口味／規格無相對應分類",
       "source": "Calling Taiwan"
     },
     {
@@ -1453,22 +1255,6 @@
       "seenEnd": "2026-12-31",
       "description": "【人氣早餐店-早餐時段】紅藜燕麥脆雞粥 × 2 + 薯餅 × 1 + 冰無糖紅茶(小)× 1",
       "reason": "未識別品項：【人氣早餐店-早餐時段】紅藜燕麥脆雞粥",
-      "source": "Calling Taiwan"
-    },
-    {
-      "code": "16591",
-      "seenPrice": 69,
-      "seenEnd": "2026-12-31",
-      "description": "【一日三餐就饗吃】原味脆雞堡 × 1 + 薯餅 × 1 + 冰無糖紅茶(小)× 1",
-      "reason": "每日新增券數量達安全上限，排入待審",
-      "source": "Calling Taiwan"
-    },
-    {
-      "code": "16592",
-      "seenPrice": 75,
-      "seenEnd": "2026-12-31",
-      "description": "【一日三餐就饗吃】花生脆雞堡 × 1 + 薯餅 × 1 + 冰無糖紅茶(小)× 1",
-      "reason": "每日新增券數量達安全上限，排入待審",
       "source": "Calling Taiwan"
     },
     {
@@ -1549,6 +1335,14 @@
       "seenEnd": "2026-12-31",
       "description": "【秋月圓賞月派對】青花椒咔啦脆雞 × 6 + 咔啦脆雞 × 6 + 原味蛋撻禮盒(6入)× 2 + 超蝦點心拼盤 × 1(黃金超蝦塊 × 3 + 鱈魚圈圈 × 3 + 雙色轉轉QQ球 × 10 + 香酥脆薯(大)× 1)",
       "reason": "含選項／複合拼盤／加購等限制，待人工確認",
+      "source": "Calling Taiwan"
+    },
+    {
+      "code": "16695",
+      "seenPrice": 179,
+      "seenEnd": "2026-12-31",
+      "description": "【大大寬頻】花生熔岩咔啦雞腿堡 × 1 + 上校雞塊 × 4 + 原味蛋撻 × 1 + 百事可樂(小)× 1",
+      "reason": "特殊口味／規格無相對應分類",
       "source": "Calling Taiwan"
     },
     {
@@ -2520,6 +2314,30 @@
       "source": "Calling Taiwan"
     },
     {
+      "code": "16791",
+      "seenPrice": 299,
+      "seenEnd": "2027-03-31",
+      "description": "【foodpanda】青花椒香麻脆雞 × 5 + 冰無糖綠茶(小)× 2",
+      "reason": "特殊口味／規格無相對應分類",
+      "source": "Calling Taiwan"
+    },
+    {
+      "code": "16792",
+      "seenPrice": 155,
+      "seenEnd": "2027-03-31",
+      "description": "【foodpanda】蒜香白醬脆雞飯 × 1 + 上校雞塊 × 4 + 冰無糖紅茶(小)× 1",
+      "reason": "未識別品項：【foodpanda】蒜香白醬脆雞飯",
+      "source": "Calling Taiwan"
+    },
+    {
+      "code": "16793",
+      "seenPrice": 99,
+      "seenEnd": "2027-03-31",
+      "description": "【foodpanda】青花椒咔啦雞腿堡 × 1 + 冰無糖綠茶(小)× 1",
+      "reason": "每日新增券數量達安全上限，排入待審",
+      "source": "Calling Taiwan"
+    },
+    {
       "code": "16794",
       "seenPrice": 229,
       "seenEnd": "2027-03-31",
@@ -2828,6 +2646,24 @@
       "source": "KCouper"
     },
     {
+      "code": "16217",
+      "seenPrice": 38,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16083",
+      "seenPrice": 49,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16286",
+      "seenPrice": 49,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
       "code": "16125",
       "seenPrice": 50,
       "reason": "有額外加價口味選項",
@@ -2852,9 +2688,33 @@
       "source": "KCouper"
     },
     {
+      "code": "16591",
+      "seenPrice": 69,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16592",
+      "seenPrice": 75,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
       "code": "16033",
       "seenPrice": 77,
       "reason": "有額外加價口味選項；替換選項會改變餐點類別",
+      "source": "KCouper"
+    },
+    {
+      "code": "16323",
+      "seenPrice": 78,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16284",
+      "seenPrice": 79,
+      "reason": "有額外加價口味選項",
       "source": "KCouper"
     },
     {
@@ -2876,9 +2736,33 @@
       "source": "KCouper"
     },
     {
+      "code": "16106",
+      "seenPrice": 83,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
       "code": "26918",
       "seenPrice": 85,
       "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16239",
+      "seenPrice": 88,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16245",
+      "seenPrice": 88,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16700",
+      "seenPrice": 93,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
       "source": "KCouper"
     },
     {
@@ -2909,6 +2793,12 @@
       "code": "26851",
       "seenPrice": 100,
       "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16244",
+      "seenPrice": 100,
+      "reason": "有額外加價口味選項",
       "source": "KCouper"
     },
     {
@@ -2948,9 +2838,27 @@
       "source": "KCouper"
     },
     {
+      "code": "26986",
+      "seenPrice": 118,
+      "reason": "未識別品項：4塊雞塊+小薯；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26989",
+      "seenPrice": 118,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
       "code": "16039",
       "seenPrice": 119,
       "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16676",
+      "seenPrice": 125,
+      "reason": "有額外加價口味選項",
       "source": "KCouper"
     },
     {
@@ -2969,6 +2877,12 @@
       "code": "26991",
       "seenPrice": 130,
       "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16698",
+      "seenPrice": 130,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
       "source": "KCouper"
     },
     {
@@ -2993,6 +2907,12 @@
       "code": "16535",
       "seenPrice": 133,
       "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16690",
+      "seenPrice": 133,
+      "reason": "有額外加價口味選項",
       "source": "KCouper"
     },
     {
@@ -3021,6 +2941,12 @@
     },
     {
       "code": "26985",
+      "seenPrice": 139,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16701",
       "seenPrice": 139,
       "reason": "有額外加價口味選項",
       "source": "KCouper"
@@ -3058,6 +2984,12 @@
     {
       "code": "26850",
       "seenPrice": 149,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16587",
+      "seenPrice": 158,
       "reason": "有額外加價口味選項；有額外加價口味選項",
       "source": "KCouper"
     },
@@ -3122,9 +3054,15 @@
       "source": "KCouper"
     },
     {
-      "code": "50551",
-      "seenPrice": 175,
-      "reason": "有額外加價口味選項；品項名稱或數量不明；有額外加價口味選項",
+      "code": "16129",
+      "seenPrice": 178,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16133",
+      "seenPrice": 178,
+      "reason": "有額外加價口味選項",
       "source": "KCouper"
     },
     {
@@ -3137,6 +3075,12 @@
       "code": "16101",
       "seenPrice": 180,
       "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16215",
+      "seenPrice": 183,
+      "reason": "有額外加價口味選項",
       "source": "KCouper"
     },
     {
@@ -3170,6 +3114,12 @@
       "source": "KCouper"
     },
     {
+      "code": "16707",
+      "seenPrice": 235,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
       "code": "16849",
       "seenPrice": 239,
       "reason": "大/中薯不可替代小薯；有額外加價口味選項",
@@ -3194,6 +3144,12 @@
       "source": "KCouper"
     },
     {
+      "code": "16678",
+      "seenPrice": 269,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
       "code": "16855",
       "seenPrice": 280,
       "reason": "有額外加價口味選項；有額外加價口味選項",
@@ -3203,6 +3159,24 @@
       "code": "26646",
       "seenPrice": 288,
       "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16167",
+      "seenPrice": 288,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16170",
+      "seenPrice": 288,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16061",
+      "seenPrice": 290,
+      "reason": "有額外加價口味選項",
       "source": "KCouper"
     },
     {
@@ -3230,25 +3204,25 @@
       "source": "KCouper"
     },
     {
+      "code": "16704",
+      "seenPrice": 333,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
       "code": "16091",
       "seenPrice": 489,
       "reason": "有額外加價口味選項",
       "source": "KCouper"
     }
   ],
-  "unsupportedCount": 808,
+  "unsupportedCount": 778,
   "unsupportedReasons": {
-    "加價／口味替換": 795,
-    "餐點分類未支援": 215,
-    "數量／規格限制": 92
+    "加價／口味替換": 767,
+    "餐點分類未支援": 214,
+    "數量／規格限制": 90
   },
   "unsupportedSamples": [
-    {
-      "code": "16217",
-      "seenPrice": 38,
-      "reason": "有額外加價口味選項",
-      "source": "KCouper"
-    },
     {
       "code": "16412",
       "seenPrice": 39,
@@ -3264,18 +3238,6 @@
     {
       "code": "16597",
       "seenPrice": 42,
-      "reason": "有額外加價口味選項",
-      "source": "KCouper"
-    },
-    {
-      "code": "16083",
-      "seenPrice": 49,
-      "reason": "有額外加價口味選項",
-      "source": "KCouper"
-    },
-    {
-      "code": "16286",
-      "seenPrice": 49,
       "reason": "有額外加價口味選項",
       "source": "KCouper"
     },
@@ -3314,46 +3276,57 @@
       "seenPrice": 59,
       "reason": "有額外加價口味選項；有額外加價口味選項",
       "source": "KCouper"
+    },
+    {
+      "code": "16126",
+      "seenPrice": 59,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16408",
+      "seenPrice": 59,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "26890",
+      "seenPrice": 60,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
     }
   ],
   "approvedChanges": [],
   "autoAddedCoupons": [
-    "26887",
-    "16411",
-    "16416",
-    "16508",
-    "16360",
-    "16475",
-    "16056",
-    "16004",
-    "16033",
-    "16034",
-    "16035",
-    "16037",
-    "16039",
-    "16085",
-    "16087",
-    "16252",
-    "16253",
-    "26775",
-    "26776",
-    "26810",
-    "26819",
-    "26823",
-    "26850",
-    "26851",
-    "26861",
-    "26918",
-    "26920",
-    "26924",
-    "26926",
-    "16073",
-    "16091",
-    "16092",
-    "16098",
-    "16535",
-    "16536",
-    "26978",
-    "16101"
+    "16061",
+    "16083",
+    "16106",
+    "16129",
+    "16133",
+    "16167",
+    "16170",
+    "16215",
+    "16217",
+    "16284",
+    "16286",
+    "16323",
+    "16587",
+    "16676",
+    "16678",
+    "16690",
+    "16698",
+    "16700",
+    "16701",
+    "16704",
+    "16707",
+    "26986",
+    "26989",
+    "16239",
+    "16244",
+    "16245",
+    "16784",
+    "16785",
+    "16591",
+    "16592"
   ]
 }
