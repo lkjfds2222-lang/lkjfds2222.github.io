@@ -1,16 +1,14 @@
 {
-  "generatedAt": "2026-10-20T09:48:20+08:00",
+  "generatedAt": "2026-10-21T09:49:11+08:00",
   "alerts": [
     {
       "kind": "new-needs-review",
       "codes": [
-        "16694",
-        "16695",
-        "16791",
-        "16792",
-        "16793"
+        "16841",
+        "16880",
+        "16900"
       ],
-      "count": 5
+      "count": 3
     },
     {
       "kind": "verification-required",
@@ -158,6 +156,18 @@
     },
     {
       "kind": "verification-required",
+      "code": "16412",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16412\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 39, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16597",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16597\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 42, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
       "code": "16083",
       "reason": "有額外加價口味選項",
       "fingerprint": "{\"code\": \"16083\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 49, \"source\": \"KCouper\"}"
@@ -194,9 +204,27 @@
     },
     {
       "kind": "verification-required",
+      "code": "16446",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16446\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 62, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16447",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16447\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 69, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
       "code": "16591",
       "reason": "有額外加價口味選項",
       "fingerprint": "{\"code\": \"16591\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 69, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16498",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16498\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 75, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
@@ -224,6 +252,18 @@
     },
     {
       "kind": "verification-required",
+      "code": "16390",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16390\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 79, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16495",
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16495\", \"reason\": \"有額外加價口味選項；有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 79, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
       "code": "16851",
       "reason": "有額外加價口味選項；有額外加價口味選項",
       "fingerprint": "{\"code\": \"16851\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 79, \"source\": \"KCouper\"}"
@@ -233,6 +273,12 @@
       "code": "16388",
       "reason": "有額外加價口味選項",
       "fingerprint": "{\"code\": \"16388\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 80, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16455",
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16455\", \"reason\": \"有額外加價口味選項；有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 82, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
@@ -263,6 +309,36 @@
       "code": "16245",
       "reason": "有額外加價口味選項",
       "fingerprint": "{\"code\": \"16245\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 88, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16433",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16433\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 88, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16389",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16389\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 89, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16391",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16391\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 89, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16445",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16445\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 89, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16472",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16472\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 89, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
@@ -332,6 +408,18 @@
     },
     {
       "kind": "verification-required",
+      "code": "16454",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16454\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 111, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16492",
+      "reason": "有額外加價口味選項；未識別品項：4塊雞塊+小薯；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16492\", \"reason\": \"有額外加價口味選項；未識別品項：4塊雞塊+小薯；有額外加價口味選項\", \"seenPrice\": 111, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
       "code": "16721",
       "reason": "有額外加價口味選項",
       "fingerprint": "{\"code\": \"16721\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 111, \"source\": \"KCouper\"}"
@@ -356,9 +444,21 @@
     },
     {
       "kind": "verification-required",
+      "code": "16440",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16440\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 118, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
       "code": "16039",
       "reason": "有額外加價口味選項；有額外加價口味選項",
       "fingerprint": "{\"code\": \"16039\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 119, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16470",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16470\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 120, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
@@ -389,229 +489,119 @@
       "code": "16698",
       "reason": "有額外加價口味選項；有額外加價口味選項",
       "fingerprint": "{\"code\": \"16698\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 130, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16858",
-      "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16858\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 130, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "26775",
-      "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"26775\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 133, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16088",
-      "reason": "有額外加價口味選項；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16088\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 133, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16535",
-      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16535\", \"reason\": \"有額外加價口味選項；有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 133, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16690",
-      "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16690\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 133, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "26776",
-      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"26776\", \"reason\": \"有額外加價口味選項；有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 135, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "26819",
-      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"26819\", \"reason\": \"有額外加價口味選項；有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 135, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16845",
-      "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16845\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 135, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16536",
-      "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16536\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 138, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "26985",
-      "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"26985\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 139, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16701",
-      "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16701\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 139, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16839",
-      "reason": "有額外加價口味選項；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16839\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 139, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "26926",
-      "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"26926\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 140, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "26975",
-      "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"26975\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 141, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16037",
-      "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16037\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 142, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "26924",
-      "reason": "有額外加價口味選項；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"26924\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 145, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "26850",
-      "reason": "有額外加價口味選項；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"26850\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 149, \"source\": \"KCouper\"}"
     }
   ],
   "newAlerts": [
     {
       "kind": "new-needs-review",
       "codes": [
-        "16694",
-        "16695",
-        "16791",
-        "16792",
-        "16793"
+        "16841",
+        "16880",
+        "16900"
       ],
-      "count": 5
+      "count": 3
     },
     {
       "kind": "verification-required",
-      "code": "16217",
+      "code": "16412",
       "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16217\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 38, \"source\": \"KCouper\"}"
+      "fingerprint": "{\"code\": \"16412\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 39, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
-      "code": "16083",
+      "code": "16597",
       "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16083\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 49, \"source\": \"KCouper\"}"
+      "fingerprint": "{\"code\": \"16597\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 42, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
-      "code": "16286",
+      "code": "16446",
       "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16286\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 49, \"source\": \"KCouper\"}"
+      "fingerprint": "{\"code\": \"16446\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 62, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
-      "code": "16591",
+      "code": "16447",
       "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16591\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 69, \"source\": \"KCouper\"}"
+      "fingerprint": "{\"code\": \"16447\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 69, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
-      "code": "16592",
+      "code": "16498",
       "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16592\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 75, \"source\": \"KCouper\"}"
+      "fingerprint": "{\"code\": \"16498\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 75, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
-      "code": "16323",
+      "code": "16390",
       "reason": "有額外加價口味選項；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16323\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 78, \"source\": \"KCouper\"}"
+      "fingerprint": "{\"code\": \"16390\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 79, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
-      "code": "16284",
+      "code": "16495",
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16495\", \"reason\": \"有額外加價口味選項；有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 79, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16455",
+      "reason": "有額外加價口味選項；有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16455\", \"reason\": \"有額外加價口味選項；有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 82, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16433",
       "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16284\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 79, \"source\": \"KCouper\"}"
+      "fingerprint": "{\"code\": \"16433\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 88, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
-      "code": "16106",
+      "code": "16389",
       "reason": "有額外加價口味選項；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16106\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 83, \"source\": \"KCouper\"}"
+      "fingerprint": "{\"code\": \"16389\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 89, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
-      "code": "16239",
-      "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16239\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 88, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16245",
-      "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16245\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 88, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16700",
+      "code": "16391",
       "reason": "有額外加價口味選項；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16700\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 93, \"source\": \"KCouper\"}"
+      "fingerprint": "{\"code\": \"16391\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 89, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
-      "code": "16244",
-      "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16244\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 100, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "26986",
-      "reason": "未識別品項：4塊雞塊+小薯；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"26986\", \"reason\": \"未識別品項：4塊雞塊+小薯；有額外加價口味選項\", \"seenPrice\": 118, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "26989",
+      "code": "16445",
       "reason": "有額外加價口味選項；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"26989\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 118, \"source\": \"KCouper\"}"
+      "fingerprint": "{\"code\": \"16445\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 89, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
-      "code": "16676",
+      "code": "16472",
       "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16676\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 125, \"source\": \"KCouper\"}"
+      "fingerprint": "{\"code\": \"16472\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 89, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
-      "code": "16698",
+      "code": "16454",
       "reason": "有額外加價口味選項；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16698\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 130, \"source\": \"KCouper\"}"
+      "fingerprint": "{\"code\": \"16454\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 111, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
-      "code": "16690",
-      "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16690\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 133, \"source\": \"KCouper\"}"
+      "code": "16492",
+      "reason": "有額外加價口味選項；未識別品項：4塊雞塊+小薯；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16492\", \"reason\": \"有額外加價口味選項；未識別品項：4塊雞塊+小薯；有額外加價口味選項\", \"seenPrice\": 111, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
-      "code": "16701",
+      "code": "16440",
       "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16701\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 139, \"source\": \"KCouper\"}"
+      "fingerprint": "{\"code\": \"16440\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 118, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16470",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16470\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 120, \"source\": \"KCouper\"}"
     }
   ],
   "sourceErrors": {}
