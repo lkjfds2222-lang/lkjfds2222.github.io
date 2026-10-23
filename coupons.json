@@ -18,7 +18,29 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
+    }
+  },
+  {
+    "code": "16575",
+    "price": 578,
+    "end": "2027-03-31",
+    "title": "【GoodLife粉絲團】咔啦脆雞 × 5 + 原味蛋撻 × 12",
+    "desc": "【GoodLife粉絲團】咔啦脆雞 × 5 + 原味蛋撻 × 12",
+    "items": {
+      "fried": 5,
+      "tart": 12
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "好康情報誌",
+        "Calling Taiwan"
+      ],
+      "priceAgreement": true,
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -40,7 +62,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -62,7 +84,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -84,7 +106,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -106,7 +128,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -128,7 +150,49 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
+    }
+  },
+  {
+    "code": "16652",
+    "price": 109,
+    "end": "2027-03-31",
+    "title": "【耀吃耀動】咔啦脆雞 × 2 + 冰無糖綠茶(小)× 1",
+    "desc": "【耀吃耀動】咔啦脆雞 × 2 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "fried": 2,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-23"
+    }
+  },
+  {
+    "code": "16656",
+    "price": 139,
+    "end": "2027-03-31",
+    "title": "【耀吃耀動】雙層咔啦雞腿堡 × 1 + 冰無糖綠茶(小)× 1",
+    "desc": "【耀吃耀動】雙層咔啦雞腿堡 × 1 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "burger": 1,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -155,7 +219,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -180,7 +244,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -206,7 +270,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -233,7 +297,137 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
+    }
+  },
+  {
+    "code": "16663",
+    "price": 200,
+    "end": "2027-03-31",
+    "title": "【中秋愛獻禮】原味蛋撻禮盒(6入)× 1 + 冰無糖紅茶(小)× 1",
+    "desc": "【中秋愛獻禮】原味蛋撻禮盒(6入)× 1 + 冰無糖紅茶(小)× 1",
+    "items": {
+      "tart": 6,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-23"
+    }
+  },
+  {
+    "code": "16666",
+    "price": 253,
+    "end": "2027-03-31",
+    "title": "【宇宙級優惠降臨】咔啦脆雞 × 4 + 原味蛋撻 × 2 + 冰無糖綠茶(小)× 1",
+    "desc": "【宇宙級優惠降臨】咔啦脆雞 × 4 + 原味蛋撻 × 2 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "fried": 4,
+      "tart": 2,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-23"
+    }
+  },
+  {
+    "code": "16669",
+    "price": 89,
+    "end": "2027-03-31",
+    "title": "【宇宙級優惠降臨】咔啦雞腿堡 × 1 + 冰無糖紅茶(小)× 1",
+    "desc": "【宇宙級優惠降臨】咔啦雞腿堡 × 1 + 冰無糖紅茶(小)× 1",
+    "items": {
+      "burger": 1,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-23"
+    }
+  },
+  {
+    "code": "16670",
+    "price": 139,
+    "end": "2027-03-31",
+    "title": "【宇宙級優惠降臨】上校雞塊 × 8 + 原味蛋撻 × 2 + 冰無糖綠茶(小)× 1",
+    "desc": "【宇宙級優惠降臨】上校雞塊 × 8 + 原味蛋撻 × 2 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "nuggets": 8,
+      "tart": 2,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-23"
+    }
+  },
+  {
+    "code": "16709",
+    "price": 89,
+    "end": "2027-03-31",
+    "title": "【奶茶控超值週年慶】咔啦脆雞 × 1 + 薯餅 × 1 + 經典冰奶茶 × 1",
+    "desc": "【奶茶控超值週年慶】咔啦脆雞 × 1 + 薯餅 × 1 + 經典冰奶茶 × 1",
+    "items": {
+      "fried": 1,
+      "hash": 1,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-23"
+    }
+  },
+  {
+    "code": "16711",
+    "price": 130,
+    "end": "2027-03-31",
+    "title": "【奶茶控超值週年慶】咔啦脆雞 × 1 + 上校雞塊 × 8 + 經典冰奶茶 × 1",
+    "desc": "【奶茶控超值週年慶】咔啦脆雞 × 1 + 上校雞塊 × 8 + 經典冰奶茶 × 1",
+    "items": {
+      "fried": 1,
+      "nuggets": 8,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -260,7 +454,203 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
+    }
+  },
+  {
+    "code": "16738",
+    "price": 196,
+    "end": "2027-03-31",
+    "title": "【探索肯德基的最佳時刻】咔啦雞腿堡 × 1 + 青花椒咔啦雞腿堡 × 1 + 原味蛋撻 × 1 + 冰無糖綠茶(小)× 1",
+    "desc": "【探索肯德基的最佳時刻】咔啦雞腿堡 × 1 + 青花椒咔啦雞腿堡 × 1 + 原味蛋撻 × 1 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "burger": 2,
+      "tart": 1,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-23"
+    }
+  },
+  {
+    "code": "16739",
+    "price": 207,
+    "end": "2027-03-31",
+    "title": "【探索肯德基的最佳時刻】咔啦雞腿堡 × 1 + 咔啦脆雞 × 2 + 原味蛋撻 × 1 + 冰無糖綠茶(小)× 1",
+    "desc": "【探索肯德基的最佳時刻】咔啦雞腿堡 × 1 + 咔啦脆雞 × 2 + 原味蛋撻 × 1 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "burger": 1,
+      "fried": 2,
+      "tart": 1,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-23"
+    }
+  },
+  {
+    "code": "16740",
+    "price": 245,
+    "end": "2027-03-31",
+    "title": "【探索肯德基的最佳時刻】咔啦雞腿堡 × 1 + 雙層咔啦雞腿堡 × 1 + 原味蛋撻 × 1 + 冰無糖綠茶(小)× 1",
+    "desc": "【探索肯德基的最佳時刻】咔啦雞腿堡 × 1 + 雙層咔啦雞腿堡 × 1 + 原味蛋撻 × 1 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "burger": 2,
+      "tart": 1,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-23"
+    }
+  },
+  {
+    "code": "16742",
+    "price": 379,
+    "end": "2027-03-31",
+    "title": "【探索肯德基的最佳時刻】咔啦脆雞 × 5 + 花生脆雞堡 × 1 + 原味脆雞堡 × 1 + 冰無糖綠茶(小)× 2",
+    "desc": "【探索肯德基的最佳時刻】咔啦脆雞 × 5 + 花生脆雞堡 × 1 + 原味脆雞堡 × 1 + 冰無糖綠茶(小)× 2",
+    "items": {
+      "fried": 5,
+      "smallBurger": 2,
+      "drink": 2
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-23"
+    }
+  },
+  {
+    "code": "16762",
+    "price": 115,
+    "end": "2027-03-31",
+    "title": "【揮汗有您】咔啦雞腿堡 × 1 + 雙色轉轉QQ球 × 10 + 冰無糖紅茶(小)× 1",
+    "desc": "【揮汗有您】咔啦雞腿堡 × 1 + 雙色轉轉QQ球 × 10 + 冰無糖紅茶(小)× 1",
+    "items": {
+      "burger": 1,
+      "qqBalls": 10,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-23"
+    }
+  },
+  {
+    "code": "16787",
+    "price": 85,
+    "end": "2027-03-31",
+    "title": "【冬日限定暖心時刻】上校雞塊 × 8 + 玉米濃湯(小)× 1",
+    "desc": "【冬日限定暖心時刻】上校雞塊 × 8 + 玉米濃湯(小)× 1",
+    "items": {
+      "nuggets": 8,
+      "soup": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-23"
+    }
+  },
+  {
+    "code": "16790",
+    "price": 126,
+    "end": "2027-03-31",
+    "title": "【冬日限定暖心時刻】咔啦雞腿堡 × 1 + 香酥脆薯(小)× 1 + 玉米濃湯(小)× 1",
+    "desc": "【冬日限定暖心時刻】咔啦雞腿堡 × 1 + 香酥脆薯(小)× 1 + 玉米濃湯(小)× 1",
+    "items": {
+      "burger": 1,
+      "fries": 1,
+      "soup": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-23"
+    }
+  },
+  {
+    "code": "16793",
+    "price": 99,
+    "end": "2027-03-31",
+    "title": "【foodpanda】青花椒咔啦雞腿堡 × 1 + 冰無糖綠茶(小)× 1",
+    "desc": "【foodpanda】青花椒咔啦雞腿堡 × 1 + 冰無糖綠茶(小)× 1",
+    "items": {
+      "burger": 1,
+      "drink": 1
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-23"
+    }
+  },
+  {
+    "code": "16794",
+    "price": 229,
+    "end": "2027-03-31",
+    "title": "【GoodLife粉絲團】原味蛋撻禮盒(6入)× 1 + 玉米濃湯(小)× 2",
+    "desc": "【GoodLife粉絲團】原味蛋撻禮盒(6入)× 1 + 玉米濃湯(小)× 2",
+    "items": {
+      "tart": 6,
+      "soup": 2
+    },
+    "original": null,
+    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
+    "source": "Calling Taiwan",
+    "crosscheck": {
+      "sources": [
+        "Calling Taiwan"
+      ],
+      "priceAgreement": false,
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -285,7 +675,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -306,7 +696,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -328,7 +718,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -352,7 +742,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -376,7 +766,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -400,7 +790,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -423,7 +813,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -450,7 +840,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -472,7 +862,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -494,7 +884,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -519,7 +909,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -544,29 +934,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
-    }
-  },
-  {
-    "code": "16575",
-    "price": 578,
-    "end": "2027-02-28",
-    "title": "【GoodLife粉絲團】咔啦脆雞 × 5 + 原味蛋撻 × 12",
-    "desc": "【GoodLife粉絲團】咔啦脆雞 × 5 + 原味蛋撻 × 12",
-    "items": {
-      "fried": 5,
-      "tart": 12
-    },
-    "original": null,
-    "note": "Calling Taiwan 第三方整理，非官方即時價格；請於肯德基官網核對適用限制",
-    "source": "Calling Taiwan",
-    "crosscheck": {
-      "sources": [
-        "好康情報誌",
-        "Calling Taiwan"
-      ],
-      "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -590,7 +958,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -617,7 +985,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -641,7 +1009,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -663,7 +1031,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -686,7 +1054,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -709,7 +1077,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -730,7 +1098,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -752,7 +1120,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -778,7 +1146,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -804,7 +1172,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -826,7 +1194,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -849,7 +1217,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -922,7 +1290,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -947,7 +1315,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -997,7 +1365,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1022,7 +1390,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1046,7 +1414,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1070,7 +1438,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1091,7 +1459,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1118,7 +1486,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1137,7 +1505,7 @@
         "好康情報誌"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1159,7 +1527,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1186,7 +1554,7 @@
         "好康情報誌"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1209,7 +1577,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1233,7 +1601,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1256,7 +1624,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1280,7 +1648,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1303,7 +1671,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1324,7 +1692,7 @@
         "好康情報誌"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1346,7 +1714,7 @@
         "好康情報誌"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1369,7 +1737,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1392,7 +1760,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1414,7 +1782,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1437,7 +1805,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1464,7 +1832,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1485,7 +1853,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1505,7 +1873,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1526,7 +1894,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1548,7 +1916,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1571,7 +1939,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1592,7 +1960,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1616,7 +1984,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1639,7 +2007,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1658,7 +2026,7 @@
         "好康情報誌"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1679,7 +2047,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1705,7 +2073,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1731,7 +2099,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1757,7 +2125,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1782,7 +2150,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1807,7 +2175,7 @@
         "好康情報誌"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1829,7 +2197,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1855,7 +2223,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1879,7 +2247,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1906,7 +2274,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1930,7 +2298,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1951,7 +2319,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1973,7 +2341,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -1996,7 +2364,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2018,7 +2386,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2040,7 +2408,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2061,7 +2429,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2082,7 +2450,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2105,7 +2473,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2127,7 +2495,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2150,7 +2518,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2173,7 +2541,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2197,7 +2565,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2225,7 +2593,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2247,7 +2615,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2269,7 +2637,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2294,7 +2662,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2317,7 +2685,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2341,7 +2709,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2364,7 +2732,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2387,7 +2755,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2410,7 +2778,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2433,7 +2801,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2455,7 +2823,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2477,7 +2845,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2500,7 +2868,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2522,7 +2890,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2544,7 +2912,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2570,7 +2938,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2591,7 +2959,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2613,7 +2981,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2635,7 +3003,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2658,7 +3026,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2680,7 +3048,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2702,7 +3070,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2723,7 +3091,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2748,7 +3116,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2773,7 +3141,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2822,7 +3190,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2847,7 +3215,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2873,7 +3241,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2898,7 +3266,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2924,7 +3292,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2949,7 +3317,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2969,7 +3337,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -2989,7 +3357,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3015,7 +3383,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3041,7 +3409,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3062,7 +3430,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3083,7 +3451,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3108,7 +3476,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3134,7 +3502,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3160,7 +3528,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3182,7 +3550,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3205,7 +3573,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3227,7 +3595,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3253,7 +3621,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3275,7 +3643,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3296,7 +3664,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3318,7 +3686,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3339,7 +3707,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3360,7 +3728,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3383,7 +3751,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3408,7 +3776,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3428,7 +3796,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3449,7 +3817,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3469,7 +3837,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3490,7 +3858,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3510,7 +3878,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3530,7 +3898,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3552,7 +3920,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3573,7 +3941,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3599,7 +3967,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3621,7 +3989,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3646,7 +4014,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3667,7 +4035,7 @@
         "好康情報誌"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3690,7 +4058,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3716,7 +4084,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3738,7 +4106,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3759,7 +4127,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3782,7 +4150,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3805,7 +4173,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3828,7 +4196,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3851,7 +4219,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3873,7 +4241,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3895,7 +4263,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3918,7 +4286,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3941,7 +4309,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3964,7 +4332,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -3986,7 +4354,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4010,7 +4378,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4035,7 +4403,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4058,7 +4426,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4079,7 +4447,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4101,7 +4469,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4123,7 +4491,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4146,7 +4514,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4172,7 +4540,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4194,7 +4562,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4215,7 +4583,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4240,7 +4608,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4262,7 +4630,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4284,7 +4652,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4309,7 +4677,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4334,7 +4702,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4355,7 +4723,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4382,7 +4750,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4406,7 +4774,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4428,7 +4796,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4453,7 +4821,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4475,7 +4843,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4496,7 +4864,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4519,7 +4887,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4541,7 +4909,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4564,7 +4932,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4587,7 +4955,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4611,7 +4979,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4632,7 +5000,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4654,7 +5022,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4676,7 +5044,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4699,7 +5067,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4721,7 +5089,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4743,7 +5111,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4765,7 +5133,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4789,7 +5157,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4814,7 +5182,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4840,7 +5208,7 @@
         "好康情報誌"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4862,7 +5230,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4884,7 +5252,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4905,7 +5273,7 @@
         "好康情報誌"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4927,7 +5295,7 @@
         "好康情報誌"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4948,7 +5316,7 @@
         "好康情報誌"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4970,7 +5338,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -4995,7 +5363,7 @@
         "好康情報誌"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -5019,7 +5387,7 @@
         "好康情報誌"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -5046,7 +5414,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -5071,7 +5439,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -5096,7 +5464,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -5121,7 +5489,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -5142,7 +5510,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -5168,7 +5536,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -5194,7 +5562,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -5218,7 +5586,7 @@
         "KCouper"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -5243,7 +5611,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -5265,7 +5633,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -5288,7 +5656,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -5310,7 +5678,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -5333,7 +5701,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": false,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -5360,7 +5728,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {
@@ -5387,7 +5755,7 @@
         "Calling Taiwan"
       ],
       "priceAgreement": true,
-      "checkedAt": "2026-10-22"
+      "checkedAt": "2026-10-23"
     }
   },
   {

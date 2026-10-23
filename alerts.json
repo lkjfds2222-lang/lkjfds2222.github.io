@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T09:49:01+08:00",
+  "generatedAt": "2026-10-23T09:51:14+08:00",
   "alerts": [
     {
       "kind": "verification-required",
@@ -60,6 +60,12 @@
       "code": "16416",
       "reason": "Calling Taiwan 餐點數量與已收錄不同，需核對",
       "fingerprint": "{\"callingItems\": {\"qqBalls\": 20}, \"code\": \"16416\", \"currentItems\": {\"qqBalls\": 2}, \"reason\": \"Calling Taiwan 餐點數量與已收錄不同，需核對\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16575",
+      "reason": "Calling Taiwan 到期日與既有資料不同，未自動改期",
+      "fingerprint": "{\"callingEnd\": \"2027-02-28\", \"code\": \"16575\", \"currentEnd\": \"2027-03-31\", \"reason\": \"Calling Taiwan 到期日與既有資料不同，未自動改期\"}"
     },
     {
       "kind": "verification-required",
@@ -339,6 +345,18 @@
     },
     {
       "kind": "verification-required",
+      "code": "16669",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16669\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 89, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16709",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16709\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 89, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
       "code": "16838",
       "reason": "有額外加價口味選項；有額外加價口味選項",
       "fingerprint": "{\"code\": \"16838\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 89, \"source\": \"KCouper\"}"
@@ -381,6 +399,12 @@
     },
     {
       "kind": "verification-required",
+      "code": "16793",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16793\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 99, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
       "code": "26851",
       "reason": "有額外加價口味選項；有額外加價口味選項",
       "fingerprint": "{\"code\": \"26851\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 100, \"source\": \"KCouper\"}"
@@ -402,6 +426,12 @@
       "code": "16651",
       "reason": "有額外加價口味選項；有額外加價口味選項",
       "fingerprint": "{\"code\": \"16651\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 108, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16652",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16652\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 109, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
@@ -450,86 +480,38 @@
       "code": "16611",
       "reason": "有額外加價口味選項；未識別品項：4塊雞塊+小薯；有額外加價口味選項",
       "fingerprint": "{\"code\": \"16611\", \"reason\": \"有額外加價口味選項；未識別品項：4塊雞塊+小薯；有額外加價口味選項\", \"seenPrice\": 111, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16721",
-      "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16721\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 111, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "26810",
-      "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"26810\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 115, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16523",
-      "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16523\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 115, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "26986",
-      "reason": "未識別品項：4塊雞塊+小薯；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"26986\", \"reason\": \"未識別品項：4塊雞塊+小薯；有額外加價口味選項\", \"seenPrice\": 118, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "26989",
-      "reason": "有額外加價口味選項；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"26989\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 118, \"source\": \"KCouper\"}"
     }
   ],
   "newAlerts": [
     {
       "kind": "verification-required",
-      "code": "16607",
+      "code": "16575",
+      "reason": "Calling Taiwan 到期日與既有資料不同，未自動改期",
+      "fingerprint": "{\"callingEnd\": \"2027-02-28\", \"code\": \"16575\", \"currentEnd\": \"2027-03-31\", \"reason\": \"Calling Taiwan 到期日與既有資料不同，未自動改期\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16669",
       "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16607\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 89, \"source\": \"KCouper\"}"
+      "fingerprint": "{\"code\": \"16669\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 89, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
-      "code": "16838",
-      "reason": "有額外加價口味選項；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16838\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 89, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16833",
-      "reason": "有額外加價口味選項；替換選項會改變餐點類別",
-      "fingerprint": "{\"code\": \"16833\", \"reason\": \"有額外加價口味選項；替換選項會改變餐點類別\", \"seenPrice\": 98, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16651",
-      "reason": "有額外加價口味選項；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16651\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 108, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16579",
-      "reason": "有額外加價口味選項；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16579\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 110, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16610",
-      "reason": "有額外加價口味選項；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16610\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 111, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16611",
-      "reason": "有額外加價口味選項；未識別品項：4塊雞塊+小薯；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16611\", \"reason\": \"有額外加價口味選項；未識別品項：4塊雞塊+小薯；有額外加價口味選項\", \"seenPrice\": 111, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16523",
+      "code": "16709",
       "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16523\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 115, \"source\": \"KCouper\"}"
+      "fingerprint": "{\"code\": \"16709\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 89, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16793",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16793\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 99, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16652",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16652\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 109, \"source\": \"KCouper\"}"
     }
   ],
   "sourceErrors": {}
