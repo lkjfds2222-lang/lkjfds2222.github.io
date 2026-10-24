@@ -1,10 +1,10 @@
 {
-  "lastChecked": "2026-10-23T09:51:14+08:00",
-  "kcouperLastUpdate": "2026-10-23 05:31:11",
+  "lastChecked": "2026-10-24T09:52:23+08:00",
+  "kcouperLastUpdate": "2026-10-24 06:18:21",
   "sources": {
     "KCouper": {
       "ok": true,
-      "verified": 73,
+      "verified": 72,
       "url": "https://raw.githubusercontent.com/Winedays/KCouper/master/public/coupon.js"
     },
     "好康情報誌": {
@@ -20,32 +20,14 @@
   },
   "totalCoupons": 253,
   "activeCoupons": 251,
-  "autoAdded": 17,
-  "autoAddedCodes": [
-    "16652",
-    "16656",
-    "16663",
-    "16666",
-    "16669",
-    "16670",
-    "16709",
-    "16711",
-    "16738",
-    "16739",
-    "16740",
-    "16742",
-    "16762",
-    "16787",
-    "16790",
-    "16793",
-    "16794"
-  ],
-  "callingAutoAdded": 17,
-  "updatedFields": 1,
+  "autoAdded": 0,
+  "autoAddedCodes": [],
+  "callingAutoAdded": 0,
+  "updatedFields": 0,
   "pendingNewCoupons": 228,
   "reviewNeeded": 193,
   "unsupportedCount": 762,
   "alertsCount": 80,
   "note": "新券須通過品項與數量辨識才會自動加入；無法確認的不納入最低價計算。",
-  "priceHistoryPoints": 1087
+  "priceHistoryPoints": 1335
 }

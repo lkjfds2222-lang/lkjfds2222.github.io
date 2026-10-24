@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T09:51:14+08:00",
+  "generatedAt": "2026-10-24T09:52:23+08:00",
   "alerts": [
     {
       "kind": "verification-required",
@@ -482,37 +482,6 @@
       "fingerprint": "{\"code\": \"16611\", \"reason\": \"有額外加價口味選項；未識別品項：4塊雞塊+小薯；有額外加價口味選項\", \"seenPrice\": 111, \"source\": \"KCouper\"}"
     }
   ],
-  "newAlerts": [
-    {
-      "kind": "verification-required",
-      "code": "16575",
-      "reason": "Calling Taiwan 到期日與既有資料不同，未自動改期",
-      "fingerprint": "{\"callingEnd\": \"2027-02-28\", \"code\": \"16575\", \"currentEnd\": \"2027-03-31\", \"reason\": \"Calling Taiwan 到期日與既有資料不同，未自動改期\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16669",
-      "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16669\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 89, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16709",
-      "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16709\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 89, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16793",
-      "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16793\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 99, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16652",
-      "reason": "有額外加價口味選項；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16652\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 109, \"source\": \"KCouper\"}"
-    }
-  ],
+  "newAlerts": [],
   "sourceErrors": {}
 }
