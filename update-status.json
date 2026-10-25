@@ -1,6 +1,6 @@
 {
-  "lastChecked": "2026-10-24T09:52:23+08:00",
-  "kcouperLastUpdate": "2026-10-24 06:18:21",
+  "lastChecked": "2026-10-25T09:44:45+08:00",
+  "kcouperLastUpdate": "2026-10-25 04:17:55",
   "sources": {
     "KCouper": {
       "ok": true,
@@ -9,7 +9,7 @@
     },
     "好康情報誌": {
       "ok": true,
-      "listed": 115,
+      "listed": 124,
       "url": "https://info.talk.tw/kfc-coupon/"
     },
     "Calling Taiwan": {
@@ -24,10 +24,10 @@
   "autoAddedCodes": [],
   "callingAutoAdded": 0,
   "updatedFields": 0,
-  "pendingNewCoupons": 228,
+  "pendingNewCoupons": 237,
   "reviewNeeded": 193,
   "unsupportedCount": 762,
-  "alertsCount": 80,
+  "alertsCount": 81,
   "note": "新券須通過品項與數量辨識才會自動加入；無法確認的不納入最低價計算。",
-  "priceHistoryPoints": 1335
+  "priceHistoryPoints": 1583
 }
