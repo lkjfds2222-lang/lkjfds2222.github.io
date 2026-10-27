@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T09:57:45+08:00",
+  "generatedAt": "2026-10-27T09:55:07+08:00",
   "alerts": [
     {
       "kind": "verification-required",
@@ -30,6 +30,12 @@
       "code": "16647",
       "reason": "來源餐點明細與已收錄內容不同，暫不改寫",
       "fingerprint": "{\"code\": \"16647\", \"oldItems\": {\"drink\": 1, \"nuggets\": 4, \"tart\": 6}, \"reason\": \"來源餐點明細與已收錄內容不同，暫不改寫\", \"seenItems\": {\"drink\": 1, \"qqBalls\": 4, \"tart\": 6}}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "26953",
+      "reason": "兩來源價格不同；以 KCouper 為主並要求人工核對",
+      "fingerprint": "{\"articlePrice\": 262, \"code\": \"26953\", \"kcouperPrice\": 209, \"reason\": \"兩來源價格不同；以 KCouper 為主並要求人工核對\"}"
     },
     {
       "kind": "verification-required",
@@ -474,14 +480,15 @@
       "code": "16610",
       "reason": "有額外加價口味選項；有額外加價口味選項",
       "fingerprint": "{\"code\": \"16610\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 111, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16611",
-      "reason": "有額外加價口味選項；未識別品項：4塊雞塊+小薯；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16611\", \"reason\": \"有額外加價口味選項；未識別品項：4塊雞塊+小薯；有額外加價口味選項\", \"seenPrice\": 111, \"source\": \"KCouper\"}"
     }
   ],
-  "newAlerts": [],
+  "newAlerts": [
+    {
+      "kind": "verification-required",
+      "code": "26953",
+      "reason": "兩來源價格不同；以 KCouper 為主並要求人工核對",
+      "fingerprint": "{\"articlePrice\": 262, \"code\": \"26953\", \"kcouperPrice\": 209, \"reason\": \"兩來源價格不同；以 KCouper 為主並要求人工核對\"}"
+    }
+  ],
   "sourceErrors": {}
 }

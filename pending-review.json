@@ -1,20 +1,6 @@
 {
-  "generatedAt": "2026-10-26T09:57:45+08:00",
+  "generatedAt": "2026-10-27T09:55:07+08:00",
   "newCoupons": [
-    {
-      "code": "16038",
-      "seenPrice": 162,
-      "seenEnd": "2026-10-31",
-      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
-      "source": "好康情報誌"
-    },
-    {
-      "code": "16619",
-      "seenPrice": 110,
-      "seenEnd": "2026-12-20",
-      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
-      "source": "好康情報誌"
-    },
     {
       "code": "16866",
       "seenPrice": 88,
@@ -152,27 +138,6 @@
       "code": "16781",
       "seenPrice": 268,
       "seenEnd": "2027-03-31",
-      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
-      "source": "好康情報誌"
-    },
-    {
-      "code": "26860",
-      "seenPrice": 110,
-      "seenEnd": "2026-10-31",
-      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
-      "source": "好康情報誌"
-    },
-    {
-      "code": "26852",
-      "seenPrice": 149,
-      "seenEnd": "2026-10-31",
-      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
-      "source": "好康情報誌"
-    },
-    {
-      "code": "26891",
-      "seenPrice": 399,
-      "seenEnd": null,
       "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
       "source": "好康情報誌"
     },
@@ -445,6 +410,14 @@
       "source": "Calling Taiwan"
     },
     {
+      "code": "16038",
+      "seenPrice": 162,
+      "seenEnd": "2026-10-31",
+      "description": "【2026畢業季】香草紙包雞 × 1 + 雞汁風味飯 × 1 + 原味蛋撻 × 1 + 冰無糖綠茶(小)× 1",
+      "reason": "未識別品項：【2026畢業季】香草紙包雞",
+      "source": "Calling Taiwan"
+    },
+    {
       "code": "16084",
       "seenPrice": 210,
       "seenEnd": "2026-10-31",
@@ -557,6 +530,14 @@
       "source": "Calling Taiwan"
     },
     {
+      "code": "26852",
+      "seenPrice": 149,
+      "seenEnd": "2026-10-31",
+      "description": "【特賣會情報粉絲團】香草紙包雞 × 1 +薯餅 × 2 + 冰無糖綠茶(小)× 1",
+      "reason": "未識別品項：【特賣會情報粉絲團】香草紙包雞",
+      "source": "Calling Taiwan"
+    },
+    {
       "code": "26854",
       "seenPrice": 270,
       "seenEnd": "2026-10-31",
@@ -578,6 +559,14 @@
       "seenEnd": "2026-10-31",
       "description": "【Sunny吃喝遊樂粉絲團】香草紙包雞 × 1 + 咔啦雞腿堡 × 1 + 原味蛋撻 × 2 + 香酥脆薯(小)× 1 + 上校雞塊 × 4 + 冰無糖綠茶(小)× 2",
       "reason": "未識別品項：【Sunny吃喝遊樂粉絲團】香草紙包雞",
+      "source": "Calling Taiwan"
+    },
+    {
+      "code": "26891",
+      "seenPrice": 399,
+      "seenEnd": "2026-10-31",
+      "description": "【特賣會情報粉絲團】5 塊雞(桶)× 1 + 上校雞塊 × 8 + 原味蛋撻 × 2 + 雙色轉轉QQ球 × 10 + 香酥脆薯(小)× 1",
+      "reason": "含選項／複合拼盤／加購等限制，待人工確認",
       "source": "Calling Taiwan"
     },
     {
@@ -1895,6 +1884,12 @@
       }
     },
     {
+      "code": "26953",
+      "reason": "兩來源價格不同；以 KCouper 為主並要求人工核對",
+      "kcouperPrice": 209,
+      "articlePrice": 262
+    },
+    {
       "code": "16214",
       "reason": "Calling Taiwan 到期日與既有資料不同，未自動改期",
       "currentEnd": "2026-12-30",
@@ -3072,12 +3067,6 @@
       "code": "16497",
       "seenPrice": 319,
       "reason": "有額外加價口味選項；有額外加價口味選項",
-      "source": "KCouper"
-    },
-    {
-      "code": "50529",
-      "seenPrice": 333,
-      "reason": "有額外加價口味選項；品項名稱或數量不明",
       "source": "KCouper"
     },
     {
