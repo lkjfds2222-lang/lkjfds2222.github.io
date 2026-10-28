@@ -1,10 +1,10 @@
 {
-  "lastChecked": "2026-10-27T09:55:07+08:00",
-  "kcouperLastUpdate": "2026-10-27 06:22:36",
+  "lastChecked": "2026-10-28T10:05:28+08:00",
+  "kcouperLastUpdate": "2026-10-28 06:15:02",
   "sources": {
     "KCouper": {
       "ok": true,
-      "verified": 72,
+      "verified": 76,
       "url": "https://raw.githubusercontent.com/Winedays/KCouper/master/public/coupon.js"
     },
     "好康情報誌": {
@@ -14,20 +14,29 @@
     },
     "Calling Taiwan": {
       "ok": true,
-      "listed": 434,
+      "listed": 443,
       "url": "https://www.callingtaiwan.com.tw/kfc-coupon-code/"
     }
   },
-  "totalCoupons": 253,
-  "activeCoupons": 249,
-  "autoAdded": 0,
-  "autoAddedCodes": [],
-  "callingAutoAdded": 0,
+  "totalCoupons": 261,
+  "activeCoupons": 257,
+  "autoAdded": 8,
+  "autoAddedCodes": [
+    "50521",
+    "50518",
+    "50519",
+    "50562",
+    "16866",
+    "16868",
+    "16889",
+    "16891"
+  ],
+  "callingAutoAdded": 4,
   "updatedFields": 0,
   "pendingNewCoupons": 235,
-  "reviewNeeded": 193,
-  "unsupportedCount": 762,
+  "reviewNeeded": 197,
+  "unsupportedCount": 764,
   "alertsCount": 80,
   "note": "新券須通過品項與數量辨識才會自動加入；無法確認的不納入最低價計算。",
-  "priceHistoryPoints": 2076
+  "priceHistoryPoints": 2329
 }

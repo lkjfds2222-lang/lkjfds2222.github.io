@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T09:55:07+08:00",
+  "generatedAt": "2026-10-28T10:05:28+08:00",
   "alerts": [
     {
       "kind": "verification-required",
@@ -321,6 +321,12 @@
     },
     {
       "kind": "verification-required",
+      "code": "16866",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16866\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 88, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
       "code": "16389",
       "reason": "有額外加價口味選項；有額外加價口味選項",
       "fingerprint": "{\"code\": \"16389\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 89, \"source\": \"KCouper\"}"
@@ -384,6 +390,12 @@
       "code": "16833",
       "reason": "有額外加價口味選項；替換選項會改變餐點類別",
       "fingerprint": "{\"code\": \"16833\", \"reason\": \"有額外加價口味選項；替換選項會改變餐點類別\", \"seenPrice\": 98, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16868",
+      "reason": "有額外加價口味選項；替換選項會改變餐點類別",
+      "fingerprint": "{\"code\": \"16868\", \"reason\": \"有額外加價口味選項；替換選項會改變餐點類別\", \"seenPrice\": 98, \"source\": \"KCouper\"}"
     },
     {
       "kind": "verification-required",
@@ -468,26 +480,20 @@
       "code": "16454",
       "reason": "有額外加價口味選項；有額外加價口味選項",
       "fingerprint": "{\"code\": \"16454\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 111, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16492",
-      "reason": "有額外加價口味選項；未識別品項：4塊雞塊+小薯；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16492\", \"reason\": \"有額外加價口味選項；未識別品項：4塊雞塊+小薯；有額外加價口味選項\", \"seenPrice\": 111, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16610",
-      "reason": "有額外加價口味選項；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16610\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 111, \"source\": \"KCouper\"}"
     }
   ],
   "newAlerts": [
     {
       "kind": "verification-required",
-      "code": "26953",
-      "reason": "兩來源價格不同；以 KCouper 為主並要求人工核對",
-      "fingerprint": "{\"articlePrice\": 262, \"code\": \"26953\", \"kcouperPrice\": 209, \"reason\": \"兩來源價格不同；以 KCouper 為主並要求人工核對\"}"
+      "code": "16866",
+      "reason": "有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16866\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 88, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
+      "code": "16868",
+      "reason": "有額外加價口味選項；替換選項會改變餐點類別",
+      "fingerprint": "{\"code\": \"16868\", \"reason\": \"有額外加價口味選項；替換選項會改變餐點類別\", \"seenPrice\": 98, \"source\": \"KCouper\"}"
     }
   ],
   "sourceErrors": {}

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T09:55:07+08:00",
+  "generatedAt": "2026-10-28T10:05:28+08:00",
   "newCoupons": [
     {
       "code": "16866",
@@ -2272,6 +2272,12 @@
       "source": "KCouper"
     },
     {
+      "code": "16866",
+      "seenPrice": 88,
+      "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
       "code": "16389",
       "seenPrice": 89,
       "reason": "有額外加價口味選項；有額外加價口味選項",
@@ -2333,6 +2339,12 @@
     },
     {
       "code": "16833",
+      "seenPrice": 98,
+      "reason": "有額外加價口味選項；替換選項會改變餐點類別",
+      "source": "KCouper"
+    },
+    {
+      "code": "16868",
       "seenPrice": 98,
       "reason": "有額外加價口味選項；替換選項會改變餐點類別",
       "source": "KCouper"
@@ -2884,9 +2896,21 @@
       "source": "KCouper"
     },
     {
+      "code": "16889",
+      "seenPrice": 194,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
       "code": "16738",
       "seenPrice": 196,
       "reason": "有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
+      "code": "16891",
+      "seenPrice": 199,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
       "source": "KCouper"
     },
     {
@@ -3112,11 +3136,11 @@
       "source": "KCouper"
     }
   ],
-  "unsupportedCount": 762,
+  "unsupportedCount": 764,
   "unsupportedReasons": {
-    "加價／口味替換": 748,
-    "餐點分類未支援": 232,
-    "數量／規格限制": 103
+    "加價／口味替換": 747,
+    "餐點分類未支援": 234,
+    "數量／規格限制": 109
   },
   "unsupportedSamples": [
     {
@@ -3193,5 +3217,14 @@
     }
   ],
   "approvedChanges": [],
-  "autoAddedCoupons": []
+  "autoAddedCoupons": [
+    "50521",
+    "50518",
+    "50519",
+    "50562",
+    "16866",
+    "16868",
+    "16889",
+    "16891"
+  ]
 }
