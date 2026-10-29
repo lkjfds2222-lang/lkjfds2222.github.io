@@ -1,6 +1,6 @@
 {
-  "lastChecked": "2026-10-28T10:05:28+08:00",
-  "kcouperLastUpdate": "2026-10-28 06:15:02",
+  "lastChecked": "2026-10-29T10:07:10+08:00",
+  "kcouperLastUpdate": "2026-10-29 06:46:28",
   "sources": {
     "KCouper": {
       "ok": true,
@@ -14,29 +14,23 @@
     },
     "Calling Taiwan": {
       "ok": true,
-      "listed": 443,
+      "listed": 448,
       "url": "https://www.callingtaiwan.com.tw/kfc-coupon-code/"
     }
   },
-  "totalCoupons": 261,
-  "activeCoupons": 257,
-  "autoAdded": 8,
+  "totalCoupons": 263,
+  "activeCoupons": 259,
+  "autoAdded": 2,
   "autoAddedCodes": [
-    "50521",
-    "50518",
-    "50519",
-    "50562",
-    "16866",
-    "16868",
-    "16889",
-    "16891"
+    "16821",
+    "16822"
   ],
-  "callingAutoAdded": 4,
+  "callingAutoAdded": 2,
   "updatedFields": 0,
-  "pendingNewCoupons": 235,
-  "reviewNeeded": 197,
-  "unsupportedCount": 764,
-  "alertsCount": 80,
+  "pendingNewCoupons": 234,
+  "reviewNeeded": 198,
+  "unsupportedCount": 762,
+  "alertsCount": 81,
   "note": "新券須通過品項與數量辨識才會自動加入；無法確認的不納入最低價計算。",
-  "priceHistoryPoints": 2329
+  "priceHistoryPoints": 2584
 }

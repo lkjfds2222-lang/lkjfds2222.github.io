@@ -1,13 +1,6 @@
 {
-  "generatedAt": "2026-10-28T10:05:28+08:00",
+  "generatedAt": "2026-10-29T10:07:10+08:00",
   "newCoupons": [
-    {
-      "code": "16866",
-      "seenPrice": 88,
-      "seenEnd": "2027-02-28",
-      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
-      "source": "好康情報誌"
-    },
     {
       "code": "16880",
       "seenPrice": 118,
@@ -19,27 +12,6 @@
       "code": "16888",
       "seenPrice": 193,
       "seenEnd": "2027-03-31",
-      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
-      "source": "好康情報誌"
-    },
-    {
-      "code": "16889",
-      "seenPrice": 194,
-      "seenEnd": "2027-03-31",
-      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
-      "source": "好康情報誌"
-    },
-    {
-      "code": "16891",
-      "seenPrice": 199,
-      "seenEnd": "2027-03-31",
-      "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
-      "source": "好康情報誌"
-    },
-    {
-      "code": "16868",
-      "seenPrice": 98,
-      "seenEnd": "2027-02-28",
       "reason": "文章發現的新券，尚未有安全的結構化餐點資料",
       "source": "好康情報誌"
     },
@@ -1122,6 +1094,14 @@
       "source": "Calling Taiwan"
     },
     {
+      "code": "16695",
+      "seenPrice": 179,
+      "seenEnd": "2026-12-22",
+      "description": "【大大寬頻】花生熔岩咔啦雞腿堡 × 1 + 上校雞塊 × 4 + 原味蛋撻 × 1 + 百事可樂(小)× 1",
+      "reason": "特殊口味／規格無相對應分類",
+      "source": "Calling Taiwan"
+    },
+    {
       "code": "16724",
       "seenPrice": 158,
       "seenEnd": "2026-12-29",
@@ -1234,10 +1214,18 @@
       "source": "Calling Taiwan"
     },
     {
-      "code": "16695",
-      "seenPrice": 179,
+      "code": "16867",
+      "seenPrice": 899,
       "seenEnd": "2026-12-31",
-      "description": "【大大寬頻】花生熔岩咔啦雞腿堡 × 1 + 上校雞塊 × 4 + 原味蛋撻 × 1 + 百事可樂(小)× 1",
+      "description": "【GoodLife粉絲團】咔啦脆雞 × 12 + 原味蛋撻禮盒(6入)× 2 + 樂享三拼小盒 × 1(上校雞塊 × 8 + 雙色轉轉QQ球 × 10 + 香酥脆薯(中)× 1)+ 1.25L 可樂 × 1",
+      "reason": "含選項／複合拼盤／加購等限制，待人工確認",
+      "source": "Calling Taiwan"
+    },
+    {
+      "code": "16869",
+      "seenPrice": 899,
+      "seenEnd": "2026-12-31",
+      "description": "【GoodLife粉絲團】咔啦脆雞 × 5 + 爆脆無骨雞腿霸 × 8 + 原味蛋撻禮盒(6入)× 2 + 上校雞塊 × 20 + 1.25L 可樂 × 1",
       "reason": "特殊口味／規格無相對應分類",
       "source": "Calling Taiwan"
     },
@@ -1551,6 +1539,14 @@
       "seenEnd": "2027-02-28",
       "description": "【宏泰人壽】爆脆無骨雞腿霸 × 2 + 雙色轉轉QQ球 × 10 + 香酥脆薯(小)× 1 + 冰無糖綠茶(小)× 1",
       "reason": "特殊口味／規格無相對應分類",
+      "source": "Calling Taiwan"
+    },
+    {
+      "code": "16823",
+      "seenPrice": 449,
+      "seenEnd": "2027-02-28",
+      "description": "【臺中購物節】5 塊雞(桶)× 1 + 原味蛋撻禮盒(6入)× 1 + 玉米濃湯(小)× 2",
+      "reason": "含選項／複合拼盤／加購等限制，待人工確認",
       "source": "Calling Taiwan"
     },
     {
@@ -2404,6 +2400,12 @@
       "source": "KCouper"
     },
     {
+      "code": "16821",
+      "seenPrice": 109,
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "source": "KCouper"
+    },
+    {
       "code": "26990",
       "seenPrice": 110,
       "reason": "有額外加價口味選項",
@@ -3136,11 +3138,11 @@
       "source": "KCouper"
     }
   ],
-  "unsupportedCount": 764,
+  "unsupportedCount": 762,
   "unsupportedReasons": {
-    "加價／口味替換": 747,
+    "加價／口味替換": 746,
     "餐點分類未支援": 234,
-    "數量／規格限制": 109
+    "數量／規格限制": 108
   },
   "unsupportedSamples": [
     {
@@ -3218,13 +3220,7 @@
   ],
   "approvedChanges": [],
   "autoAddedCoupons": [
-    "50521",
-    "50518",
-    "50519",
-    "50562",
-    "16866",
-    "16868",
-    "16889",
-    "16891"
+    "16821",
+    "16822"
   ]
 }

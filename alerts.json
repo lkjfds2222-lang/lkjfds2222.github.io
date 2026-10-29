@@ -1,6 +1,15 @@
 {
-  "generatedAt": "2026-10-28T10:05:28+08:00",
+  "generatedAt": "2026-10-29T10:07:10+08:00",
   "alerts": [
+    {
+      "kind": "new-needs-review",
+      "codes": [
+        "16823",
+        "16867",
+        "16869"
+      ],
+      "count": 3
+    },
     {
       "kind": "verification-required",
       "code": "26859",
@@ -453,6 +462,12 @@
     },
     {
       "kind": "verification-required",
+      "code": "16821",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16821\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 109, \"source\": \"KCouper\"}"
+    },
+    {
+      "kind": "verification-required",
       "code": "26990",
       "reason": "有額外加價口味選項",
       "fingerprint": "{\"code\": \"26990\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 110, \"source\": \"KCouper\"}"
@@ -474,26 +489,23 @@
       "code": "16004",
       "reason": "有額外加價口味選項；有額外加價口味選項",
       "fingerprint": "{\"code\": \"16004\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 111, \"source\": \"KCouper\"}"
-    },
-    {
-      "kind": "verification-required",
-      "code": "16454",
-      "reason": "有額外加價口味選項；有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16454\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 111, \"source\": \"KCouper\"}"
     }
   ],
   "newAlerts": [
     {
-      "kind": "verification-required",
-      "code": "16866",
-      "reason": "有額外加價口味選項",
-      "fingerprint": "{\"code\": \"16866\", \"reason\": \"有額外加價口味選項\", \"seenPrice\": 88, \"source\": \"KCouper\"}"
+      "kind": "new-needs-review",
+      "codes": [
+        "16823",
+        "16867",
+        "16869"
+      ],
+      "count": 3
     },
     {
       "kind": "verification-required",
-      "code": "16868",
-      "reason": "有額外加價口味選項；替換選項會改變餐點類別",
-      "fingerprint": "{\"code\": \"16868\", \"reason\": \"有額外加價口味選項；替換選項會改變餐點類別\", \"seenPrice\": 98, \"source\": \"KCouper\"}"
+      "code": "16821",
+      "reason": "有額外加價口味選項；有額外加價口味選項",
+      "fingerprint": "{\"code\": \"16821\", \"reason\": \"有額外加價口味選項；有額外加價口味選項\", \"seenPrice\": 109, \"source\": \"KCouper\"}"
     }
   ],
   "sourceErrors": {}
